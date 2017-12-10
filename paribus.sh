@@ -48,8 +48,8 @@ fi
 
 #Init directories
 mkdir -p $process_dir
-uparse_dir=$process_dir/usearch
-mkdir -p $uparse_dir
+usearch_dir=$process_dir/usearch
+mkdir -p $usearch_dir
 
 
 
@@ -66,7 +66,7 @@ fi
 
 
 
-renamed_dir=$uparse_dir"/renamed"
+renamed_dir=$usearch_dir"/renamed"
 mkdir -p $renamed_dir
 while read sid_fastq_pair; 
 do
@@ -84,8 +84,8 @@ done < $sid_fastq_pair_list
 
 
 fastq_maxdiffs=10
-merged_dir=${uparse_dir}/merged
-unmerged_dir=${uparse_dir}/unmerged
+merged_dir=${usearch_dir}/merged
+unmerged_dir=${usearch_dir}/unmerged
 reports=${process_dir}/reports
 mkdir -p $merged_dir  $unmerged_dir $reports
 while read sid_fastq_pair;
@@ -126,9 +126,9 @@ done < $sid_fastq_pair_list
 
 
 seq2sid.py -r $unmerged_dir -o $unmerged_dir
-merged_dir_final=${uparse_dir}/merged_final
+merged_dir_final=${usearch_dir}/merged_final
 unmerged_fastq_pairs=$unmerged_dir/sid_fastq_pair.list
-join_merged_dir=${uparse_dir}/join_merged
+join_merged_dir=${usearch_dir}/join_merged
 mkdir -p $join_merged_dir  $merged_dir_final
 while read sid_fastq_pair;
 do
@@ -159,7 +159,7 @@ done < $unmerged_fastq_pairs
 
 
 fastq_maxee=5
-filtered_dir=$uparse_dir"/filtered"
+filtered_dir=$usearch_dir"/filtered"
 mkdir -p $filtered_dir
 while read sid_fastq_pair
 do
@@ -175,33 +175,33 @@ done < $sid_fastq_pair_list
 
 
 
-# filtered_fasta_dir=$uparse_dir"/filtered.fasta"
+# filtered_fasta_dir=$usearch_dir"/filtered.fasta"
 # mkdir -p $filtered_fasta_dir
 # for i in `ls -1 $filtered_dir/*.fastq`;
 # do filename=$(basename "$i");
 # base="${filename%.*}"; 
 # seqtk seq -A $i > $filtered_fasta_dir/$base.fa;
 # done
-# cat $filtered_fasta_dir/*.fa > $uparse_dir/filtered_all.fa
+# cat $filtered_fasta_dir/*.fa > $usearch_dir/filtered_all.fa
 
 
 
 
-# usearch -fastx_uniques $uparse_dir/filtered_all.fa -fastaout $uparse_dir/filtered_all.uniques.sorted.fa -sizeout -relabel Uniq
-# usearch -cluster_otus $uparse_dir/filtered_all.uniques.sorted.fa -relabel OTU_ -otus  $uparse_dir/otus_raw.fa
-# usearch -otutab $uparse_dir/filtered_all.fa -otus $uparse_dir/otus_raw.fa -otutabout $uparse_dir/otutab.txt -biomout $uparse_dir/otutab.json \
-#         -mapout $uparse_dir/map.txt -notmatched $uparse_dir/unmapped.fa -dbmatched $uparse_dir/otus_with_sizes.fa -sizeout
+# usearch -fastx_uniques $usearch_dir/filtered_all.fa -fastaout $usearch_dir/filtered_all.uniques.sorted.fa -sizeout -relabel Uniq
+# usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fa -relabel OTU_ -otus  $usearch_dir/otus_raw.fa
+# usearch -otutab $usearch_dir/filtered_all.fa -otus $usearch_dir/otus_raw.fa -otutabout $usearch_dir/otutab.txt -biomout $usearch_dir/otutab.json \
+#         -mapout $usearch_dir/map.txt -notmatched $usearch_dir/unmapped.fa -dbmatched $usearch_dir/otus_with_sizes.fa -sizeout
 # Create ZOTUs by denoising (error-correction)
-# usearch -unoise3 $uparse_dir/filtered_all.uniques.sorted.fa -zotus $uparse_dir/zotus.fa
+# usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fa -zotus $usearch_dir/zotus.fa
 # Create OTU table for ZOTUs
-# usearch -otutab $uparse_dir/filtered_all.fa -zotus $uparse_dir/zotus.fa  -strand plus -otutabout $uparse_dir/zotutab.txt
+# usearch -otutab $usearch_dir/filtered_all.fa -zotus $usearch_dir/zotus.fa  -strand plus -otutabout $usearch_dir/zotutab.txt
 # Create OTU table for 97% OTUs
 # mkdir $taxonomy_dir
-# assign_taxonomy.py -i $uparse_dir/otus_repsetOUT.fa -o $taxonomy_dir -r $greengenes_db/rep_set/97_otus.fasta -t $greengenes_db/taxonomy/97_otu_taxonomy.txt -m uclust
-# biom convert -i $uparse_dir/otus_table.tab.txt --table-type="OTU table" --to-json -o $process_dir/otus_table.biom
+# assign_taxonomy.py -i $usearch_dir/otus_repsetOUT.fa -o $taxonomy_dir -r $greengenes_db/rep_set/97_otus.fasta -t $greengenes_db/taxonomy/97_otu_taxonomy.txt -m uclust
+# biom convert -i $usearch_dir/otus_table.tab.txt --table-type="OTU table" --to-json -o $process_dir/otus_table.biom
 # biom add-metadata -i $process_dir/otus_table.biom -o $process_dir/otus_table.tax.biom --observation-metadata-fp $taxonomy_dir/otus_repsetOUT_tax_assignments.txt --observation-header OTUID,taxonomy,confidence --sc-separated taxonomy --float-fields confidence --output-as-json
 # mkdir $alignment_dir
-# align_seqs.py -m pynast -i $uparse_dir/otus_repsetOUT.fa -o $alignment_dir -t $greengenes_db/rep_set_aligned/97_otus.fasta
+# align_seqs.py -m pynast -i $usearch_dir/otus_repsetOUT.fa -o $alignment_dir -t $greengenes_db/rep_set_aligned/97_otus.fasta
 
 
 # filter_alignment.py -i $alignment_dir/otus_repsetOUT_aligned.fasta -o $alignment_dir/filtered
@@ -213,7 +213,7 @@ done < $sid_fastq_pair_list
 
 
 # export PATH=$PATH:/global/mb/amw/soft/fasta-splitter-0.2.4
-# export PATH=/global/mb/amw/soft/ImageMagick-7.0.5-3/install/bin:/opt/exp_soft/bioinf/uparse_helpers/:$PATH
+# export PATH=/global/mb/amw/soft/ImageMagick-7.0.5-3/install/bin:/opt/exp_soft/bioinf/usearch_helpers/:$PATH
 # export PATH=$PATH:/global/mb/amw/soft/amw-src
 # export PATH=$PATH:/global/mb/amw/soft/amw-src/fastqc_combine
 # export PATH=~/bin:$PATH
@@ -229,7 +229,7 @@ done < $sid_fastq_pair_list
 # then
     
 #     
-#     uparse_dir=$process_dir/uparse
+#     usearch_dir=$process_dir/usearch
 #     taxonomy_dir=$process_dir/tax
 #     alignment_dir=$process_dir/align
 #     greengenes_db=/global/mb/amw/dbs/gg_13_8_otus
