@@ -27,6 +27,9 @@ do
 done
 shift $((OPTIND -1))
 
+
+
+
 if [ -z $raw_reads_dir ]
    
 then
@@ -36,6 +39,8 @@ then
     echo "    paribus.sh -r  <fastq reads directory> -p   <processing directory (default:paribus.o)>" 
     exit 1
 fi
+
+
 
 
 if [ -z $process_dir ]   
@@ -50,6 +55,13 @@ fi
 mkdir -p $process_dir
 usearch_dir=$process_dir/usearch
 mkdir -p $usearch_dir
+
+
+
+
+fastqc_dir=$process_dir/fastqc
+mkdir $fastqc_dir
+fastqc --extract -f fastq -o $fastqc_dir  $raw_reads_dir/*
 
 
 
@@ -167,20 +179,21 @@ do
 
    usearch -fastq_filter ${merged_dir_final}/${sid}.merged.fastq -fastq_maxee $fastq_maxee -fastqout ${filtered_dir}/${sid}.merged.filtered.fastq ;
 
-   usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 0.05,0.1,0.25,0.5,0.75,1.0 -output ${reports}/${sid}_eestats2.txt ;
+   usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 0.05,0.1,0.25,0.5,0.75,1.0 -output ${filtered_dir}/${reports}/${sid}_eestats2.txt ;
    
 done < $sid_fastq_pair_list
-
 # fastq_maxee E Discard reads with > E total expected errors for all bases in the read after any truncation options have been applied.
+
 
 
 
 # filtered_fasta_dir=$usearch_dir"/filtered.fasta"
 # mkdir -p $filtered_fasta_dir
 # for i in `ls -1 $filtered_dir/*.fastq`;
-# do filename=$(basename "$i");
-# base="${filename%.*}"; 
-# seqtk seq -A $i > $filtered_fasta_dir/$base.fa;
+# do
+#    filename=$(basename "$i");
+#    base="${filename%.*}"; 
+#    seqtk seq -A $i > $filtered_fasta_dir/$base.fa;
 # done
 # cat $filtered_fasta_dir/*.fa > $usearch_dir/filtered_all.fa
 
@@ -188,13 +201,33 @@ done < $sid_fastq_pair_list
 
 
 # usearch -fastx_uniques $usearch_dir/filtered_all.fa -fastaout $usearch_dir/filtered_all.uniques.sorted.fa -sizeout -relabel Uniq
+
+
+
+
 # usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fa -relabel OTU_ -otus  $usearch_dir/otus_raw.fa
+
+
+
+
 # usearch -otutab $usearch_dir/filtered_all.fa -otus $usearch_dir/otus_raw.fa -otutabout $usearch_dir/otutab.txt -biomout $usearch_dir/otutab.json \
 #         -mapout $usearch_dir/map.txt -notmatched $usearch_dir/unmapped.fa -dbmatched $usearch_dir/otus_with_sizes.fa -sizeout
-# Create ZOTUs by denoising (error-correction)
+
+
+
+
+# # Create ZOTUs by denoising (error-correction)
 # usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fa -zotus $usearch_dir/zotus.fa
-# Create OTU table for ZOTUs
+
+
+
+
+# # Create OTU table for ZOTUs
 # usearch -otutab $usearch_dir/filtered_all.fa -zotus $usearch_dir/zotus.fa  -strand plus -otutabout $usearch_dir/zotutab.txt
+
+
+
+
 # Create OTU table for 97% OTUs
 # mkdir $taxonomy_dir
 # assign_taxonomy.py -i $usearch_dir/otus_repsetOUT.fa -o $taxonomy_dir -r $greengenes_db/rep_set/97_otus.fasta -t $greengenes_db/taxonomy/97_otu_taxonomy.txt -m uclust
