@@ -14,7 +14,8 @@ The following programs/utilities will need to be in your path
  * This shell script queues up all the sequence reads for header renaming
  * It uses the ``fastx_renamer`` binary to rename the headers
  4. ``usearch`` v10 http://www.drive5.com/usearch/download.html
- 5.  ``seqtk`` https://github.com/lh3/seqtk.git
+ 5. ``seqtk`` https://github.com/lh3/seqtk.git
+ 6.  ``FASTQC`` https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 <!-- ``` -->
 <!-- Give examples -->
 <!-- ``` -->
