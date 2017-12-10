@@ -13,11 +13,9 @@ do
       :) "Invalid option: $OPTARG requires an argument" 1>&2
       ;;
       r) raw_reads_dir=$OPTARG
-	 if [ -d $raw_reads_dir ]
-
+	 
+	 if [ ! -d $raw_reads_dir ]
 	 then
-	     :
-	 else
 	     echo "Failed to locate the reads directory: $raw_reads_dir "
 	 fi
       ;;
@@ -27,9 +25,6 @@ do
       ;;
    esac
 done
-
-
-
 shift $((OPTIND -1))
 
 if [ -z $raw_reads_dir ]
@@ -49,9 +44,11 @@ then
 fi
 
 
+
+
 #Init directories
 mkdir -p $process_dir
-uparse_dir=$process_dir/uparse
+uparse_dir=$process_dir/usearch
 mkdir -p $uparse_dir
 
 
@@ -59,6 +56,12 @@ mkdir -p $uparse_dir
 
 seq2sid.py -r $raw_reads_dir -o $process_dir
 sid_fastq_pair_list=$process_dir/sid_fastq_pair.list
+if [ ! -e  "$sid_fastq_pair_list" ]
+then
+    echo "Sequences reads pair file does not exist: $sid_fastq_pair_list"
+    echo "Exiting..."
+    exit 1
+fi
 
 
 
@@ -66,12 +69,13 @@ sid_fastq_pair_list=$process_dir/sid_fastq_pair.list
 renamed_dir=$uparse_dir"/renamed"
 mkdir -p $renamed_dir
 while read sid_fastq_pair; 
-do sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`; 
-fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
-fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
-fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
-fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
-rename_fastq_headers.sh $sid $fastq_r1 $fastq_r2 $fastq_r1_renamed $fastq_r2_renamed;
+do
+    sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`; 
+    fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
+    fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
+    fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
+    fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
+    rename_fastq_headers.sh $sid $fastq_r1 $fastq_r2 $fastq_r1_renamed $fastq_r2_renamed;
 done < $sid_fastq_pair_list
 #TO BE DONE
 #must optimize here there are too many file copies generate and variables assigned
@@ -79,94 +83,123 @@ done < $sid_fastq_pair_list
 
 
 
+fastq_maxdiffs=10
+merged_dir=${uparse_dir}/merged
+unmerged_dir=${uparse_dir}/unmerged
+reports=${process_dir}/reports
+mkdir -p $merged_dir  $unmerged_dir $reports
+while read sid_fastq_pair;
+do sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
+fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
+fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
+fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
+fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
+out_fwd=$(basename $fastq_r1);
+out_rev=$(basename $fastq_r2); 
+usearch -fastq_mergepairs $fastq_r1_renamed\
+	-reverse $fastq_r2_renamed\
+        -fastq_maxdiffs $fastq_maxdiffs\
+	-fastqout $merged_dir"/"$sid".merged.fastq"\
+	-tabbedout $reports/tabbedout_${sid}.txt\
+	-report $reports/report_${sid}.txt\
+	-alnout $reports/aln_${sid}.txt\
+	-fastqout_notmerged_fwd $unmerged_dir/${out_fwd}\
+	-fastqout_notmerged_rev $unmerged_dir/${out_rev}
+done < $sid_fastq_pair_list
+
+# usearch -fastq_mergepairs
+# supports multiprocessing default is 10 cores
+# -fastq_maxdiffs  Maximum number of mismatches in the alignment. Default 5. Consider increasing if you have long overlaps.
+# -fastq_pctid  Minimum %id of alignment. Default 90. Consider decreasing if you have long overlaps.
+# -fastq_nostagger  Discard staggered pairs. Default is to trim overhangs (non-biological sequence).
+# -fastq_merge_maxee  Maximum expected errors in the merged read. Not recommended for OTU analysis.
+# -fastq_minmergelen  Minimum length for the merged sequence. See Filtering artifacts by setting a merge length range.
+# -fastq_maxmergelen  Maximum length for the merged sequence.
+# -fastq_minqual  Discard merged read if any merged Q score is less than the given value. (No minimum by default).
+# -fastq_minovlen  Discard pair if alignment is shorter than given value. Default 16.
+# https://www.biostars.org/p/225683/
 
 
 
 
+#*****************************************************************************************************************************#
+
+
+seq2sid.py -r $unmerged_dir -o $unmerged_dir
+merged_dir_final=${uparse_dir}/merged_final
+unmerged_fastq_pairs=$unmerged_dir/sid_fastq_pair.list
+join_merged_dir=${uparse_dir}/join_merged
+mkdir -p $join_merged_dir  $merged_dir_final
+while read sid_fastq_pair;
+do
+    sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
+    fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
+    fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
+    joined_fastq=${join_merged_dir}/${sid}_unmerged_tmp.fastq
+    usearch -fastq_join $fastq_r1 -reverse $fastq_r2 -fastqout $joined_fastq
+
+    grep "nohsp" $reports/tabbedout_${sid}.txt | cut -f 1 >  ${join_merged_dir}/$nohsp_${sid}.labels
+
+    usearch -fastx_getseqs  $joined_fastq -labels ${join_merged_dir}/$nohsp_${sid}.labels -trunclabels -fastqout ${join_merged_dir}/${sid}_joined.fastq
+
+    usearch -fastq_eestats2 ${merged_dir}/${sid}.merged.fastq  -ee_cutoffs 0.05,0.1,0.25,0.5,0.75,1.0 -output ${merged_dir}/${sid}_eestats2.txt ;
+
+    cat ${join_merged_dir}/${sid}_joined.fastq  ${merged_dir}/${sid}.merged.fastq >  ${merged_dir_final}/${sid}.merged.fastq
+
+    usearch -fastq_eestats2 ${merged_dir_final}/${sid}.merged.fastq  -ee_cutoffs 0.05,0.1,0.25,0.5,0.75,1.0 -output ${merged_dir_final}/${sid}_eestats2.txt ;
+
+done < $unmerged_fastq_pairs
 
 
 
 
+#*****************************************************************************************************************************#
 
 
-# mkdir  -p  "$process_dir"
-
-# # #this automaticaly creates the seqid pair file
-# seq2sid.py -d $raw_reads_dir  
-# mkdir -p $fastqc_dir
-
-# #fastqc --extract -f fastq -o $fastqc_dir -t 6 $raw_reads_dir/*
-
-# #fastqc_combine.pl -v --out $fastqc_dir --skip --files "$fastqc_dir/*_fastqc"
-
-# renamed_dir=$uparse_dir"/renamed"
-
-# fastq_maxdiffs=5
-# merged_dir=$uparse_dir"/merged"
-# mkdir -p $merged_dir
-# while read sid_fastq_pair;
-# do sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
-# fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
-# fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
-#    fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
-# fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
-# usearch -fastq_mergepairs $fastq_r1_renamed -reverse $fastq_r2_renamed -fastq_maxdiffs $fastq_maxdiffs -fastqout $merged_dir"/"$sid".merged.fastq";
-# done < $sid_fastq_pair_list
 
 
-# fastq_maxee=0.05
-# filtered_dir=$uparse_dir"/filtered"
-# mkdir -p $filtered_dir
+fastq_maxee=5
+filtered_dir=$uparse_dir"/filtered"
+mkdir -p $filtered_dir
+while read sid_fastq_pair
+do
+   sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
 
-# while read sid_fastq_pair;
-# do sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;  
-# usearch -fastq_filter $merged_dir"/"$sid".merged.fastq" -fastq_maxee $fastq_maxee -fastqout $filtered_dir"/"$sid".merged.filtered.fastq"  ;
-# done < $sid_fastq_pair_list
+   usearch -fastq_filter ${merged_dir_final}/${sid}.merged.fastq -fastq_maxee $fastq_maxee -fastqout ${filtered_dir}/${sid}.merged.filtered.fastq ;
 
-# filtered_fastqc_dir=$uparse_dir"/filtered.fastqc"
-# mkdir -p $filtered_fastqc_dir
-# fastqc --extract -f fastq -o $uparse_dir"/filtered.fastqc" -t 6 $filtered_dir/*.fastq
+   usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 0.05,0.1,0.25,0.5,0.75,1.0 -output ${reports}/${sid}_eestats2.txt ;
+   
+done < $sid_fastq_pair_list
 
-# fastqc_combine.pl -v --out $filtered_fastqc_dir --skip --files "$filtered_fastqc_dir/*_fastqc"
+# fastq_maxee E Discard reads with > E total expected errors for all bases in the read after any truncation options have been applied.
 
 
 
 # filtered_fasta_dir=$uparse_dir"/filtered.fasta"
-# mkdir $filtered_fasta_dir
+# mkdir -p $filtered_fasta_dir
 # for i in `ls -1 $filtered_dir/*.fastq`;
 # do filename=$(basename "$i");
 # base="${filename%.*}"; 
 # seqtk seq -A $i > $filtered_fasta_dir/$base.fa;
 # done
-
 # cat $filtered_fasta_dir/*.fa > $uparse_dir/filtered_all.fa
 
 
+
+
 # usearch -fastx_uniques $uparse_dir/filtered_all.fa -fastaout $uparse_dir/filtered_all.uniques.sorted.fa -sizeout -relabel Uniq
-
-
 # usearch -cluster_otus $uparse_dir/filtered_all.uniques.sorted.fa -relabel OTU_ -otus  $uparse_dir/otus_raw.fa
-
 # usearch -otutab $uparse_dir/filtered_all.fa -otus $uparse_dir/otus_raw.fa -otutabout $uparse_dir/otutab.txt -biomout $uparse_dir/otutab.json \
 #         -mapout $uparse_dir/map.txt -notmatched $uparse_dir/unmapped.fa -dbmatched $uparse_dir/otus_with_sizes.fa -sizeout
-
-
 # Create ZOTUs by denoising (error-correction)
 # usearch -unoise3 $uparse_dir/filtered_all.uniques.sorted.fa -zotus $uparse_dir/zotus.fa
-
 # Create OTU table for ZOTUs
 # usearch -otutab $uparse_dir/filtered_all.fa -zotus $uparse_dir/zotus.fa  -strand plus -otutabout $uparse_dir/zotutab.txt
-
 # Create OTU table for 97% OTUs
-
 # mkdir $taxonomy_dir
-
 # assign_taxonomy.py -i $uparse_dir/otus_repsetOUT.fa -o $taxonomy_dir -r $greengenes_db/rep_set/97_otus.fasta -t $greengenes_db/taxonomy/97_otu_taxonomy.txt -m uclust
-
 # biom convert -i $uparse_dir/otus_table.tab.txt --table-type="OTU table" --to-json -o $process_dir/otus_table.biom
-
 # biom add-metadata -i $process_dir/otus_table.biom -o $process_dir/otus_table.tax.biom --observation-metadata-fp $taxonomy_dir/otus_repsetOUT_tax_assignments.txt --observation-header OTUID,taxonomy,confidence --sc-separated taxonomy --float-fields confidence --output-as-json
-
 # mkdir $alignment_dir
 # align_seqs.py -m pynast -i $uparse_dir/otus_repsetOUT.fa -o $alignment_dir -t $greengenes_db/rep_set_aligned/97_otus.fasta
 
