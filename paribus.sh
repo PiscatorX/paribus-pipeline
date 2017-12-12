@@ -21,6 +21,14 @@ do
       ;;
       p) process_dir=$OPTARG
       ;;
+      d) ref_db=$OPTARG
+      ;;
+      t) ref_tax=$OPTARG
+      ;;
+      c)
+	  ref_tax=/global/mb/amw/dbs/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+	  ref_db=/global/mb/amw/dbs/gg_13_8_otus/rep_set/97_otus.fasta
+      ;;
       \?) echo "Usage: cmd [-h] [-r] [-p]"
       ;;
    esac
@@ -36,7 +44,8 @@ then
     echo "Invalid option: fastq reads directory [-r] is required" 1>&2
     echo "Usage:"
     echo "    paribus.sh -h               Display this help message."
-    echo "    paribus.sh -r  <fastq reads directory> -p   <processing directory (default:paribus.o)>" 
+    echo "    paribus.sh -r  <fastq reads directory> -p   <processing directory (default:paribus.o)>"
+    echo "    -t    taxon assignment reference fasta file database (default: 97_otu.fasta )"
     exit 1
 fi
 
@@ -46,6 +55,20 @@ fi
 if [ -z $process_dir ]   
 then
     process_dir=paribus.o
+fi
+
+
+if [ -z $ref_db ]   
+then
+    ref_db=97_otus.fasta
+fi
+
+
+
+
+if [ -z $ref_tax ]   
+then
+    ref_tax=97_otu_taxonomy.txt
 fi
 
 
@@ -79,16 +102,17 @@ fi
 
 
 renamed_dir=$usearch_dir"/renamed"
-# mkdir -p $renamed_dir
-# while read sid_fastq_pair; 
-# do
-#     sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`; 
-#     fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
-#     fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
-#     fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
-#     fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
-#     rename_fastq_headers.sh $sid $fastq_r1 $fastq_r2 $fastq_r1_renamed $fastq_r2_renamed;
-# done < $sid_fastq_pair_list
+mkdir -p $renamed_dir
+while read sid_fastq_pair; 
+do
+    sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`; 
+    fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
+    fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
+    fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
+    fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
+    rename_fastq_headers.sh $sid $fastq_r1 $fastq_r2 $fastq_r1_renamed $fastq_r2_renamed;
+done < $sid_fastq_pair_list
+
 #TO BE DONE
 #must optimize here there are too many file copies generate and variables assigned
 #fastx_renamer  is cpu intensive definately a candidate for parrallelizing
@@ -99,25 +123,25 @@ fastq_maxdiffs=10
 merged_dir=${usearch_dir}/merged
 unmerged_dir=${usearch_dir}/unmerged
 reports=${process_dir}/reports
-# mkdir -p $merged_dir  $unmerged_dir $reports
-# while read sid_fastq_pair;
-# do sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
-# fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
-# fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
-# fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
-# fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
-# out_fwd=$(basename $fastq_r1);
-# out_rev=$(basename $fastq_r2); 
-# usearch -fastq_mergepairs $fastq_r1_renamed\
-# 	-reverse $fastq_r2_renamed\
-#         -fastq_maxdiffs $fastq_maxdiffs\
-# 	-fastqout $merged_dir"/"$sid".merged.fastq"\
-# 	-tabbedout $reports/tabbedout_${sid}.txt\
-# 	-report $reports/report_${sid}.txt\
-# 	-alnout $reports/aln_${sid}.txt\
-# 	-fastqout_notmerged_fwd $unmerged_dir/${out_fwd}\
-# 	-fastqout_notmerged_rev $unmerged_dir/${out_rev}
-# done < $sid_fastq_pair_list
+mkdir -p $merged_dir  $unmerged_dir $reports
+while read sid_fastq_pair;
+do sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
+fastq_r1=`echo $sid_fastq_pair | awk -F ' ' '{print $2}'`;
+fastq_r2=`echo $sid_fastq_pair | awk -F ' ' '{print $3}'`;
+fastq_r1_renamed=$renamed_dir"/"$(basename $fastq_r1);
+fastq_r2_renamed=$renamed_dir"/"$(basename $fastq_r2);
+out_fwd=$(basename $fastq_r1);
+out_rev=$(basename $fastq_r2); 
+usearch -fastq_mergepairs $fastq_r1_renamed\
+	-reverse $fastq_r2_renamed\
+        -fastq_maxdiffs $fastq_maxdiffs\
+	-fastqout $merged_dir"/"$sid".merged.fastq"\
+	-tabbedout $reports/tabbedout_${sid}.txt\
+	-report $reports/report_${sid}.txt\
+	-alnout $reports/aln_${sid}.txt\
+	-fastqout_notmerged_fwd $unmerged_dir/${out_fwd}\
+	-fastqout_notmerged_rev $unmerged_dir/${out_rev}
+done < $sid_fastq_pair_list
 
 # usearch -fastq_mergepairs
 # supports multiprocessing default is 10 cores
@@ -182,7 +206,8 @@ do
    usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 5,6,7,8,9,10 -output ${filtered_dir}/${sid}_eestats2.txt ;
    
 done < $sid_fastq_pair_list
-# fastq_maxee E Discard reads with > E total expected errors for all bases in the read after any truncation options have been applied.
+
+fastq_maxee E Discard reads with > E total expected errors for all bases in the read after any truncation options have been applied.
 
 
 
@@ -217,7 +242,7 @@ usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fa -relabel OTU_ 
 
 # Create OTU table for 97% OTUs
 usearch -otutab $usearch_dir/filtered_all.fa -otus $usearch_dir/otus_raw.fa -otutabout $usearch_dir/otutab.txt -biomout $usearch_dir/otutab.json \
-        -mapout $usearch_dir/map.txt -notmatched $usearch_dir/unmapped.fa -dbmatched $usearch_dir/otus_with_sizes.fa -sizeout
+         -mapout $usearch_dir/map.txt -notmatched $usearch_dir/unmapped.fa -dbmatched $usearch_dir/otus_with_sizes.fa -sizeout
 
 
 
@@ -234,10 +259,15 @@ usearch -otutab $usearch_dir/filtered_all.fa -otus $usearch_dir/otus_raw.fa -otu
 
 
 
-
 taxonomy_dir=$process_dir/tax
-mkdir $taxonomy_dir
-assign_taxonomy.py -i $usearch_dir/otus_repsetOUT.fa -o $taxonomy_dir -r $greengenes_db/rep_set/97_otus.fasta -t $greengenes_db/taxonomy/97_otu_taxonomy.txt -m uclust
+mkdir -p $taxonomy_dir
+echo assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fa -o $taxonomy_dir -r $ref_db -t $ref_tax -m uclust
+
+
+
+
+
+
 # biom convert -i $usearch_dir/otus_table.tab.txt --table-type="OTU table" --to-json -o $process_dir/otus_table.biom
 # biom add-metadata -i $process_dir/otus_table.biom -o $process_dir/otus_table.tax.biom --observation-metadata-fp $taxonomy_dir/otus_repsetOUT_tax_assignments.txt --observation-header OTUID,taxonomy,confidence --sc-separated taxonomy --float-fields confidence --output-as-json
 # mkdir $alignment_dir
