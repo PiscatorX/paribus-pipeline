@@ -279,7 +279,7 @@ taxonomy_dir=$process_dir/taxonomy
 ref_tax=/home/drewx/Documents/Paribus/consensus_taxonomy_7_levels.txt
 ref_db=/home/drewx/Documents/Paribus/97_otus_18S.fasta
 mkdir -p $taxonomy_dir
-assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fa\
+assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fasta\
 		   -o $taxonomy_dir\
 		   -r $ref_db\
 		   -t $ref_tax\
@@ -298,43 +298,18 @@ biom add-metadata\
      --output-as-json
      
 
-# mkdir $alignment_dir
-# align_seqs.py -m pynast -i $usearch_dir/otus_repsetOUT.fa -o $alignment_dir -t $greengenes_db/rep_set_aligned/97_otus.fasta
+
+alignment_dir=$process_dir/align
+mkdir $alignment_dir
+align_seqs.py -m pynast  -i $usearch_dir/otus_with_sizes.fasta -o $alignment_dir -t $greengenes_db/rep_set_aligned/97_otus.fasta
 
 
-# filter_alignment.py -i $alignment_dir/otus_repsetOUT_aligned.fasta -o $alignment_dir/filtered
-# make_phylogeny.py -i $alignment_dir/filtered/otus_repsetOUT_aligned_pfiltered.fasta -o $process_dir/otus_repsetOUT_aligned_pfiltered.tre
+filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta -o $alignment_dir/filtered
 
-# biom summarize-table -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.quantative
+make_phylogeny.py -i $alignment_dir/filtered/otus_with_sizes_aligned_pfiltered.fasta -o $process_dir/otus_with_sizes_aligned_pfiltered.tre
 
-# biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.qualitative
+biom summarize-table -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.quantative
+
+biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.qualitative
 
 
-# export PATH=$PATH:/global/mb/amw/soft/fasta-splitter-0.2.4
-# export PATH=/global/mb/amw/soft/ImageMagick-7.0.5-3/install/bin:/opt/exp_soft/bioinf/usearch_helpers/:$PATH
-# export PATH=$PATH:/global/mb/amw/soft/amw-src
-# export PATH=$PATH:/global/mb/amw/soft/amw-src/fastqc_combine
-# export PATH=~/bin:$PATH
-
-# raw_reads_dir="$1"
-# process_dir="$2"
-
-# #raw_reads_dir=RawReadX 
-# #process_dir=Red_Tide
-
-# if [ -d "$raw_reads_dir" ]
-
-# then
-    
-#     
-#     usearch_dir=$process_dir/usearch
-#     taxonomy_dir=$process_dir/tax
-#     alignment_dir=$process_dir/align
-#     greengenes_db=/global/mb/amw/dbs/gg_13_8_otus
-#     gold_db=/global/mb/amw/dbs/gold.fa
-#     fastqc_dir=$process_dir/fastqc
-# else
-#     echo pass
-#     #exit 1
-
-# fi
