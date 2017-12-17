@@ -28,6 +28,7 @@ do
       c)
 	  ref_tax=/home/andhlovu/SILVA_128_QIIME_release/taxonomy/18S_only/97/consensus_taxonomy_7_levels.txt
 	  ref_db=/home/andhlovu/SILVA_128_QIIME_release/rep_set/rep_set_18S_only/97/97_otus_18S.fasta
+	  ref_align=/home/andhlovu/SILVA_128_QIIME_release/rep_set_aligned/97/97_otus_aligned.fasta
       ;;
       \?) echo "Usage: cmd [-h] [-r] [-p]"
       ;;
@@ -299,15 +300,27 @@ biom add-metadata\
      
 
 
+echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
 alignment_dir=$process_dir/align
 mkdir $alignment_dir
-align_seqs.py -m pynast  -i $usearch_dir/otus_with_sizes.fasta -o $alignment_dir -t $greengenes_db/rep_set_aligned/97_otus.fasta
+align_seqs.py -m pynast  -i $usearch_dir/otus_with_sizes.fasta -o $alignment_dir -t $ref_align
 
 
+
+
+echo -e "\n\e[0;"$color"m Filtering the alignment  \033[0m\n"
 filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta -o $alignment_dir/filtered
 
+
+
+
+echo -e "\n\e[0;"$color"m Reconstructing the phylogeny \033[0m\n"
 make_phylogeny.py -i $alignment_dir/filtered/otus_with_sizes_aligned_pfiltered.fasta -o $process_dir/otus_with_sizes_aligned_pfiltered.tre
 
+
+
+
+echo -e "\n\e[0;"$color"m Biom table summarising \033[0m\n"
 biom summarize-table -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.quantative
 
 biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.qualitative
