@@ -227,22 +227,22 @@ for i in `ls -1 $filtered_dir/*.fastq`;
 do
    filename=$(basename "$i");
    base="${filename%.*}"; 
-   seqtk seq -A $i > $filtered_fasta_dir/$base.fa;
+   seqtk seq -A $i > $filtered_fasta_dir/$base.fasta;
 done
-cat $filtered_fasta_dir/*.fa > $usearch_dir/filtered_all.fa
+cat $filtered_fasta_dir/*.fasta > $usearch_dir/filtered_all.fasta
 
 
 
 echo -e "\n\e[0;"$color"m Dereplication \033[0m\n"
-usearch -fastx_uniques $usearch_dir/filtered_all.fa -fastaout $usearch_dir/filtered_all.uniques.sorted.fa -sizeout -relabel Uniq
+usearch -fastx_uniques $usearch_dir/filtered_all.fasta -fastaout $usearch_dir/filtered_all.uniques.sorted.fasta -sizeout -relabel Uniq
 #usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa -output $reports/uniques_learn.txt
 
 
 
 echo -e "\n\e[0;"$color"m Picking OTUs \033[0m\n"
-usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fa\
+usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 	-relabel OTU_\
-	-otus $usearch_dir/otus_raw.fa\
+	-otus $usearch_dir/otus_raw.fasta\
 	-uparseout $usearch_dir/uparse.txt\
 	-uparsealnout $usearch_dir/uparsealnout.txt\
         -minsize 1
@@ -252,13 +252,13 @@ usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fa\
 
 # Create OTU table for 97% OTUs
 echo -e "\n\e[0;"$color"m Create OTU table for 97% OTUs \033[0m\n"
-usearch -otutab $usearch_dir/filtered_all.fa\
-        -otus	$usearch_dir/otus_raw.fa\
+usearch -otutab $usearch_dir/filtered_all.fasta\
+        -otus	$usearch_dir/otus_raw.fasta\
 	-otutabout $usearch_dir/otutab.txt\
 	-biomout $usearch_dir/otutab.json\
         -mapout $usearch_dir/map.txt\
-	-notmatched $usearch_dir/unmapped.fa\
-	-dbmatched $usearch_dir/otus_with_sizes.fa\
+	-notmatched $usearch_dir/unmapped.fasta\
+	-dbmatched $usearch_dir/otus_with_sizes.fasta\
 	-sizeout
 
 
@@ -302,7 +302,7 @@ biom add-metadata\
 
 echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
 alignment_dir=$process_dir/align
-mkdir $alignment_dir
+mkdir -p $alignment_dir
 align_seqs.py -m pynast  -i $usearch_dir/otus_with_sizes.fasta -o $alignment_dir -t $ref_align
 
 
