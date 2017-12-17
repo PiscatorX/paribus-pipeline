@@ -15,7 +15,9 @@ The following programs/utilities will need to be in your path
  * It uses the ``fastx_renamer`` binary to rename the headers
  4. ``usearch`` v10 http://www.drive5.com/usearch/download.html
  5. ``seqtk`` https://github.com/lh3/seqtk.git
- 6.  ``FASTQC`` https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+ 6. ``FASTQC`` https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+ 7. ``QIIME`` http://qiime.org/install/install.html
+ 8. ``BIOM``  http://biom-format.org/ 
 <!-- ``` -->
 <!-- Give examples -->
 <!-- ``` -->
