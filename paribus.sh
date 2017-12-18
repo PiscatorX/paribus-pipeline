@@ -220,7 +220,7 @@ cat ${merged_dir_final}/*.fasta > ${merged_raw}/raw_reads.fasta
 
 
 mkdir -p ${fastqc_dir}/merged_final
-fastqc --extract -t 6 -f fastq -o ${fastqc_dir}/merged_final ${join_merged_dir}/*fastq
+fastqc --extract -t 6 -f fastq -o ${fastqc_dir}/merged_final ${merged_dir_final}/*fastq
 
 
 
@@ -298,13 +298,19 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
 
 echo -e "\n\e[0;"$color"m Running Unoise \033[0m\n"
 # Create ZOTUs by denoising (error-correction)
-usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fa -zotus $usearch_dir/zotus.fa
+usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fasta\
+	-zotus $usearch_dir/zotus.fasta
+
 
 
 
 echo -e "\n\e[0;"$color"m Creating OTU table for ZOTUs \033[0m\n"
 # Create OTU table for ZOTUs
-usearch -otutab $usearch_dir/raw_reads.fasta -zotus $usearch_dir/zotus.fa  -strand plus -otutabout $usearch_dir/zotutab.txt
+usearch -otutab ${merged_raw}/raw_reads.fasta\
+	-zotus $usearch_dir/zotus.fasta\
+	-strand plus\
+	-otutabout $usearch_dir/zotutab.txt
+
 
 
 
