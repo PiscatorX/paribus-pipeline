@@ -88,9 +88,9 @@ mkdir -p $usearch_dir
 
 
 
-# fastqc_dir=$process_dir/fastqc
-# mkdir -p $fastqc_dir/raw_reads
-# fastqc --extract -f fastq -o $fastqc_dir/raw_reads  $raw_reads_dir/*.fastq
+fastqc_dir=$process_dir/fastqc
+mkdir -p $fastqc_dir/raw_reads
+fastqc --extract -f fastq -o $fastqc_dir/raw_reads  $raw_reads_dir/*.fastq
 
 
 
@@ -213,8 +213,8 @@ cat ${merged_dir_final}/*.fasta > ${merged_raw}/raw_reads.fasta
 
 
 
-# mkdir -p ${fastqc_dir}/merged_final
-# fastqc --extract -f fastq -o ${fastqc_dir}/merged_final ${join_merged_dir}/*fastq
+mkdir -p ${fastqc_dir}/merged_final
+fastqc --extract -f fastq -o ${fastqc_dir}/merged_final ${join_merged_dir}/*fastq
 
 
 
@@ -238,8 +238,8 @@ done < $sid_fastq_pair_list
 
 
 
-# mkdir -p ${fastqc_dir}/filtered
-# fastqc --extract -f fastq -o ${fastqc_dir}/filtered  $filtered_dir/*fastq
+mkdir -p ${fastqc_dir}/filtered
+fastqc --extract -f fastq -o ${fastqc_dir}/filtered  $filtered_dir/*fastq
 
 
 
@@ -258,7 +258,7 @@ cat $filtered_fasta_dir/*.fasta > $usearch_dir/filtered_all.fasta
 
 echo -e "\n\e[0;"$color"m Dereplication \033[0m\n"
 usearch -fastx_uniques $usearch_dir/filtered_all.fasta -fastaout $usearch_dir/filtered_all.uniques.sorted.fasta -sizeout -relabel Uniq
-#usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa -output $reports/uniques_learn.txt
+usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa -output $reports/uniques_learn.txt
 
 
 
@@ -286,15 +286,15 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
 
 
 
-
+echo -e "\n\e[0;"$color"m Running Unoise \033[0m\n"
 # Create ZOTUs by denoising (error-correction)
-#usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fa -zotus $usearch_dir/zotus.fa
+usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fa -zotus $usearch_dir/zotus.fa
 
 
 
-
+echo -e "\n\e[0;"$color"m Creating OTU table for ZOTUs \033[0m\n"
 # Create OTU table for ZOTUs
-#usearch -otutab $usearch_dir/filtered_all.fa -zotus $usearch_dir/zotus.fa  -strand plus -otutabout $usearch_dir/zotutab.txt
+usearch -otutab $usearch_dir/raw_reads.fasta -zotus $usearch_dir/zotus.fa  -strand plus -otutabout $usearch_dir/zotutab.txt
 
 
 
