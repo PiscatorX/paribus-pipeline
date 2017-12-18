@@ -339,7 +339,7 @@ echo -e "\n\e[0;"$color"m Filtering the alignment  \033[0m\n"
 filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta\
 		    -o $alignment_dir/filtered\
 		    -e 0.10\
-                    -g 0.80
+                    -g 0.80\
                     -s
 
 
