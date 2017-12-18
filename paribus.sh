@@ -291,7 +291,6 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
         -mapout $usearch_dir/map.txt\
 	-notmatched $usearch_dir/unmapped.fasta\
 	-dbmatched $usearch_dir/otus_with_sizes.fasta\
-	-sizeout\
         -threads $threads
 
 
