@@ -328,21 +328,9 @@ assign_taxonomy.py -v\
 
 
 echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
-biom convert -i $usearch_dir/otutab.txt\
-     --table-type="OTU table"\
-     --to-json\
-     -o $process_dir/otus_table.biom
-biom add-metadata\
-     -i $process_dir/otus_table.biom\
-     -o $process_dir/otus_table.tax.biom\
-     --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
-     --observation-header OTUID,taxonomy,confidence\
-     --sc-separated taxonomy\
-     --float-fields confidence\
-     --output-as-json
 biom add-metadata\
      -i $usearch_dir/otutab.json\
-     -o $process_dir/otus_table.tax.biom2\
+     -o $process_dir/otus_table.tax.biom\
      --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
      --observation-header OTUID,taxonomy,confidence\
      --sc-separated taxonomy\
