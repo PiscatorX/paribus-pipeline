@@ -334,7 +334,7 @@ biom convert -i $usearch_dir/otutab.txt\
      --to-json\
      -o $process_dir/otus_table.biom
 biom add-metadata\
-     -i $process_dir/otus_table.biom
+     -i $process_dir/otus_table.biom\
      -o $process_dir/otus_table.tax.biom\
      --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
      --observation-header OTUID,taxonomy,confidence\
