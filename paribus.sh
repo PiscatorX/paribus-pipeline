@@ -322,10 +322,15 @@ biom add-metadata\
      
 
 
+
 echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
 alignment_dir=$process_dir/align
 mkdir -p $alignment_dir
-align_seqs.py -m pynast  -i $usearch_dir/otus_with_sizes.fasta -o $alignment_dir -t $ref_align
+align_seqs.py -m pynast\
+	      -min_pct 60
+	      -i $usearch_dir/otus_with_sizes.fasta\
+	      -o $alignment_dir\
+	      -t $ref_align
 
 
 
