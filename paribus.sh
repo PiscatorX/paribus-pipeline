@@ -265,10 +265,9 @@ cat $filtered_fasta_dir/*.fasta > $usearch_dir/filtered_all.fasta
 echo -e "\n\e[0;"$color"m Dereplication \033[0m\n"
 usearch -fastx_uniques $usearch_dir/filtered_all.fasta\
 	-fastaout $usearch_dir/filtered_all.uniques.sorted.fasta\
-	-sizeout -relabel Uniq
+	-sizeout -relabel Uniq\
         -threads $threads
-usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa\
-	-output $reports/uniques_learn.txt
+
 
 
 
@@ -276,8 +275,8 @@ echo -e "\n\e[0;"$color"m Picking OTUs \033[0m\n"
 usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 	-relabel OTU_\
 	-otus $usearch_dir/otus_raw.fasta\
-        -minsize 1
-        -threads $threads
+        -minsize 1\
+        -threads $threads\
 	-uparseout $usearch_dir/uparse.txt\
 	#-uparsealnout $usearch_dir/uparsealnout.txt\
 
@@ -293,7 +292,7 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
         -mapout $usearch_dir/map.txt\
 	-notmatched $usearch_dir/unmapped.fasta\
 	-dbmatched $usearch_dir/otus_with_sizes.fasta\
-	-sizeout
+	-sizeout\
         -threads $threads
 
 
