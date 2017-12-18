@@ -206,140 +206,142 @@ done
 cat ${merged_dir_final}/*.fasta > ${merged_raw}/raw_reads.fasta
 
 
-# #*****************************************************************************************************************************#
+
+
+#*****************************************************************************************************************************#
 
 
 
 
-# # mkdir -p ${fastqc_dir}/merged_final
-# # fastqc --extract -f fastq -o ${fastqc_dir}/merged_final ${join_merged_dir}/*fastq
+# mkdir -p ${fastqc_dir}/merged_final
+# fastqc --extract -f fastq -o ${fastqc_dir}/merged_final ${join_merged_dir}/*fastq
 
 
 
-# echo -e "\n\e[0;"$color"m Filtering reads \033[0m\n"
-# fastq_maxee=5
-# filtered_dir=${usearch_dir}/filtered
-# mkdir -p $filtered_dir
-# while read sid_fastq_pair
-# do
-#    sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
+echo -e "\n\e[0;"$color"m Filtering reads \033[0m\n"
+fastq_maxee=5
+filtered_dir=${usearch_dir}/filtered
+mkdir -p $filtered_dir
+while read sid_fastq_pair
+do
+   sid=`echo $sid_fastq_pair | awk -F ' ' '{print $1}'`;
 
-#    usearch -fastq_filter ${merged_dir_final}/${sid}.merged.fastq -fastq_maxee $fastq_maxee   -fastqout ${filtered_dir}/${sid}.merged.filtered.fastq ;
+   usearch -fastq_filter ${merged_dir_final}/${sid}.merged.fastq -fastq_maxee $fastq_maxee   -fastqout ${filtered_dir}/${sid}.merged.filtered.fastq ;
 
-#    usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 5,6,7,8,9,10 -output ${filtered_dir}/${sid}_eestats2.txt ;
+   usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 5,6,7,8,9,10 -output ${filtered_dir}/${sid}_eestats2.txt ;
    
-# done < $sid_fastq_pair_list
-# #-fastq_maxee $fastq_maxee
-# # fastq_maxee E
-# # Discard reads with > E total expected errors for all bases in the read after any truncation options have been applied.
+done < $sid_fastq_pair_list
+#-fastq_maxee $fastq_maxee
+# fastq_maxee E
+# Discard reads with > E total expected errors for all bases in the read after any truncation options have been applied.
 
 
 
 
-# # mkdir -p ${fastqc_dir}/filtered
-# # fastqc --extract -f fastq -o ${fastqc_dir}/filtered  $filtered_dir/*fastq
+# mkdir -p ${fastqc_dir}/filtered
+# fastqc --extract -f fastq -o ${fastqc_dir}/filtered  $filtered_dir/*fastq
 
 
 
-# echo -e "\n\e[0;"$color"m Converting fastq to fasta \033[0m\n"
-# filtered_fasta_dir=${usearch_dir}/filtered.fasta
-# mkdir -p $filtered_fasta_dir
-# for i in `ls -1 $filtered_dir/*.fastq`;
-# do
-#    filename=$(basename "$i");
-#    base="${filename%.*}"; 
-#    seqtk seq -A $i > $filtered_fasta_dir/$base.fasta;
-# done
-# cat $filtered_fasta_dir/*.fasta > $usearch_dir/filtered_all.fasta
+echo -e "\n\e[0;"$color"m Converting fastq to fasta \033[0m\n"
+filtered_fasta_dir=${usearch_dir}/filtered.fasta
+mkdir -p $filtered_fasta_dir
+for i in `ls -1 $filtered_dir/*.fastq`;
+do
+   filename=$(basename "$i");
+   base="${filename%.*}"; 
+   seqtk seq -A $i > $filtered_fasta_dir/$base.fasta;
+done
+cat $filtered_fasta_dir/*.fasta > $usearch_dir/filtered_all.fasta
 
 
 
-# echo -e "\n\e[0;"$color"m Dereplication \033[0m\n"
-# usearch -fastx_uniques $usearch_dir/filtered_all.fasta -fastaout $usearch_dir/filtered_all.uniques.sorted.fasta -sizeout -relabel Uniq
-# #usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa -output $reports/uniques_learn.txt
+echo -e "\n\e[0;"$color"m Dereplication \033[0m\n"
+usearch -fastx_uniques $usearch_dir/filtered_all.fasta -fastaout $usearch_dir/filtered_all.uniques.sorted.fasta -sizeout -relabel Uniq
+#usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa -output $reports/uniques_learn.txt
 
 
 
-# echo -e "\n\e[0;"$color"m Picking OTUs \033[0m\n"
-# usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
-# 	-relabel OTU_\
-# 	-otus $usearch_dir/otus_raw.fasta\
-# 	-uparseout $usearch_dir/uparse.txt\
-# 	-uparsealnout $usearch_dir/uparsealnout.txt\
-#         -minsize 1
-
-
-
-
-# # Create OTU table for 97% OTUs
-# echo -e "\n\e[0;"$color"m Create OTU table for 97% OTUs \033[0m\n"
-# usearch -otutab ${merged_dir_final}/raw_reads.fasta\
-#         -otus	$usearch_dir/otus_raw.fasta\
-# 	-otutabout $usearch_dir/otutab.txt\
-# 	-biomout $usearch_dir/otutab.json\
-#         -mapout $usearch_dir/map.txt\
-# 	-notmatched $usearch_dir/unmapped.fasta\
-# 	-dbmatched $usearch_dir/otus_with_sizes.fasta\
-# 	-sizeout
+echo -e "\n\e[0;"$color"m Picking OTUs \033[0m\n"
+usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
+	-relabel OTU_\
+	-otus $usearch_dir/otus_raw.fasta\
+	-uparseout $usearch_dir/uparse.txt\
+	-uparsealnout $usearch_dir/uparsealnout.txt\
+        -minsize 1
 
 
 
 
-# # Create ZOTUs by denoising (error-correction)
-# #usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fa -zotus $usearch_dir/zotus.fa
+# Create OTU table for 97% OTUs
+echo -e "\n\e[0;"$color"m Create OTU table for 97% OTUs \033[0m\n"
+usearch -otutab ${merged_dir_final}/raw_reads.fasta\
+        -otus	$usearch_dir/otus_raw.fasta\
+	-otutabout $usearch_dir/otutab.txt\
+	-biomout $usearch_dir/otutab.json\
+        -mapout $usearch_dir/map.txt\
+	-notmatched $usearch_dir/unmapped.fasta\
+	-dbmatched $usearch_dir/otus_with_sizes.fasta\
+	-sizeout
 
 
 
 
-# # Create OTU table for ZOTUs
-# #usearch -otutab $usearch_dir/filtered_all.fa -zotus $usearch_dir/zotus.fa  -strand plus -otutabout $usearch_dir/zotutab.txt
-
-
-
-# echo -e "\n\e[0;"$color"m Assigning taxonomy \033[0m\n"
-# taxonomy_dir=$process_dir/taxonomy
-# mkdir -p $taxonomy_dir
-# assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fasta\
-# 		   -o $taxonomy_dir\
-# 		   -r $ref_db\
-# 		   -t $ref_tax\
-# 		   -m uclust
+# Create ZOTUs by denoising (error-correction)
+#usearch -unoise3 $usearch_dir/filtered_all.uniques.sorted.fa -zotus $usearch_dir/zotus.fa
 
 
 
 
-# echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
-# biom add-metadata\
-#      -i $usearch_dir/otutab.json\
-#      -o $process_dir/otus_table.tax.biom\
-#      --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
-#      --observation-header OTUID,taxonomy,confidence\
-#      --sc-separated taxonomy\
-#      --float-fields confidence\
-#      --output-as-json
+# Create OTU table for ZOTUs
+#usearch -otutab $usearch_dir/filtered_all.fa -zotus $usearch_dir/zotus.fa  -strand plus -otutabout $usearch_dir/zotutab.txt
+
+
+
+echo -e "\n\e[0;"$color"m Assigning taxonomy \033[0m\n"
+taxonomy_dir=$process_dir/taxonomy
+mkdir -p $taxonomy_dir
+assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fasta\
+		   -o $taxonomy_dir\
+		   -r $ref_db\
+		   -t $ref_tax\
+		   -m uclust
+
+
+
+
+echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
+biom add-metadata\
+     -i $usearch_dir/otutab.json\
+     -o $process_dir/otus_table.tax.biom\
+     --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
+     --observation-header OTUID,taxonomy,confidence\
+     --sc-separated taxonomy\
+     --float-fields confidence\
+     --output-as-json
      
 
 
-# echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
-# alignment_dir=$process_dir/align
-# mkdir -p $alignment_dir
-# align_seqs.py -m pynast  -i $usearch_dir/otus_with_sizes.fasta -o $alignment_dir -t $ref_align
+echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
+alignment_dir=$process_dir/align
+mkdir -p $alignment_dir
+align_seqs.py -m pynast  -i $usearch_dir/otus_with_sizes.fasta -o $alignment_dir -t $ref_align
 
 
 
 
-# echo -e "\n\e[0;"$color"m Filtering the alignment  \033[0m\n"
-# filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta -o $alignment_dir/filtered
+echo -e "\n\e[0;"$color"m Filtering the alignment  \033[0m\n"
+filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta -o $alignment_dir/filtered
 
 
 
 
-# echo -e "\n\e[0;"$color"m Reconstructing the phylogeny \033[0m\n"
-# make_phylogeny.py -i $alignment_dir/filtered/otus_with_sizes_aligned_pfiltered.fasta -o $process_dir/otus_with_sizes_aligned_pfiltered.tre
+echo -e "\n\e[0;"$color"m Reconstructing the phylogeny \033[0m\n"
+make_phylogeny.py -i $alignment_dir/filtered/otus_with_sizes_aligned_pfiltered.fasta -o $process_dir/otus_with_sizes_aligned_pfiltered.tre
 
 
 
 
-# echo -e "\n\e[0;"$color"m Biom table summarising \033[0m\n"
-# biom summarize-table -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.quantative
-# biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.qualitative
+echo -e "\n\e[0;"$color"m Biom table summarising \033[0m\n"
+biom summarize-table -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.quantative
+biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.qualitative
