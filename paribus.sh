@@ -328,15 +328,19 @@ echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
 alignment_dir=$process_dir/align
 mkdir -p $alignment_dir
 align_seqs.py -m pynast\
-	      -p 60
 	      -i $usearch_dir/otus_with_sizes.fasta\
+	      -p 60\
 	      -o $alignment_dir -t $ref_align
 
 
 
 
 echo -e "\n\e[0;"$color"m Filtering the alignment  \033[0m\n"
-filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta -o $alignment_dir/filtered
+filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta\
+		    -o $alignment_dir/filtered\
+		    -e 0.10\
+                    -g 0.80
+                    -s
 
 
 
