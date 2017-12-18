@@ -195,7 +195,7 @@ done < $unmerged_fastq_pairs
 
 
 merged_raw=${usearch_dir}/merged_raw
-mkdir $merged_raw
+mkdir -p $merged_raw
 echo -e "\n\e[0;"$color"m Converting raw fastq reads to fasta \033[0m\n"
 for i in `ls -1 ${merged_dir_final}/*.fastq`;
 do
