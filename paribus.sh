@@ -7,7 +7,13 @@
 ref_tax=/home/andhlovu/SILVA_128_QIIME_release/taxonomy/18S_only/97/consensus_taxonomy_7_levels.txt
 ref_db=/home/andhlovu/SILVA_128_QIIME_release/rep_set/rep_set_18S_only/97/97_otus_18S.fasta
 ref_align=/home/andhlovu/SILVA_128_QIIME_release/core_alignment/core_alignment_SILVA128.fna
+threads=$PBS_NUM_PPN
 
+#THREADS
+if [ -z $threads ]   
+then
+    threads=2
+fi
 
 
 
@@ -90,7 +96,7 @@ mkdir -p $usearch_dir
 
 fastqc_dir=$process_dir/fastqc
 mkdir -p $fastqc_dir/raw_reads
-fastqc --extract -f fastq -o $fastqc_dir/raw_reads  $raw_reads_dir/*.fastq
+fastqc --extract -t 6 -f fastq -o $fastqc_dir/raw_reads  $raw_reads_dir/*.fastq
 
 
 
@@ -214,7 +220,7 @@ cat ${merged_dir_final}/*.fasta > ${merged_raw}/raw_reads.fasta
 
 
 mkdir -p ${fastqc_dir}/merged_final
-fastqc --extract -f fastq -o ${fastqc_dir}/merged_final ${join_merged_dir}/*fastq
+fastqc --extract -t 6 -f fastq -o ${fastqc_dir}/merged_final ${join_merged_dir}/*fastq
 
 
 
@@ -239,7 +245,7 @@ done < $sid_fastq_pair_list
 
 
 mkdir -p ${fastqc_dir}/filtered
-fastqc --extract -f fastq -o ${fastqc_dir}/filtered  $filtered_dir/*fastq
+fastqc --extract -t 6 -f fastq -o ${fastqc_dir}/filtered  $filtered_dir/*fastq
 
 
 
@@ -257,8 +263,12 @@ cat $filtered_fasta_dir/*.fasta > $usearch_dir/filtered_all.fasta
 
 
 echo -e "\n\e[0;"$color"m Dereplication \033[0m\n"
-usearch -fastx_uniques $usearch_dir/filtered_all.fasta -fastaout $usearch_dir/filtered_all.uniques.sorted.fasta -sizeout -relabel Uniq
-usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa -output $reports/uniques_learn.txt
+usearch -fastx_uniques $usearch_dir/filtered_all.fasta\
+	-fastaout $usearch_dir/filtered_all.uniques.sorted.fasta\
+	-sizeout -relabel Uniq
+        -threads $threads
+usearch -fastx_learn $usearch_dir/filtered_all.uniques.sorted.fa\
+	-output $reports/uniques_learn.txt
 
 
 
@@ -267,7 +277,8 @@ usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 	-relabel OTU_\
 	-otus $usearch_dir/otus_raw.fasta\
         -minsize 1
-	#-uparseout $usearch_dir/uparse.txt\
+        -threads $threads
+	-uparseout $usearch_dir/uparse.txt\
 	#-uparsealnout $usearch_dir/uparsealnout.txt\
 
 
@@ -283,7 +294,7 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
 	-notmatched $usearch_dir/unmapped.fasta\
 	-dbmatched $usearch_dir/otus_with_sizes.fasta\
 	-sizeout
-
+        -threads $threads
 
 
 echo -e "\n\e[0;"$color"m Running Unoise \033[0m\n"
