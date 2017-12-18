@@ -276,7 +276,6 @@ usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 	-relabel OTU_\
 	-otus $usearch_dir/otus_raw.fasta\
         -minsize 1\
-        -threads $threads\
 	-uparseout $usearch_dir/uparse.txt\
 	#-uparsealnout $usearch_dir/uparsealnout.txt\
 
@@ -294,6 +293,8 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
 	-dbmatched $usearch_dir/otus_with_sizes.fasta\
 	-sizeout\
         -threads $threads
+
+
 
 
 echo -e "\n\e[0;"$color"m Running Unoise \033[0m\n"
@@ -328,15 +329,26 @@ assign_taxonomy.py -v\
 
 
 echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
+biom convert -i $usearch_dir/otutab.txt\
+     --table-type="OTU table"\
+     --to-json\
+     -o $process_dir/otus_table.biom
 biom add-metadata\
-     -i $usearch_dir/otutab.json\
+     -i $process_dir/otus_table.biom
      -o $process_dir/otus_table.tax.biom\
      --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
      --observation-header OTUID,taxonomy,confidence\
      --sc-separated taxonomy\
      --float-fields confidence\
      --output-as-json
-     
+biom add-metadata\
+     -i $usearch_dir/otutab.json\
+     -o $process_dir/otus_table.tax.biom2\
+     --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
+     --observation-header OTUID,taxonomy,confidence\
+     --sc-separated taxonomy\
+     --float-fields confidence\
+     --output-as-json
 
 
 
