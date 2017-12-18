@@ -266,9 +266,9 @@ echo -e "\n\e[0;"$color"m Picking OTUs \033[0m\n"
 usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 	-relabel OTU_\
 	-otus $usearch_dir/otus_raw.fasta\
+        -minsize 1
 	#-uparseout $usearch_dir/uparse.txt\
 	#-uparsealnout $usearch_dir/uparsealnout.txt\
-        -minsize 1
 
 
 
