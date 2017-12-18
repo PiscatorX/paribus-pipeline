@@ -329,8 +329,7 @@ mkdir -p $alignment_dir
 align_seqs.py -m pynast\
 	      -p 60
 	      -i $usearch_dir/otus_with_sizes.fasta\
-	      -o $alignment_dir\
-	      -t $ref_align
+	      -o $alignment_dir -t $ref_align
 
 
 
