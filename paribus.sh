@@ -28,7 +28,7 @@ do
       c)
 	  ref_tax=/home/andhlovu/SILVA_128_QIIME_release/taxonomy/18S_only/97/consensus_taxonomy_7_levels.txt
 	  ref_db=/home/andhlovu/SILVA_128_QIIME_release/rep_set/rep_set_18S_only/97/97_otus_18S.fasta
-	  ref_align=/home/andhlovu/SILVA_128_QIIME_release/rep_set_aligned/97/97_otus_aligned.fasta
+	  ref_align=/home/andhlovu/SILVA_128_QIIME_release/core_alignment/core_alignment_SILVA128.fna
       ;;
       \?) echo "Usage: cmd [-h] [-r] [-p]"
       ;;
@@ -185,6 +185,20 @@ do
     usearch -fastq_eestats2 ${merged_dir_final}/${sid}.merged.fastq  -ee_cutoffs 0.05,0.1,0.25,0.5,0.75,1.0 -output ${merged_dir_final}/${sid}_eestats2.txt ;
 
 done < $unmerged_fastq_pairs
+
+
+
+
+echo -e "\n\e[0;"$color"m Converting raw fastq reads to fasta \033[0m\n"
+for i in `ls -1 ${merged_dir_final}/*.fastq`;
+do
+   filename=$(basename "$i");
+   base="${filename%.*}"; 
+   seqtk seq -A $i > $filtered_fasta_dir/$base.fasta;
+done
+cat ${merged_dir_final}/*.fasta > ${merged_dir_final}/raw_reads.fasta
+
+
 #*****************************************************************************************************************************#
 
 
@@ -252,7 +266,7 @@ usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 
 # Create OTU table for 97% OTUs
 echo -e "\n\e[0;"$color"m Create OTU table for 97% OTUs \033[0m\n"
-usearch -otutab $usearch_dir/filtered_all.fasta\
+usearch -otutab ${merged_dir_final}/raw_reads.fasta\
         -otus	$usearch_dir/otus_raw.fasta\
 	-otutabout $usearch_dir/otutab.txt\
 	-biomout $usearch_dir/otutab.json\
@@ -285,6 +299,7 @@ assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fasta\
 		   -r $ref_db\
 		   -t $ref_tax\
 		   -m uclust
+
 
 
 
@@ -322,7 +337,4 @@ make_phylogeny.py -i $alignment_dir/filtered/otus_with_sizes_aligned_pfiltered.f
 
 echo -e "\n\e[0;"$color"m Biom table summarising \033[0m\n"
 biom summarize-table -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.quantative
-
 biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.qualitative
-
-
