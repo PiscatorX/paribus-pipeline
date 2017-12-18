@@ -275,7 +275,7 @@ usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 
 # Create OTU table for 97% OTUs
 echo -e "\n\e[0;"$color"m Create OTU table for 97% OTUs \033[0m\n"
-usearch -otutab ${merged_dir_final}/raw_reads.fasta\
+usearch -otutab ${merged_raw}/raw_reads.fasta\
         -otus	$usearch_dir/otus_raw.fasta\
 	-otutabout $usearch_dir/otutab.txt\
 	-biomout $usearch_dir/otutab.json\
