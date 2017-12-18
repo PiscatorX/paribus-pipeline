@@ -266,8 +266,8 @@ echo -e "\n\e[0;"$color"m Picking OTUs \033[0m\n"
 usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 	-relabel OTU_\
 	-otus $usearch_dir/otus_raw.fasta\
-	-uparseout $usearch_dir/uparse.txt\
-	-uparsealnout $usearch_dir/uparsealnout.txt\
+	#-uparseout $usearch_dir/uparse.txt\
+	#-uparsealnout $usearch_dir/uparsealnout.txt\
         -minsize 1
 
 
@@ -301,7 +301,8 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
 echo -e "\n\e[0;"$color"m Assigning taxonomy \033[0m\n"
 taxonomy_dir=$process_dir/taxonomy
 mkdir -p $taxonomy_dir
-assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fasta\
+assign_taxonomy.py -v\
+		   -i $usearch_dir/otus_with_sizes.fasta\
 		   -o $taxonomy_dir\
 		   -r $ref_db\
 		   -t $ref_tax\
