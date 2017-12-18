@@ -1,5 +1,16 @@
 #! /bin/bash
 
+
+
+
+#CLUSTER DEFAULTS
+ref_tax=/home/andhlovu/SILVA_128_QIIME_release/taxonomy/18S_only/97/consensus_taxonomy_7_levels.txt
+ref_db=/home/andhlovu/SILVA_128_QIIME_release/rep_set/rep_set_18S_only/97/97_otus_18S.fasta
+ref_align=/home/andhlovu/SILVA_128_QIIME_release/core_alignment/core_alignment_SILVA128.fna
+
+
+
+
 color=34
 while getopts ":r:p:h" opt;
 do
@@ -24,11 +35,6 @@ do
       d) ref_db=$OPTARG
       ;;
       t) ref_tax=$OPTARG
-      ;;
-      c)
-	  ref_tax=/home/andhlovu/SILVA_128_QIIME_release/taxonomy/18S_only/97/consensus_taxonomy_7_levels.txt
-	  ref_db=/home/andhlovu/SILVA_128_QIIME_release/rep_set/rep_set_18S_only/97/97_otus_18S.fasta
-	  ref_align=/home/andhlovu/SILVA_128_QIIME_release/core_alignment/core_alignment_SILVA128.fna
       ;;
       \?) echo "Usage: cmd [-h] [-r] [-p]"
       ;;
@@ -291,8 +297,6 @@ usearch -otutab ${merged_dir_final}/raw_reads.fasta\
 
 echo -e "\n\e[0;"$color"m Assigning taxonomy \033[0m\n"
 taxonomy_dir=$process_dir/taxonomy
-ref_tax=/home/drewx/Documents/Paribus/consensus_taxonomy_7_levels.txt
-ref_db=/home/drewx/Documents/Paribus/97_otus_18S.fasta
 mkdir -p $taxonomy_dir
 assign_taxonomy.py -v -i $usearch_dir/otus_with_sizes.fasta\
 		   -o $taxonomy_dir\
