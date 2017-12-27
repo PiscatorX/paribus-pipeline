@@ -225,7 +225,7 @@ fastqc --extract -t 6 -f fastq -o ${fastqc_dir}/merged_final ${merged_dir_final}
 
 
 echo -e "\n\e[0;"$color"m Filtering reads \033[0m\n"
-fastq_maxee=5
+fastq_maxee=1
 filtered_dir=${usearch_dir}/filtered
 mkdir -p $filtered_dir
 while read sid_fastq_pair
@@ -290,7 +290,7 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
 	-biomout $usearch_dir/otutab.json\
         -mapout $usearch_dir/map.txt\
 	-notmatched $usearch_dir/unmapped.fasta\
-	-dbmatched $usearch_dir/otus_with_sizes.fasta\
+	-dbmatched $usearch_dir/otus.fasta\
         -threads $threads
 
 
@@ -318,7 +318,7 @@ echo -e "\n\e[0;"$color"m Assigning taxonomy \033[0m\n"
 taxonomy_dir=$process_dir/taxonomy
 mkdir -p $taxonomy_dir
 assign_taxonomy.py -v\
-		   -i $usearch_dir/otus_with_sizes.fasta\
+		   -i $usearch_dir/otus.fasta\
 		   -o $taxonomy_dir\
 		   -r $ref_db\
 		   -t $ref_tax\
@@ -331,7 +331,7 @@ echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
 biom add-metadata\
      -i $usearch_dir/otutab.json\
      -o $process_dir/otus_table.tax.biom\
-     --observation-metadata-fp $taxonomy_dir/otus_with_sizes_tax_assignments.txt\
+     --observation-metadata-fp $taxonomy_dir/otus_tax_assignments.txt\
      --observation-header OTUID,taxonomy,confidence\
      --sc-separated taxonomy\
      --float-fields confidence\
@@ -343,7 +343,7 @@ echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
 alignment_dir=$process_dir/align
 mkdir -p $alignment_dir
 align_seqs.py -m pynast\
-	      -i $usearch_dir/otus_with_sizes.fasta\
+	      -i $usearch_dir/otus.fasta\
 	      -p 60\
 	      -o $alignment_dir -t $ref_align
 
@@ -351,7 +351,7 @@ align_seqs.py -m pynast\
 
 
 echo -e "\n\e[0;"$color"m Filtering the alignment  \033[0m\n"
-filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta\
+filter_alignment.py -i $alignment_dir/otus_aligned.fasta\
 		    -o $alignment_dir/filtered\
 		    -e 0.10\
                     -g 0.80\
@@ -361,7 +361,7 @@ filter_alignment.py -i $alignment_dir/otus_with_sizes_aligned.fasta\
 
 
 echo -e "\n\e[0;"$color"m Reconstructing the phylogeny \033[0m\n"
-make_phylogeny.py -i $alignment_dir/filtered/otus_with_sizes_aligned_pfiltered.fasta -o $process_dir/otus_with_sizes_aligned_pfiltered.tre
+make_phylogeny.py -i $alignment_dir/filtered/otus_aligned_pfiltered.fasta -o $process_dir/otus_aligned_pfiltered.tre
 
 
 
