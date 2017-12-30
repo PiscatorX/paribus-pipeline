@@ -225,7 +225,7 @@ fastqc --extract -t 6 -f fastq -o ${fastqc_dir}/merged_final ${merged_dir_final}
 
 
 echo -e "\n\e[0;"$color"m Filtering reads \033[0m\n"
-fastq_maxee=1
+fastq_maxee=5
 filtered_dir=${usearch_dir}/filtered
 mkdir -p $filtered_dir
 while read sid_fastq_pair
@@ -234,7 +234,7 @@ do
 
    usearch -fastq_filter ${merged_dir_final}/${sid}.merged.fastq -fastq_maxee $fastq_maxee   -fastqout ${filtered_dir}/${sid}.merged.filtered.fastq ;
 
-   usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 5,6,7,8,9,10 -output ${filtered_dir}/${sid}_eestats2.txt ;
+   usearch -fastq_eestats2 ${filtered_dir}/${sid}.merged.filtered.fastq  -ee_cutoffs 1,2,3,4,5,5 -output ${filtered_dir}/${sid}_eestats2.txt ;
    
 done < $sid_fastq_pair_list
 #-fastq_maxee $fastq_maxee
@@ -277,7 +277,8 @@ usearch -cluster_otus $usearch_dir/filtered_all.uniques.sorted.fasta\
 	-otus $usearch_dir/otus_raw.fasta\
         -minsize 1\
 	-uparseout $usearch_dir/uparse.txt\
-	#-uparsealnout $usearch_dir/uparsealnout.txt\
+        -fulldp
+	
 
 
 
@@ -289,9 +290,10 @@ usearch -otutab ${merged_raw}/raw_reads.fasta\
 	-otutabout $usearch_dir/otutab.txt\
 	-biomout $usearch_dir/otutab.json\
         -mapout $usearch_dir/map.txt\
-	-notmatched $usearch_dir/unmapped.fasta\
+	-notmatched $usearch_dir/notmatched.fasta\
 	-dbmatched $usearch_dir/otus.fasta\
-        -threads $threads
+        -threads $threads\
+	-fulldp
 
 
 
