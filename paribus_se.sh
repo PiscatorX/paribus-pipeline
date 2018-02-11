@@ -214,13 +214,14 @@ usearch -otutab ${raw_fasta}/raw_reads.fasta\
 
 
 
-
-echo -e "\n\e[0;"$color"m Assigning taxonomy \033[0m\n"
-taxonomy_dir=$process_dir/taxonomy
+process_dir=$process_dir/uclust
+usearch_dir=$usearch_dir/uclust
+echo -e "\n\e[0;"$color"m Assigning taxonomy UCLUST \033[0m\n"
+taxonomy_dir_uclust=$process_dir/taxonomy/uclust
 mkdir -p $taxonomy_dir
 assign_taxonomy.py -v\
 		   -i $usearch_dir/otus.fasta\
-		   -o $taxonomy_dir\
+		   -o $taxonomy_dir_uclust\
 		   -r $ref_db\
 		   -t $ref_tax\
 		   -m uclust
@@ -243,7 +244,70 @@ biom add-metadata\
 
 
 echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
-alignment_dir=$process_dir/align
+alignment_dir=$process_dir/align/uclust
+mkdir -p $alignment_dir
+align_seqs.py -m pynast\
+	      -i $usearch_dir/otus.fasta\
+	      -p 60\
+	      -o $alignment_dir -t $ref_align
+
+
+
+
+echo -e "\n\e[0;"$color"m Filtering the alignment  \033[0m\n"
+filter_alignment.py -i $alignment_dir/otus_aligned.fasta\
+		    -o $alignment_dir/filtered\
+		    -e 0.10\
+                    -g 0.80\
+                    -s
+
+
+
+
+echo -e "\n\e[0;"$color"m Reconstructing the phylogeny \033[0m\n"
+make_phylogeny.py -i $alignment_dir/filtered/otus_aligned_pfiltered.fasta -o $process_dir/otus_aligned_pfiltered.tre
+
+
+
+
+echo -e "\n\e[0;"$color"m Biom table summarising \033[0m\n"
+biom summarize-table -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.quantative
+biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $process_dir/otus_table.tax.biom.summary.qualitative
+
+###############################################################################################################################
+
+
+process_dir=$process_dir/rdp
+usearch_dir=$usearch_dir/rdp
+echo -e "\n\e[0;"$color"m Assigning taxonomy RDP \033[0m\n"
+taxonomy_dir_rdp=$process_dir/taxonomy/rdp
+mkdir -p $taxonomy_dir
+assign_taxonomy.py -v\
+		   -i $usearch_dir/otus.fasta\
+		   -o $taxonomy_dir_rdp\
+		   -r $ref_db\
+		   -t $ref_tax\
+		   -m rdp
+
+
+
+
+
+echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
+biom add-metadata\
+     -i $usearch_dir/otutab.json\
+     -o $process_dir/otus_table.tax.biom\
+     --observation-metadata-fp $taxonomy_dir_rdp/otus_tax_assignments.txt\
+     --observation-header OTUID,taxonomy,confidence\
+     --sc-separated taxonomy\
+     --float-fields confidence\
+     --output-as-json
+
+
+
+
+echo -e "\n\e[0;"$color"m Aligning the sequences \033[0m\n"
+alignment_dir=$process_dir/align/rdp
 mkdir -p $alignment_dir
 align_seqs.py -m pynast\
 	      -i $usearch_dir/otus.fasta\
