@@ -219,7 +219,7 @@ echo -e "\n\e[0;"$color"m Assigning taxonomy UCLUST \033[0m\n"
 process_dir=$process_dir/uclust
 usearch_dir=$usearch_dir/uclust
 taxonomy_dir_uclust=$process_dir/taxonomy/uclust
-mkdir -p $process_dir $usearch_dir $taxonomy_dir
+mkdir -p $process_dir $usearch_dir $taxonomy_dir_uclust
 assign_taxonomy.py -v\
 		   -i $usearch_dir/otus.fasta\
 		   -o $taxonomy_dir_uclust\
@@ -282,7 +282,7 @@ echo -e "\n\e[0;"$color"m Assigning taxonomy RDP \033[0m\n"
 process_dir=$process_dir/rdp
 usearch_dir=$usearch_dir/rdp
 taxonomy_dir_rdp=$process_dir/taxonomy/rdp
-mkdir -p mkdir -p $process_dir $usearch_dir $taxonomy_dir
+mkdir -p mkdir -p $process_dir $usearch_dir $taxonomy_dir_rdp
 assign_taxonomy.py -v\
 		   -i $usearch_dir/otus.fasta\
 		   -o $taxonomy_dir_rdp\
