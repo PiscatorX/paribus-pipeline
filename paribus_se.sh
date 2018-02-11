@@ -214,11 +214,12 @@ usearch -otutab ${raw_fasta}/raw_reads.fasta\
 
 
 
+
+echo -e "\n\e[0;"$color"m Assigning taxonomy UCLUST \033[0m\n"
 process_dir=$process_dir/uclust
 usearch_dir=$usearch_dir/uclust
-echo -e "\n\e[0;"$color"m Assigning taxonomy UCLUST \033[0m\n"
 taxonomy_dir_uclust=$process_dir/taxonomy/uclust
-mkdir -p $taxonomy_dir
+mkdir -p $process_dir $usearch_dir $taxonomy_dir
 assign_taxonomy.py -v\
 		   -i $usearch_dir/otus.fasta\
 		   -o $taxonomy_dir_uclust\
@@ -277,11 +278,11 @@ biom summarize-table --qualitative -i $process_dir/otus_table.tax.biom -o $proce
 ###############################################################################################################################
 
 
+echo -e "\n\e[0;"$color"m Assigning taxonomy RDP \033[0m\n"
 process_dir=$process_dir/rdp
 usearch_dir=$usearch_dir/rdp
-echo -e "\n\e[0;"$color"m Assigning taxonomy RDP \033[0m\n"
 taxonomy_dir_rdp=$process_dir/taxonomy/rdp
-mkdir -p $taxonomy_dir
+mkdir -p mkdir -p $process_dir $usearch_dir $taxonomy_dir
 assign_taxonomy.py -v\
 		   -i $usearch_dir/otus.fasta\
 		   -o $taxonomy_dir_rdp\
