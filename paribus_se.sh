@@ -237,19 +237,30 @@ assign_taxonomy.py -v\
 
 
 
-
 echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
 process_out=$process_dir/uclust
 mkdir -p $process_out
+tag=$(basename $raw_reads_dir)
 biom add-metadata\
      -i $usearch_dir/otutab.json\
-     -o $process_out/otus_table.tax.biom\
+     -o ${tag}_tax_otus.biom\
      --observation-metadata-fp $taxonomy_dir_uclust/otus_tax_assignments.txt\
      --observation-header OTUID,taxonomy,confidence\
      --sc-separated taxonomy\
      --float-fields confidence\
      --output-as-json
 
+
+summaries=$process_out/summaries
+krona_plots=$process_out/Krona
+mkdir -p $summaries $krona_plots
+summarize_taxa.py -i ${tag}_tax_otus.biom\
+		  -m $usearch_dir/map.txt\
+		  -o $summaries
+summary2krona.py ${summaries}/${tag}_tax_otus_L6.txt\
+		 -o ${summaries}/${tag}_krona.tsv
+ktImportText ${summaries}/${tag}_krona.tsv\
+	     -o ${krona_plots}/${tag}_krona.html
 
 
 
@@ -305,6 +316,7 @@ assign_taxonomy.py -v\
 echo -e "\n\e[0;"$color"m Adding taxonomy data to BIOM file \033[0m\n"
 process_out=$process_dir/rdp
 mkdir -p $process_out
+tag=$(basename $raw_reads_dir)
 biom add-metadata\
      -i $usearch_dir/otutab.json\
      -o $process_out/otus_table.tax.biom\
@@ -314,6 +326,19 @@ biom add-metadata\
      --float-fields confidence\
      --output-as-json
 
+
+
+
+summaries=$process_out/summaries
+krona_plots=$process_out/Krona
+mkdir -p $summaries $krona_plots
+summarize_taxa.py -i ${tag}_tax_otus.biom\
+		  -m $usearch_dir/map.txt\
+		  -o $summaries
+summary2krona.py ${summaries}/${tag}_tax_otus_L6.txt\
+		 -o ${summaries}/${tag}_krona.tsv
+ktImportText ${summaries}/${tag}_krona.tsv\
+	     -o ${krona_plots}/${tag}_krona.html
 
 
 
