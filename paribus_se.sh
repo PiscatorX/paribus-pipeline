@@ -259,7 +259,7 @@ mkdir -p $summaries $krona_plots
 summarize_taxa.py -i tax_${tag}_otus.biom\
 		  -m $usearch_dir/map.txt\
 		  -o $summaries
-summary2krona.py ${summaries}/${tag}_tax_otus_L6.txt\
+summary2krona.py ${summaries}/tax_${tag}_otus_L6.txt\
 		 -o ${summaries}/${tag}_krona.tsv
 ktImportText ${summaries}/${tag}_krona.tsv\
 	     -o ${krona_plots}/${tag}_krona.html
