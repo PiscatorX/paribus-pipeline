@@ -243,7 +243,7 @@ mkdir -p $process_out
 tag=$(basename $raw_reads_dir)
 biom add-metadata\
      -i $usearch_dir/otutab.json\
-     -o ${tag}_tax_otus.biom\
+     -o tax_${tag}_otus.biom\
      --observation-metadata-fp $taxonomy_dir_uclust/otus_tax_assignments.txt\
      --observation-header OTUID,taxonomy,confidence\
      --sc-separated taxonomy\
@@ -251,10 +251,12 @@ biom add-metadata\
      --output-as-json
 
 
+
+
 summaries=$process_out/summaries
 krona_plots=$process_out/Krona
 mkdir -p $summaries $krona_plots
-summarize_taxa.py -i ${tag}_tax_otus.biom\
+summarize_taxa.py -i tax_${tag}_otus.biom\
 		  -m $usearch_dir/map.txt\
 		  -o $summaries
 summary2krona.py ${summaries}/${tag}_tax_otus_L6.txt\
