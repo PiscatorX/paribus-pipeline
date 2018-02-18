@@ -222,6 +222,9 @@ usearch -otutab ${raw_fasta}/raw_reads.fasta\
         -threads $threads\
 	-fulldp
 
+usearch -alpha_div\
+	-otutabout $usearch_dir/otutab.txt\
+	-output $usearch_dir/usearch_alpha_div.txt
 
 
 
@@ -257,7 +260,7 @@ biom add-metadata\
 summaries=$process_out/summaries
 krona_plots=$process_out/Krona
 mkdir -p $summaries $krona_plots
-summarize_taxa.py -i tax_${tag}_otus.biom\
+summarize_taxa.py -i $process_out/tax_${tag}_otus.biom\
 		  -o $summaries
 
 #-m $usearch_dir/map.txt 
@@ -337,7 +340,7 @@ biom add-metadata\
 summaries=$process_out/summaries
 krona_plots=$process_out/Krona
 mkdir -p $summaries $krona_plots
-summarize_taxa.py -i tax_${tag}_otus.biom\
+summarize_taxa.py -i $process_out/tax_${tag}_otus.biom\
 		  -o $summaries
 
 #-m $usearch_dir/map.txt 
@@ -378,3 +381,6 @@ make_phylogeny.py -i $alignment_dir/filtered/otus_aligned_pfiltered.fasta -o $pr
 echo -e "\n\e[0;"$color"m Biom table summarising \033[0m\n"
 biom summarize-table -i $process_out/tax_${tag}_otus.biom -o $process_out/tax_${tag}_otus.biom.summary.quantative
 biom summarize-table --qualitative -i $process_out/tax_${tag}_otus.biom -o $process_out/tax_${tag}_otus.biom.summary.qualitative
+
+
+echo -e "\n\e[0;"$color"m Calculate diversity metrics \033[0m\n"
