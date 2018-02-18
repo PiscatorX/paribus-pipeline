@@ -383,4 +383,4 @@ biom summarize-table -i $process_out/tax_${tag}_otus.biom -o $process_out/tax_${
 biom summarize-table --qualitative -i $process_out/tax_${tag}_otus.biom -o $process_out/tax_${tag}_otus.biom.summary.qualitative
 
 
-echo -e "\n\e[0;"$color"m Calculate diversity metrics \033[0m\n"
+#echo -e "\n\e[0;"$color"m Calculate diversity metrics \033[0m\n"
