@@ -222,9 +222,13 @@ usearch -otutab ${raw_fasta}/raw_reads.fasta\
         -threads $threads\
 	-fulldp
 
+
+
+
 usearch -alpha_div\
-	-otutabout $usearch_dir/otutab.txt\
+	$usearch_dir/otutab.txt\
 	-output $usearch_dir/usearch_alpha_div.txt
+
 
 
 
