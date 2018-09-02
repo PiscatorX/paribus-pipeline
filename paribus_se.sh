@@ -373,7 +373,7 @@ filter_alignment.py -i $alignment_dir/otus_aligned.fasta\
 
 
 echo -e "\n\e[0;"$color"m Reconstructing the phylogeny \033[0m\n"
-make_phylogeny.py -i $alignment_dir/filtered/otus_aligned_pfiltered.fasta -o $process_dir/otus_aligned_pfiltered.tre
+make_phylogeny.py -i $alignment_dir/filtered/otus_aligned_pfiltered.fasta -o $process_out/otus_aligned_pfiltered.tre
 
 
 
