@@ -68,7 +68,7 @@ qiime tools import \
 ##Demultiplexing sequences
 qiime demux emp-single \
       --i-seqs emp-single-end-sequences.qza \
-      --m-barcodes-file metadata.tsv \
+      --m-barcodes-file sample-metadata.tsv \
       --m-barcodes-column BarcodeSequence \
       --o-per-sample-sequences demux.qza
 
