@@ -1,16 +1,16 @@
 #!/usr/bin/env nextflow
 
-params.data     = "/home/drewx/Documents/sea-biome/reads/16S_manifest.csv"
+params.data    = "/home/drewx/Documents/sea-biome/metadata/manifest.csv"
+//params.data 	= "/home/drewx/Documents/sea-biome/reads.gz"
 params.metadata = "/home/drewx/Documents/sea-biome/metadata/sample-metadata.tsv"
-params.classifier = "/opt/DB_REF/SILVA/silva-132-99-515-806-nb-classifier.qza"
-params.type     = "SingleEndFastqManifestPhred33"
+params.type     =  "SampleData[PairedEndSequencesWithQuality]"
 params.dada2    = true
 params.deblur   = false
 params.viz_reqs  = false
 data            = Channel.value(params.data)
 metadata        = Channel.value(params.metadata)
-output		= "${PWD}/qiime2.Out"
-classifier      = Channel.value(params.classifier)
+output		= "${PWD}/paribus.Out"
+//classifier      = Channel.value(params.classifier)
 metadata_cols   = Channel.value(["Experiment"])
 
 
@@ -22,79 +22,89 @@ error "params.dada2=${params.dada2} and params.deblur=${params.deblur} chose one
 }
 
 
-// process importing_data{
+process importing_data{
 
-//     cpus params.ltp_cores
-//     publishDir path: "$output/reads_data", mode: 'copy'
-//     memory "${params.m_mem} GB"
+    cpus params.ltp_cores
+    publishDir path: "$output/reads_data", mode: 'copy'
+    memory "${params.m_mem} GB"
 
-//     input:
-//         val  data
-//         val  metadata
+    input:
+        val  data
+        val  metadata
+	
 
-//     output:
-// 	file("single-end-demux.qza")  into (single_end_demux1, single_end_demux2) 
+    output:
+	file("reads_demux.qza")  into (demux_reads1, demux_reads2) 
 
     
-// """
-//      qiime tools import \
-//      --type 'SampleData[SequencesWithQuality]' \
-//      --input-path ${data} \
-//      --output-path single-end-demux.qza \
-//      --input-format SingleEndFastqManifestPhred33
+"""
 
-// """
-
-// }
+     qiime tools import \
+	 --type ${params.type} \
+	 --input-path ${data} \
+	 --output-path reads_demux.qza \
+	 --input-format PairedEndFastqManifestPhred33
 
 
-// process dada2{
+    qiime demux summarize \
+         --i-data reads_demux.qza \
+	 --o-visualization reads_demux.qzv
 
-//     cpus params.mtp_cores
-//     memory "${params.m_mem} GB"
-//     publishDir path: "$output/dada2", mode: 'copy'
-//     input:
-// 	 file single_end_demux1
-//          val  metadata
+
+"""
+
+}
+
+
+
+process dada2{
+
+    cpus params.mtp_cores
+    memory "${params.m_mem} GB"
+    publishDir path: "$output/dada2", mode: 'copy'
+    input:
+	 file demux_reads1
+         val  metadata
 	 
-//     output:
-// 	file("dada2_rep_seqs.qza") into dada2_rep_seqs
-// 	file("dada2_rep_seqs.qzv") into dada2_rep_viz
-//         file("dada2_table.qza") into dada2_table
-//         file("dada2_stats.*") into dada2_stats
-// 	file("dada2_table.*") into dada2_table_data
+    output:
+	file("dada2_rep_seqs.qza") into dada2_rep_seqs
+	file("dada2_rep_seqs.qzv") into dada2_rep_viz
+        file("dada2_table.qza") into dada2_table
+        file("dada2_stats.*") into dada2_stats
+	file("dada2_table.*") into dada2_table_data
 	
-// """
+"""
  
-//     qiime dada2 denoise-single \
-// 	  --i-demultiplexed-seqs ${single_end_demux1} \
-// 	  --p-n-threads ${params.htp_cores}\
-// 	  --p-trim-left 0 \
-//           --p-max-ee 5 \
-//           --p-trunc-len 300 \
-// 	  --o-representative-sequences dada2_rep_seqs.qza \
-// 	  --o-table dada2_table.qza \
-// 	  --o-denoising-stats dada2_stats.qza \
-// 	  --verbose
+    qiime dada2 denoise-paired \
+	  --i-demultiplexed-seqs ${demux_reads1} \
+	  --p-n-threads ${params.htp_cores}\
+	  --p-trim-left-r 0 \
+          --p-trunc-len-f 0 \
+          --p-trunc-len-r 0 \
+          --p-max-ee 2.5 \
+	  --o-representative-sequences dada2_rep_seqs.qza \
+	  --o-table dada2_table.qza \
+	  --o-denoising-stats dada2_stats.qza \
+	  --verbose
 
-//     qiime metadata tabulate \
-// 	--m-input-file dada2_stats.qza \
-// 	--o-visualization dada2_stats.qzv
+    qiime metadata tabulate \
+	--m-input-file dada2_stats.qza \
+	--o-visualization dada2_stats.qzv
 
-//     qiime feature-table summarize \
-//         --i-table dada2_table.qza \
-//         --o-visualization dada2_table.qzv \
-//         --m-sample-metadata-file ${metadata}
+    qiime feature-table summarize \
+        --i-table dada2_table.qza \
+        --o-visualization dada2_table.qzv \
+        --m-sample-metadata-file ${metadata}
 
    
-//     qiime feature-table tabulate-seqs \
-//        --i-data dada2_rep_seqs.qza \
-//        --o-visualization dada2_rep_seqs.qzv
+    qiime feature-table tabulate-seqs \
+       --i-data dada2_rep_seqs.qza \
+       --o-visualization dada2_rep_seqs.qzv
 
 
-// """
+"""
     
-// }
+}
 
 
 // process deblur{
@@ -103,26 +113,32 @@ error "params.dada2=${params.dada2} and params.deblur=${params.deblur} chose one
 //     memory "${params.m_mem} GB"
 //     publishDir path: "$output/deblur", mode: 'copy'
 //     input:
-// 	file single_end_demux2
-//      val metadata
+// 	file demux_reads2
+//         val metadata
 
 //     output:
-//         file("deblur_rep_seqs.qza") into deblur_rep_seqs
-// 	file("deblur_rep_seqs.qzv") into deblur_rep_viz
-// 	file("deblur_filter_stats.qz*") into deblur_filter_stats
-//         file("deblur_table.qza") into deblur_table
-//         file("deblur_stats.*") into dablur_stats
+// 	file("deblur_filter_seqs.qza") into deblur_seqs_filter
+//         file("deblur_filter_stats.qza") into deblur_stats_filter
+//     //     file("deblur_rep_seqs.qza") into deblur_rep_seqs
+//     // 	file("deblur_rep_seqs.qzv") into deblur_rep_viz
+//     // 	file("deblur_filter_stats.qz*") into deblur_filter_stats
+//     //     file("deblur_table.qza") into deblur_table
+//     //     file("deblur_stats.*") into dablur_stats
 // """
 
 //     qiime quality-filter q-score \
-// 	  --i-demux ${single_end_demux2} \
-// 	  --o-filtered-sequences deblur_stats_filter.qza \
+// 	  --i-demux ${demux_reads2} \
+// 	  --o-filtered-sequences deblur_filter_seqs.qza \
 // 	  --o-filter-stats deblur_filter_stats.qza \
 // 	  --verbose
 
-//     qiime deblur denoise-16S \
-// 	  --i-demultiplexed-seqs deblur_stats_filter.qza \
-// 	  --p-trim-length 120 \
+//     qiime metadata tabulate \
+//      	  --m-input-file deblur_filter_stats.qza \
+//           --o-visualization deblur_filter_table.qzv
+
+//     #qiime deblur denoise-16S \
+// 	  --i-demultiplexed-seqs ${demux_reads} \
+// 	  --p-trim-length -1 \
 // 	  --o-representative-sequences deblur_rep_seqs.qza \
 // 	  --o-table deblur_table.qza \
 // 	  --p-sample-stats \
@@ -130,20 +146,16 @@ error "params.dada2=${params.dada2} and params.deblur=${params.deblur} chose one
 // 	  --p-jobs-to-start ${params.mtp_cores} \
 // 	  --verbose
 
-//     qiime metadata tabulate \
-//      	  --m-input-file deblur_filter_stats.qza \
-//           --o-visualization deblur_filter_stats.qzv
-
-//     qiime deblur visualize-stats \
-//          --i-deblur-stats deblur_stats.qza \
-//          --o-visualization deblur_stats.qzv
-
-//     qiime feature-table summarize \
+//     #qiime deblur visualize-stats \
+//          --i-deblur-stats deblur_filter_stats.qza \
+//          --o-visualization deblur_filter_stats.qza.qzv
+    
+//     #qiime feature-table summarize \
 //         --i-table deblur_table.qza \
 //         --o-visualization deblur_table.qzv \
 //         --m-sample-metadata-file ${metadata}
     
-//    qiime feature-table tabulate-seqs \
+//    #qiime feature-table tabulate-seqs \
 //        --i-data deblur_rep_seqs.qza \
 //        --o-visualization deblur_rep_seqs.qzv
 
@@ -160,7 +172,9 @@ error "params.dada2=${params.dada2} and params.deblur=${params.deblur} chose one
 //    feature_table = dada2_table
 // }
 
-// else if (params.deblur){
+//else
+
+// if (params.deblur){
 
 //      repseqs = deblur_rep_seqs
 //      feature_table = deblur_table
@@ -168,8 +182,8 @@ error "params.dada2=${params.dada2} and params.deblur=${params.deblur} chose one
 
 
 
-repseqs = Channel.value("/home/drewx/Documents/paribus-pipeline/qiime2.Out/dada2/dada2_rep_seqs.qza")
-feature_table   = Channel.value("/home/drewx/Documents/paribus-pipeline/qiime2.Out/dada2/dada2_table.qza")
+// repseqs = Channel.value("/home/drewx/Documents/paribus-pipeline/qiime2.Out/dada2/dada2_rep_seqs.qza")
+// feature_table   = Channel.value("/home/drewx/Documents/paribus-pipeline/qiime2.Out/dada2/dada2_table.qza")
 
 // process phylogeny{
 
@@ -203,7 +217,7 @@ feature_table   = Channel.value("/home/drewx/Documents/paribus-pipeline/qiime2.O
 
 
 
-rooted_tree=Channel.fromPath("/home/drewx/Documents/paribus-pipeline/qiime2.Out/phylogeny/rooted_tree.qza")
+//rooted_tree=Channel.fromPath("/home/drewx/Documents/paribus-pipeline/qiime2.Out/phylogeny/rooted_tree.qza")
 
 
 
@@ -366,35 +380,35 @@ rooted_tree=Channel.fromPath("/home/drewx/Documents/paribus-pipeline/qiime2.Out/
 
 
 
-process  feature_classifier{
+// process  feature_classifier{
 	 
-     // errorStrategy 'ignore'
-    cpus params.mtp_cores
-    memory "${params.m_mem} GB"
-    publishDir path: "$output/feature_classifier", mode: 'copy'
-    input:
-         val classifier
-	 val repseqs
+//      // errorStrategy 'ignore'
+//     cpus params.mtp_cores
+//     memory "${params.m_mem} GB"
+//     publishDir path: "$output/feature_classifier", mode: 'copy'
+//     input:
+//          val classifier
+// 	 val repseqs
  	 
-    output:
-        // file("taxonomy.qza") into taxonomy
-        // file("taxonomy.qzv") into taxonomy_viz
+//     output:
+//         // file("taxonomy.qza") into taxonomy
+//         // file("taxonomy.qzv") into taxonomy_viz
     
-"""
+// """
     
-   qiime feature-classifier classify-sklearn \
-   	 --i-classifier ${classifier} \
-   	 --i-reads ${repseqs} \
-         --p-n-jobs ${params.mtp_cores}  \
-   	 --o-classification taxonomy.qza
+//    qiime feature-classifier classify-sklearn \
+//    	 --i-classifier ${classifier} \
+//    	 --i-reads ${repseqs} \
+//          --p-n-jobs ${params.mtp_cores}  \
+//    	 --o-classification taxonomy.qza
 
-   qiime metadata tabulate \
-      --m-input-file taxonomy.qza \
-      --o-visualization taxonomy.qzv
+//    qiime metadata tabulate \
+//       --m-input-file taxonomy.qza \
+//       --o-visualization taxonomy.qzv
 
-"""
+// """
 
-}
+// }
 
 
 
