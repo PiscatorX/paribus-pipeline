@@ -1,9 +1,11 @@
 #!/usr/bin/env nextflow
 
-params.data    = "/home/drewx/Documents/sea-biome/metadata/manifest.csv"
+//params.data    = "/home/drewx/Documents/sea-biome/metadata/manifest.csv"
+params.data     = "/home/andhlovu/St_Helena_Bay/metadata/16S_manifest.csv"
 //params.data 	= "/home/drewx/Documents/sea-biome/reads.gz"
 params.metadata = "/home/drewx/Documents/sea-biome/metadata/16S_sample-metadata.tsv"
-params.classifier="/opt/DB_REF/SILVA/silva-132-99-515-806-nb-classifier.qza"
+//params.classifier="/opt/DB_REF/SILVA/silva-132-99-515-806-nb-classifier.qza"
+params.classifier="/projects/andhlovu/DB_REF/SILVA/silva_132.18s.99_rep_set.dada2.fa"
 params.type     =  "SampleData[PairedEndSequencesWithQuality]"
 params.dada2    = true
 params.deblur   = false
