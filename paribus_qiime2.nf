@@ -5,7 +5,8 @@ params.data     = "/home/andhlovu/St_Helena_Bay/metadata/16S_manifest.csv"
 //params.data 	= "/home/drewx/Documents/sea-biome/reads.gz"
 params.metadata = "/home/drewx/Documents/sea-biome/metadata/16S_sample-metadata.tsv"
 //params.classifier="/opt/DB_REF/SILVA/silva-132-99-515-806-nb-classifier.qza"
-params.classifier="/projects/andhlovu/DB_REF/SILVA/silva_132.18s.99_rep_set.dada2.fa"
+params.classifier="/projects/andhlovu/DB_REF/SILVA_132_QIIME_release/silva-132-99-515-806-nb-classifier.qza"
+"/projects/andhlovu/DB_REF/SILVA/silva_132.18s.99_rep_set.dada2.fa"
 params.type     =  "SampleData[PairedEndSequencesWithQuality]"
 params.dada2    = true
 params.deblur   = false
@@ -112,10 +113,15 @@ metadata_cols   = Channel.value(["Experiment"])
 
 
 
+// /home/andhlovu/dada2/dada2_rep_seqs.qza
+// /home/andhlovu/dada2/dada2_rep_seqs.qzv
+// /home/andhlovu/dada2/dada2_stats.qza
+// /home/andhlovu/dada2/dada2_stats.qzv
+// /home/andhlovu/dada2/dada2_table.qza
+// /home/andhlovu/dada2/dada2_table.qzv
 
-repseqs = Channel.value("/home/drewx/St.Helena.MetaT/dada2/dada2_rep_seqs.qza")
-feature_table   = Channel.value("/home/drewx/St.Helena.MetaT/dada2/dada2_table.qza")
-
+repseqs = Channel.value("/home/andhlovu/dada2/dada2_rep_seqs.qza")
+feature_table   = Channel.value("/home/andhlovu/dada2/dada2_table.qza")
 
 
 // process phylogeny{
@@ -313,16 +319,16 @@ feature_table   = Channel.value("/home/drewx/St.Helena.MetaT/dada2/dada2_table.q
 process  feature_classifier{
 	 
      // errorStrategy 'ignore'
-    cpus params.mtp_cores
-    memory "${params.m_mem} GB"
+    cpus params.htp_cores
+    memory "${params.h_mem} GB"
     publishDir path: "$output/feature_classifier", mode: 'copy'
     input:
          val classifier
 	 val repseqs
  	 
     output:
-        // file("taxonomy.qza") into taxonomy
-        // file("taxonomy.qzv") into taxonomy_viz
+        file("taxonomy.qza") into taxonomy
+        file("taxonomy.qzv") into taxonomy_viz
     
 """
     
