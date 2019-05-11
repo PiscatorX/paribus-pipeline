@@ -26,10 +26,10 @@ do
 	 then
 	     echo "Failed to locate the reference sequences: ${reference}"
 	     usage
-	 elif [[ ${reference} != *"fasta"* ]]
+	 elif [[ ${reference} != *"fna"* ]]
 	 then
 
-	 echo -e "\n\nFail! expected 'fasta' extension in sequence file: ${reference} \n\n"
+	 echo -e "\n\nFail! expected 'fna' extension in sequence file: ${reference} \n\n"
 
 	 exit 1
 	 fi
@@ -68,7 +68,7 @@ do
 done
 
 
-if [ ${missing_arg} = true ]
+if [[ ${missing_arg} = true ]]
   then
      usage
 fi
@@ -87,7 +87,7 @@ fi
 
 
 reference_fname=$(basename ${reference})
-q2_reference=${output_dir}/${reference_fname/fasta/qza}
+q2_reference=${output_dir}/${reference_fname/fna/qza}
 qiime tools import \
   --type 'FeatureData[Sequence]' \
   --input-path ${reference} \
@@ -111,8 +111,8 @@ qiime feature-classifier extract-reads \
 
 
 reference_fname=$(basename ${reference})
-q2_classifier=${output_dir}/${reference_fname/fasta/q2_classfier}
+q2_classifier=${output_dir}/${reference_fname/fna/q2_classfier}
 qiime feature-classifier fit-classifier-naive-bayes \
-      --i-reference-reads ref_seqs.qza \
+      --i-reference-reads "${output_dir}/ref_seqs.qza" \
       --i-reference-taxonomy ${q2_taxonomy} \
       --o-classifier ${q2_classifier}
