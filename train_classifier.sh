@@ -6,8 +6,8 @@ usage()
  
   echo -e "\nTrain q2-feature-classifier"
   echo -e "Usage:"
-  echo -e "  $0  -r  <reference reads> -t  <taxonomy>"  
-  echo -e  "  $0  -h  Display this help message.\n"
+  echo -e "  $0  -i  <reference reads> -t  <taxonomy>"  
+  echo -e "  $0  -h  Display this help message.\n"
   exit 1
   
 }
