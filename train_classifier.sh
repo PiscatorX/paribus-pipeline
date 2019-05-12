@@ -95,7 +95,7 @@ qiime tools import \
 
 
 taxonomy_fname=$(basename ${taxonomy})
-q2_taxonomy=${output_dir}/${taxonomy_fname/txt/qza}
+q2_taxonomy=${output_dir}/${taxonomy_fname/.txt/_q2_tax.qza}
 qiime tools import \
   --type 'FeatureData[Taxonomy]' \
   --input-format HeaderlessTSVTaxonomyFormat \

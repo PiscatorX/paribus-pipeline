@@ -3,7 +3,8 @@
 //params.data    = "/home/drewx/Documents/sea-biome/metadata/manifest.csv"
 params.data     = "/home/andhlovu/St_Helena_Bay/metadata/16S_manifest.csv"
 //params.data 	= "/home/drewx/Documents/sea-biome/reads.gz"
-params.metadata = "/home/drewx/Documents/sea-biome/metadata/16S_sample-metadata.tsv"
+//params.metadata = "/home/drewx/Documents/sea-biome/metadata/16S_sample-metadata.tsv"
+params.metadata = "/home/andhlovu/St_Helena_Bay/metadata/16S_sample-metadata.tsv"
 //params.classifier="/opt/DB_REF/SILVA/silva-132-99-515-806-nb-classifier.qza"
 params.classifier="/projects/andhlovu/DB_REF/SILVA_132_QIIME_release/silva-132-99-515-806-nb-classifier.qza"
 "/projects/andhlovu/DB_REF/SILVA/silva_132.18s.99_rep_set.dada2.fa"
@@ -20,13 +21,12 @@ metadata_cols   = Channel.value(["Experiment"])
 
 
 
-
 process importing_data{
 
     cpus params.ltp_cores
     publishDir path: "$output/reads_data", mode: 'copy'
     memory "${params.m_mem} GB"
-
+    
     input:
         val  data
         val  metadata
@@ -56,133 +56,155 @@ process importing_data{
 
 
 
-// process dada2{
+process dada2{
 
-//     cpus params.mtp_cores
-//     memory "${params.m_mem} GB"
-//     publishDir path: "$output/dada2", mode: 'copy'
-//     input:
-// 	 file demux_reads1
-//          val  metadata
+    cpus params.mtp_cores
+    memory "${params.m_mem} GB"
+    publishDir path: "$output/dada2", mode: 'copy'
+    input:
+	 file demux_reads1
+         val  metadata
 	 
-//     output:
-// 	file("dada2_rep_seqs.qza") into dada2_rep_seqs
-// 	file("dada2_rep_seqs.qzv") into dada2_rep_viz
-//         file("dada2_table.qza") into dada2_table
-//         file("dada2_stats.*") into dada2_stats
-// 	file("dada2_table.*") into dada2_table_data
+    output:
+	file("dada2_rep_seqs.qza") into dada2_rep_seqs
+	file("dada2_rep_seqs.qzv") into dada2_rep_viz
+        file("dada2_table.qza") into dada2_table
+        file("dada2_stats.*") into dada2_stats
+	file("dada2_table.*") into dada2_table_data
 	
-// """
+"""
  
-//     qiime dada2 denoise-paired \
-// 	  --i-demultiplexed-seqs ${demux_reads1} \
-// 	  --p-n-threads ${params.htp_cores}\
-// 	  --p-trim-left-r 0 \
-//           --p-trunc-len-f 0 \
-//           --p-trunc-len-r 0 \
-//           --p-max-ee 2.5 \
-// 	  --o-representative-sequences dada2_rep_seqs.qza \
-// 	  --o-table dada2_table.qza \
-// 	  --o-denoising-stats dada2_stats.qza \
-// 	  --verbose
+    qiime dada2 denoise-paired \
+	  --i-demultiplexed-seqs ${demux_reads1} \
+	  --p-n-threads ${params.htp_cores}\
+	  --p-trim-left-r 0 \
+          --p-trunc-len-f 0 \
+          --p-trunc-len-r 0 \
+          --p-max-ee 2.5 \
+	  --o-representative-sequences dada2_rep_seqs.qza \
+	  --o-table dada2_table.qza \
+	  --o-denoising-stats dada2_stats.qza \
+	  --verbose
 
-//     qiime metadata tabulate \
-// 	--m-input-file dada2_stats.qza \
-// 	--o-visualization dada2_stats.qzv
+    qiime metadata tabulate \
+	--m-input-file dada2_stats.qza \
+	--o-visualization dada2_stats.qzv
 
-//     qiime feature-table summarize \
-//         --i-table dada2_table.qza \
-//         --o-visualization dada2_table.qzv \
-//         --m-sample-metadata-file ${metadata}
+    qiime feature-table summarize \
+        --i-table dada2_table.qza \
+        --o-visualization dada2_table.qzv \
+        --m-sample-metadata-file ${metadata}
 
    
-//     qiime feature-table tabulate-seqs \
-//        --i-data dada2_rep_seqs.qza \
-//        --o-visualization dada2_rep_seqs.qzv
+    qiime feature-table tabulate-seqs \
+       --i-data dada2_rep_seqs.qza \
+       --o-visualization dada2_rep_seqs.qzv
 
 
-// """
+"""
     
-// }
+}
 
 
 
+process phylogeny{
 
-// /home/andhlovu/dada2/dada2_rep_seqs.qza
-// /home/andhlovu/dada2/dada2_rep_seqs.qzv
-// /home/andhlovu/dada2/dada2_stats.qza
-// /home/andhlovu/dada2/dada2_stats.qzv
-// /home/andhlovu/dada2/dada2_table.qza
-// /home/andhlovu/dada2/dada2_table.qzv
+    cpus params.mtp_cores
+    memory "${params.m_mem} GB"
+    publishDir path: "$output/phylogeny", mode: 'copy'
+    input:
+        file dada2_rep_seqs
 
-repseqs = Channel.value("/home/andhlovu/dada2/dada2_rep_seqs.qza")
-feature_table   = Channel.value("/home/andhlovu/dada2/dada2_table.qza")
-
-
-// process phylogeny{
-
-//     cpus params.mtp_cores
-//     memory "${params.m_mem} GB"
-//     publishDir path: "$output/phylogeny", mode: 'copy'
-//     input:
-//         val repseqs
-
-//     output:
-//         file("aligned_rep_seqs.qza") into aligned
-// 	file("masked_aligned_rep_seqs.qza") into masked_aligned
-// 	file("unrooted_tree.qza") into unrooted_tree 
-// 	file("rooted_tree.qza") into rooted_tree
+    output:
+        file("aligned_rep_seqs.qza") into aligned
+	file("masked_aligned_rep_seqs.qza") into masked_aligned
+	file("unrooted_tree.qza") into unrooted_tree 
+	file("rooted_tree.qza") into rooted_tree
 	 
 
-// """
-//     qiime phylogeny align-to-tree-mafft-fasttree \
-// 	  --p-n-threads ${params.mtp_cores} \
-// 	  --i-sequences ${repseqs}  \
-// 	  --o-alignment aligned_rep_seqs.qza \
-// 	  --o-masked-alignment masked_aligned_rep_seqs.qza \
-// 	  --o-tree unrooted_tree.qza \
-// 	  --o-rooted-tree rooted_tree.qza \
-// 	  --verbose
+"""
+    qiime phylogeny align-to-tree-mafft-fasttree \
+	  --p-n-threads ${params.mtp_cores} \
+	  --i-sequences ${dada2_rep_seqs}  \
+	  --o-alignment aligned_rep_seqs.qza \
+	  --o-masked-alignment masked_aligned_rep_seqs.qza \
+	  --o-tree unrooted_tree.qza \
+	  --o-rooted-tree rooted_tree.qza \
+	  --verbose
 
-// """
-
-
-// }
+"""
 
 
+}
 
-// process  core_metrics_phylogenetic{
 
-//     //echo true
-//     cpus params.mtp_cores
-//     memory "${params.m_mem} GB"
-//     publishDir path: "$output/", mode: 'copy'
-//     input:
-//         val feature_table
-//         val  metadata 
-// 	file rooted_tree
 
-//     output:
-//         file("core_metrics") into (core_metrics1,  core_metrics2, core_metrics3)
+process  core_metrics_phylogenetic{
+
+    //echo true
+    cpus params.mtp_cores
+    memory "${params.m_mem} GB"
+    publishDir path: "$output/", mode: 'copy'
+    input:
+        val  metadata 
+        file dada2_table
+	file rooted_tree
+
+    output:
+        file("core_metrics") into (core_metrics1,  core_metrics2, core_metrics3)
 
     
-// """
+"""
 
-//     qiime diversity core-metrics-phylogenetic \
-//     	  --i-phylogeny ${rooted_tree} \
-//     	  --i-table ${feature_table} \
-//     	  --p-sampling-depth 500 \
-//     	  --m-metadata-file ${metadata} \
-//     	  --output-dir core_metrics \
-//     	  --verbose
+    qiime diversity core-metrics-phylogenetic \
+    	  --i-phylogeny ${rooted_tree} \
+    	  --i-table ${dada2_table} \
+    	  --p-sampling-depth 500 \
+    	  --m-metadata-file ${metadata} \
+    	  --output-dir core_metrics \
+    	  --verbose
 
-//     qiime metadata tabulate \
-//     	 --m-input-file core_metrics/faith_pd_vector.qza \
-//          --o-visualization core_metrics/faith_pd_vector.qzv
+    qiime metadata tabulate \
+    	 --m-input-file core_metrics/faith_pd_vector.qza \
+         --o-visualization core_metrics/faith_pd_vector.qzv
 
-// """
+"""
 
-// }
+}
+
+
+
+
+process  feature_classifier{
+	 
+     // errorStrategy 'ignore'
+    cpus params.htp_cores
+    memory "${params.h_mem} GB"
+    publishDir path: "$output/feature_classifier", mode: 'copy'
+    input:
+         val classifier
+	 file dada2_rep_seqs
+ 	 
+    output:
+        file("taxonomy.qza") into taxonomy
+        file("taxonomy.qzv") into taxonomy_viz
+    
+"""
+    
+   qiime feature-classifier classify-sklearn \
+   	 --i-classifier ${classifier} \
+   	 --i-reads ${dada2_rep_seqs} \
+         --p-n-jobs ${params.mtp_cores}  \
+   	 --o-classification taxonomy.qza
+
+   qiime metadata tabulate \
+      --m-input-file taxonomy.qza \
+      --o-visualization taxonomy.qzv
+
+"""
+
+}
+
 
 
 
@@ -311,6 +333,7 @@ feature_table   = Channel.value("/home/andhlovu/dada2/dada2_table.qza")
 
 
 
+
 // process  feature_classifier{
 	 
 //      // errorStrategy 'ignore'
@@ -341,9 +364,6 @@ feature_table   = Channel.value("/home/andhlovu/dada2/dada2_table.qza")
 // """
 
 // }
-
-
-
 
 // qiime taxa collapse \
 //    --i-table gut-table.qza \
