@@ -19,45 +19,40 @@ metadata_cols   = Channel.value(["Experiment"])
 
 
 
-// if (params.dada2 == params.deblur){
-
-// error "params.dada2=${params.dada2} and params.deblur=${params.deblur} chose one option to set to `true`"
-   
-// }
 
 
-// process importing_data{
+process importing_data{
 
-//     cpus params.ltp_cores
-//     publishDir path: "$output/reads_data", mode: 'copy'
-//     memory "${params.m_mem} GB"
+    cpus params.ltp_cores
+    publishDir path: "$output/reads_data", mode: 'copy'
+    memory "${params.m_mem} GB"
 
-//     input:
-//         val  data
-//         val  metadata
+    input:
+        val  data
+        val  metadata
 	
 
-//     output:
-// 	file("reads_demux.qza")  into (demux_reads1, demux_reads2) 
+    output:
+	file("reads_demux.qza")  into (demux_reads1, demux_reads2) 
 
     
-// """
+"""
 
-//      qiime tools import \
-// 	 --type ${params.type} \
-// 	 --input-path ${data} \
-// 	 --output-path reads_demux.qza \
-// 	 --input-format PairedEndFastqManifestPhred33
-
-
-//     qiime demux summarize \
-//          --i-data reads_demux.qza \
-// 	 --o-visualization reads_demux.qzv
+     qiime tools import \
+	 --type ${params.type} \
+	 --input-path ${data} \
+	 --output-path reads_demux.qza \
+	 --input-format PairedEndFastqManifestPhred33
 
 
-// """
+    qiime demux summarize \
+         --i-data reads_demux.qza \
+	 --o-visualization reads_demux.qzv
 
-// }
+
+"""
+
+}
 
 
 
@@ -316,45 +311,45 @@ feature_table   = Channel.value("/home/andhlovu/dada2/dada2_table.qza")
 
 
 
-process  feature_classifier{
+// process  feature_classifier{
 	 
-     // errorStrategy 'ignore'
-    cpus params.htp_cores
-    memory "${params.h_mem} GB"
-    publishDir path: "$output/feature_classifier", mode: 'copy'
-    input:
-         val classifier
-	 val repseqs
+//      // errorStrategy 'ignore'
+//     cpus params.htp_cores
+//     memory "${params.h_mem} GB"
+//     publishDir path: "$output/feature_classifier", mode: 'copy'
+//     input:
+//          val classifier
+// 	 val repseqs
  	 
-    output:
-        file("taxonomy.qza") into taxonomy
-        file("taxonomy.qzv") into taxonomy_viz
+//     output:
+//         file("taxonomy.qza") into taxonomy
+//         file("taxonomy.qzv") into taxonomy_viz
     
-"""
+// """
     
-   /usr/bin/time -o classfier.time qiime feature-classifier classify-sklearn \
-   	 --i-classifier ${classifier} \
-   	 --i-reads ${repseqs} \
-         --p-n-jobs ${params.mtp_cores}  \
-   	 --o-classification taxonomy.qza
+//    qiime feature-classifier classify-sklearn \
+//    	 --i-classifier ${classifier} \
+//    	 --i-reads ${repseqs} \
+//          --p-n-jobs ${params.mtp_cores}  \
+//    	 --o-classification taxonomy.qza
 
-   qiime metadata tabulate \
-      --m-input-file taxonomy.qza \
-      --o-visualization taxonomy.qzv
-
-"""
-
-}
+//    qiime metadata tabulate \
+//       --m-input-file taxonomy.qza \
+//       --o-visualization taxonomy.qzv
 
 
+// """
+
+// }
 
 
 
-// qiime taxa barplot \
-//       --i-table table.qza \
-//       --i-taxonomy taxonomy.qza \
-//       --m-metadata-file sample-metadata.tsv \
-//       --o-visualization taxa-bar-plots.qzv
+
+// qiime taxa collapse \
+//    --i-table gut-table.qza \
+//    --i-taxonomy taxonomy.qza \
+//    --p-level 6 \
+//    --o-collapsed-table gut-table-l6.qza
 
 
 
@@ -384,11 +379,6 @@ process  feature_classifier{
 
 
 
-// qiime taxa collapse \
-//       --i-table gut-table.qza \
-//       --i-taxonomy taxonomy.qza \
-//       --p-level 6 \
-//       --o-collapsed-table gut-table-l6.qza
 
 
 
