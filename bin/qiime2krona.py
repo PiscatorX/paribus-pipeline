@@ -1,19 +1,21 @@
 #!/usr/bin/env python
 
+import argparse
 import itertools
 import csv
-
 
 
 
 class Qiime2Krona(object):
 
     def __init__(self):
-        
-        self.qiime_taxa_fp =  open("level-15.csv", newline='')
+
+        parser = argparse.ArgumentParser(description="""Convert  Qiime2  summary csv file to Krona tsv.""")
+        parser.add_argument("qiime2_taxa_csv")
+        args, unknown = parser.parse_known_args()
+        self.qiime_taxa_fp =  open(args.qiime2_taxa_csv)
         self.filter_func = lambda x : x == 'BarcodeSequence'
-
-
+        
         
     def extract_tables(self):
         
@@ -28,7 +30,7 @@ class Qiime2Krona(object):
                  if taxon.startswith("D"):
                      taxon ='\t'.join([ taxon.strip().split('__')[1:][0] for taxon in taxon.split(";") ]).strip()
                      print("{}\t{}".format(frequency, taxon), file=file_obj)
-             
+             print(fname)
              
     def take_until(self, row, predicate):
         filtered_row = {}
@@ -39,8 +41,7 @@ class Qiime2Krona(object):
 
         return filtered_row
     
-        
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     qiime2krona =  Qiime2Krona()
     qiime2krona.extract_tables()

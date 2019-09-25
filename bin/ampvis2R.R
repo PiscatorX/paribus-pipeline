@@ -6,9 +6,13 @@ library(tidyverse)
 library(ggpubr)
 library(cowplot)
 
-otu_table_filename = "~/Documents/DevOps/PR2/phyloseq/SHB_18S_feature_table_headers.tsv"
-metadata_filename = "/home/drewx/St.Helena.MetaT/Raw/18S-Data/18S_metadata_phyloseq.tsv"
-outdir = "/home/drewx/Documents/DevOps/PR2_CTD"
+# otu_table_filename = "~/Documents/DevOps/PR2/phyloseq/SHB_18S_feature_table_headers.tsv"
+# metadata_filename = "/home/drewx/St.Helena.MetaT/Raw/18S-Data/18S_metadata_phyloseq.tsv"
+# outdir = "/home/drewx/Documents/DevOps/PR2_CTD"
+
+otu_table_filename = "/home/drewx/Documents/DevOps/16S/paribus.Out/phyloseq/SHB_16S_feature_table_headers.tsv"
+metadata_filename = "/home/drewx/St.Helena.MetaT/Raw/16S-Data/16S_metadata_phyloseq.tsv"
+outdir = "/home/drewx/Documents/DevOps/16S/paribus.Out/phyloseq"
 
 myotutable <- read.delim(otu_table_filename)
 mymetadata <- read.delim(metadata_filename, sep="\t")
