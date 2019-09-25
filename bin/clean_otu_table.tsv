@@ -1,0 +1,883 @@
+# Constructed from biom file
+#OTU ID	A2511	J2515	taxonomy
+36ced6d7e229be21b5ac7d3a85b51b2b	53.0	43.0	Bacteria; Nitrospinae; Nitrospinia; Nitrospinales; Nitrospinaceae; LS-NOB; 
+d64611b0b511efd3d4bc463c9eaba034	54.0	43.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; ; 
+822f84c3b1d31afe3ccaafe28cfc0f2e	512.0	878.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Ascidiaceihabitans; 
+bc5593081c603faf9990d8f73ccce91d	217.0	99.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Cellvibrionaceae; uncultured; uncultured organism
+d3df483cbb13c7f8c70820fb7e1e6230	6.0	0.0	Bacteria; Actinobacteria; Thermoleophilia; Solirubrobacterales; Solirubrobacteraceae; Patulibacter; Patulibacter minatonensis
+0914347d5afe550f2a12ea4f80b3f165	0.0	17.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; 
+139ad7417ef0dfb630699faea2eb5e06	73.0	95.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; ; 
+1271ffedb677dacceaeb91ec0e6a6d0d	25.0	6.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group III; uncultured marine archaeon; uncultured marine archaeon; uncultured marine archaeon
+08d9aea2b17a9615e9cd313df5e35810	0.0	30.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bacteriovoracaceae; ; 
+43d87801069220664c1981be9255d43a	459.0	965.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Ascidiaceihabitans; uncultured bacterium
+675c983fa9c5e69b6878a2e5e7cffee5	0.0	3.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Arctic97B-4 marine group; metagenome; metagenome; metagenome
+25918f634c09835e79130f1b6b2961e0	4.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+661be535f3328661192cbe6bcd73970a	0.0	3.0	Bacteria; Armatimonadetes; Armatimonadia; Armatimonadales; ; ; 
+4a463cf1078abec2bd4e780c9b88fad0	0.0	11.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); uncultured delta proteobacterium Sva0853; uncultured delta proteobacterium Sva0853; uncultured delta proteobacterium Sva0853
+8d5bbc9fe4276e3f20bcfba704e8859f	73.0	67.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+94cb0984ed9cbdecf760d8e7c437a184	0.0	28.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; uncultured marine euryarchaeote DH148-W1; uncultured marine euryarchaeote DH148-W1; uncultured marine euryarchaeote DH148-W1
+ce41f4da79b50557dd2574230c9d484d	14.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Chthoniobacterales; Chthoniobacteraceae; Chthoniobacter; uncultured bacterium
+547b78057390d8dd87e029218928ab3c	0.0	13.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Devosiaceae; Devosia; 
+ac50b7dd017e84d3aa524610e390de05	13.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; Aureispira; uncultured Bacteroidetes bacterium
+be7b502cdfa8934ef452262d6993731c	18.0	35.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; 
+5ed61569aab30a877a67c2e53b08cddc	3.0	5.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; uncultured marine eukaryote; uncultured marine eukaryote; uncultured marine eukaryote
+e3bd4c321c5364d01871ebb503a1dc7e	308.0	430.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Colwellia; 
+15f70377a20620ede76a1f2a910a5fa2	31.0	146.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+9f6dbbf0b15f6b2eeeb691edb6e6bd52	32.0	0.0	Bacteria; ; ; ; ; ; 
+698d4fd43c64b1dcba9a5b9cbbcbd893	0.0	4.0	Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas; 
+87a40aa40fe0bb69598b6b59841e369a	49.0	49.0	Bacteria; Proteobacteria; Gammaproteobacteria; Nitrosococcales; Nitrosococcaceae; Cm1-21; uncultured gamma proteobacterium
+b9c6f6447f56262a8f185ea82991850f	0.0	9.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Prolixibacteraceae; Draconibacterium; uncultured bacterium
+4f7fc71fbc9939e21388a7aa6089102e	10.0	10.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Cytophagaceae; Cytophaga; metagenome
+e7ab4b543a03582976d41c0df48b69fe	0.0	7.0	Bacteria; Firmicutes; Negativicutes; Selenomonadales; Veillonellaceae; Dialister; Veillonellaceae bacterium DNF00626
+66c6790748de5a903e8aa191670dead1	25.0	47.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured marine bacterium; uncultured marine bacterium
+0f7c3a07c1f906350c46496ae2b078f8	221.0	910.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; marine metagenome; marine metagenome; marine metagenome
+e6eda78c7742d9384ad90a2db9203ce8	20.0	15.0	Bacteria; Proteobacteria; Gammaproteobacteria; Ga0077536; uncultured bacterium; uncultured bacterium; uncultured bacterium
+fe037094f4e4d88606f217b5c3d1f59c	92.0	192.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; ; 
+3c040197263714da317b698fa5779937	343.0	371.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; uncultured Bacteroidetes bacterium
+7548fbaec85e1a3ac972463827d350f1	29.0	41.0	Bacteria; Proteobacteria; Gammaproteobacteria; Ectothiorhodospirales; Ectothiorhodospiraceae; uncultured; 
+70580c5fdb0e12b99fd4ad77b8f9e3ab	14.0	36.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; metagenome
+d698adf0a79eda87bed6c89930262e31	0.0	5.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; uncultured marine group II euryarchaeote HF500_47D04; uncultured marine group II euryarchaeote HF500_47D04; uncultured marine group II euryarchaeote HF500_47D04
+aac3fed77594bf011ae74840d1c7d22c	42.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade II; ; 
+b1c671dde7f6e801af6fd0b3085cb475	494.0	1373.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+04ecfad5772d2e09a84a0f5ef460536c	0.0	13.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Beijerinckiaceae; Methylobacterium; 
+088f0fe22ad2aefbbb7965a5c2657f5d	88.0	133.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Ruegeria; 
+fad66ea83a2659ba94dd905e7075e9f3	15.0	15.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured delta proteobacterium; uncultured delta proteobacterium; uncultured delta proteobacterium
+ac940243ddc863efcd2273871bb30e6a	151.0	172.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; OM60(NOR5) clade; 
+fcd4f1369a7e61e6dfda99e1710ccc16	408.0	877.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Methylophilaceae; OM43 clade; 
+39635132fddd5dcab4f1ae60151c286a	28.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Pseudonocardiales; Pseudonocardiaceae; ; 
+93d410bda3079e20054a7fe8758d9950	0.0	5.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; Magnetospira; uncultured nuHF1 cluster bacterium HF0770_35I22
+1263b941de1a0c2fb61d10f6b7e273da	123.0	133.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; uncultured; uncultured marine bacterium
+e9cc7d25753d22c815bfff0909f4bdff	2.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Marixanthomonas; Flavobacteriaceae bacterium HTCC2652
+37f7165d3db313efd8610c05d753e4df	3.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; NS11-12 marine group; ; 
+8d7a4526b1beb1e5de35b1b2d8b4c60a	22.0	22.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Oleiphilaceae; Oleiphilus; 
+1d88682b31bd7ffc08478ecf49bae051	11.0	0.0	Bacteria; Actinobacteria; Thermoleophilia; Solirubrobacterales; Solirubrobacteraceae; Conexibacter; metagenome
+badeae06f9f02ed7567ab02f37fc1612	98.0	104.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Pseudohongiellaceae; Pseudohongiella; 
+a5c6e34380204fc25a1e1440f26cbfee	107.0	76.0	Bacteria; Proteobacteria; Gammaproteobacteria; UBA10353 marine group; ; ; 
+4fa18227fcf7fc6f1c669b7a34483adf	4.0	8.0	Bacteria; Kiritimatiellaeota; Kiritimatiellae; Kiritimatiellales; Kiritimatiellaceae; uncultured bacterium; uncultured bacterium
+8f21dba7b40d77ce0b91a3b8637db466	14.0	0.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; uncultured marine bacterium
+1d669aacc3d1cc0ab4ed1df1d2dcd103	44.0	30.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Kangiellaceae; Aliikangiella; uncultured bacterium
+abe4546ada79d04e094fa1e005a76d71	0.0	31.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Alteromonadaceae; Alteromonas; 
+ef9b0d0eca7f6f1ac637d43a479e65a4	16.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; uncultured gamma proteobacterium
+8184b3608c597c01c68eb44133e7b8d0	0.0	6.0	Bacteria; Proteobacteria; Alphaproteobacteria; Puniceispirillales; SAR116 clade; uncultured bacterium; uncultured bacterium
+ac5c52caea9a55bc60fcca0f82bbba79	0.0	2.0	Bacteria; Proteobacteria; Gammaproteobacteria; Gammaproteobacteria Incertae Sedis; Unknown Family; uncultured bacterium; uncultured bacterium
+e7d7279b6f0331472ac290af0fea238f	40.0	37.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; MB11C04 marine group; 
+f0df21abb152b71d1e2c2d4fe966b700	16.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Salinisphaerales; Salinisphaeraceae; Salinisphaera; uncultured marine bacterium
+f1ce4897644877cf6f1235176866dfed	0.0	5.0	Bacteria; Firmicutes; Negativicutes; Selenomonadales; Veillonellaceae; Dialister; unidentified
+b2aea22ecda36a0389bf39007caced28	0.0	3.0	Bacteria; Proteobacteria; Alphaproteobacteria; ; ; ; 
+a8b397210b8bbe54e65d244d0b542c54	94.0	111.0	Bacteria; Proteobacteria; Alphaproteobacteria; Thalassobaculales; Nisaeaceae; OM75 clade; 
+63b98d69f205f4ee460f94a3a59b2615	54.0	35.0	Bacteria; Marinimicrobia (SAR406 clade); Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06
+1eeb3a951603a4c877a4ba59a204763e	40.0	224.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Winogradskyella; 
+b5de67fe21e73120ce639a9d4f64521c	0.0	15.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Prolixibacteraceae; Draconibacterium; uncultured bacterium
+5f4ba6ed21ca4b46e699e30e401c5e45	8.0	49.0	Bacteria; Cyanobacteria; Oxyphotobacteria; Synechococcales; Cyanobiaceae; Synechococcus CC9902; 
+536c261c70115dd774b18aaf70f1ab2c	0.0	10.0	Bacteria; Chlamydiae; Chlamydiae; Chlamydiales; Parachlamydiaceae; ; 
+2fd8b28d7379d1fbefd5895fbdeb1e64	0.0	6.0	Bacteria; Gemmatimonadetes; Longimicrobia; Longimicrobiales; Longimicrobiaceae; metagenome; metagenome
+6e15615f6323028a99d250c5a531539b	0.0	70.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Rhodanobacter; 
+71e634843700331811fb699e4e1ca3c9	18.0	11.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Algicola; uncultured gamma proteobacterium
+efa9dafd48ad6deec1a30eef7b3f8b2e	22.0	21.0	Bacteria; Proteobacteria; Alphaproteobacteria; uncultured; ; ; 
+30ee88663585f2dbdabc3c858b17dfdb	0.0	12.0	Bacteria; Epsilonbacteraeota; Campylobacteria; Campylobacterales; Arcobacteraceae; Arcobacter; 
+6cc4c17fa6b07f18fb7b5e0d3c39ea4e	0.0	9.0	Bacteria; Proteobacteria; Gammaproteobacteria; SAR86 clade; uncultured organism; uncultured organism; uncultured organism
+e6b2de3db9b185d50f78830311317094	30.0	23.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; MB11C04 marine group; uncultured bacterium
+073633bb2b176ae1524deafcd2e3a478	20.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Marinobacteraceae; Marinobacter; 
+5646b04c0d3fe38812fcb83f8add0619	196.0	579.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+a8ca8616b100819eeab2219dd3a5b1a6	0.0	5.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Wenyingzhuangia; 
+7dc9a5e23c642d86f34fbbf8a1d83dbc	26.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Novosphingobium; 
+84c3e82b27365fd3b60f4e25d87392b4	0.0	25.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade II; ; 
+7857d3187944415a804e443783213d31	25.0	86.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Pseudohongiellaceae; Pseudohongiella; uncultured marine bacterium
+da543151726f3378caea3185fab863d6	0.0	7.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Spongiibacteraceae; uncultured; 
+7643083b8c5dc02bbd2e5ce387fa1ffa	0.0	23.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; OM60(NOR5) clade; 
+c1f301f29c2ede1a25d33f6ee519f225	13.0	34.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); bacterium associated with Parathyasira sp.; bacterium associated with Parathyasira sp.; bacterium associated with Parathyasira sp.
+d167b13524d29dd32432572d5e068108	19.0	23.0	Bacteria; Proteobacteria; Alphaproteobacteria; Puniceispirillales; SAR116 clade; Candidatus Puniceispirillum; uncultured bacterium
+8f26f6ae88c88191a467d8170129dc87	10.0	7.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; MB11C04 marine group; 
+538dafb27c8d7ccc71d810a73998f191	35.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Salinisphaerales; Salinisphaeraceae; Salinisphaera; uncultured bacterium
+226c9af4a0958a4215f8c7e80f579c2b	10.0	11.0	Bacteria; Gemmatimonadetes; BD2-11 terrestrial group; uncultured marine microorganism; uncultured marine microorganism; uncultured marine microorganism; uncultured marine microorganism
+c30f384b7a200b71235a6650e1aad14d	141.0	113.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+4e70ee6e1debd8fcb64d870206883615	0.0	2.0	Bacteria; Proteobacteria; Gammaproteobacteria; ; ; ; 
+c611c8d206a7545a15659f8aef5ee2b2	3.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; env.OPS 17; uncultured Bacteroidetes bacterium; uncultured Bacteroidetes bacterium
+4ed6dce72cfd066a4f2721b3ed99c424	52.0	56.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+757b734a3c4d17d535f54c9bc592ac5d	28.0	32.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured Owenweeksia sp.; uncultured Owenweeksia sp.
+eb1caf7f14bba8dc11db7f1a96038c27	11.0	28.0	Bacteria; Cyanobacteria; Oxyphotobacteria; Synechococcales; Cyanobiaceae; Synechococcus CC9902; uncultured cyanobacterium
+b2599cb5292e400d0712eb2bb0f4fcde	9.0	22.0	Bacteria; Lentisphaerae; Oligosphaeria; P.palmC41; uncultured Lentisphaerae bacterium; uncultured Lentisphaerae bacterium; uncultured Lentisphaerae bacterium
+b2c46b01a80f284ea506f52ced3e03ab	31.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; Erwinia; uncultured bacterium
+9ec6c32027e4c9e177a8f06130e4433c	6.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Steroidobacterales; Steroidobacteraceae; Steroidobacter; 
+b640a831f0c28e6d60ba3f6b278f38fa	33.0	36.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Persicirhabdus; uncultured bacterium
+40e93375ec77107c90ca0be1da3f6c0b	109.0	166.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; Lentimonas; uncultured marine bacterium
+7a62b1e90645b29a47d1dafca2c562b8	42.0	56.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; NS11-12 marine group; uncultured marine bacterium; uncultured marine bacterium
+845a4790091bad012b97f5200806b065	10.0	0.0	Bacteria; ; ; ; ; ; 
+182f14f4738e3e78477df91d12e0b714	11.0	0.0	Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Cohnella; 
+be78a6c2f850cdc9a54c727aea3a2b79	10.0	27.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rickettsiales; Rickettsiaceae; Candidatus Megaira; 
+5c26a397bfde17c1700cd7989fb6a0a5	0.0	26.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; unidentified archaeon
+2114414db001c21b5f663a9d3e7b56e6	0.0	19.0	Bacteria; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Shuttleworthia; uncultured bacterium
+39a36fc164f44021be62ea6bf8f00b53	0.0	4.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+b4289ab0a9a00034c1fbce477b2c4ded	0.0	65.0	Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas; 
+f617f0ce888fe9b6b91cb9069b7a11f5	27.0	14.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Spirosomaceae; Dyadobacter; 
+b54d62de77fb56acf6e548014277eb2f	9.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; 
+77f222a453153fac6e63722df9a781f1	90.0	58.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+ac4ac274d280050de041eaa56cbe3c92	9.0	7.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; Blastopirellula; uncultured planctomycete
+64f80defe11094b9008e77a620313b75	8.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Methylacidiphilales; Methylacidiphilaceae; uncultured; uncultured Verrucomicrobia bacterium
+8d0cbbfc21359edf6c4fd2a1a13594d3	29.0	0.0	Bacteria; ; ; ; ; ; 
+dfbcf643d39da3d96679e19c7ab6b3a1	0.0	14.0	Bacteria; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Fastidiosipila; Clostridiales bacterium KA00274
+29d4b7cb7a51d7e7f7c13859af8945c3	0.0	82.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; uncultured eubacterium WD208
+49a1382401dc09cacc5a7cdb5ab6f1c0	7.0	17.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bradymonadales; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+ce1816c5ee4c273dcf30d3163672c0e5	0.0	13.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Nitrincolaceae; uncultured; 
+13228e6ddc8ac2fd6a54f9f4ff8018ee	0.0	3.0	Bacteria; Planctomycetes; OM190; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete
+d8799f340615646f390026acb2d08e15	33.0	53.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; OM60(NOR5) clade; 
+06b79ef377f389567e2c2c0f086257cf	44.0	135.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; 
+55357d6cc58549d420cccd3c467f8a16	23.0	25.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Saccharospirillaceae; uncultured; uncultured marine bacterium
+6fc221c40a6938f04e930da2b1429ee2	0.0	26.0	Bacteria; Proteobacteria; Alphaproteobacteria; Acetobacterales; Acetobacteraceae; uncultured; 
+1111bb73192b927241f2edfc0cd0b057	20.0	17.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; Blastopirellula; bacterium SH1-10
+43c02c05359261183e16e961189742b8	0.0	9.0	Bacteria; Tenericutes; Mollicutes; Izimaplasmatales; Izimaplasmataceae; Izimaplasma; uncultured bacterium
+1cb1cab4e83db881e4cc221cb4a980f7	51.0	55.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Ilumatobacteraceae; Ilumatobacter; Ilumatobacter nonamiensis YM16-303
+9a8df6a1afc866bff6e1354cd11e78f4	29.0	101.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; marine metagenome; marine metagenome; marine metagenome
+627a99dd1114c5212eb902a0d47d6f37	28.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Flavobacterium; 
+71b2d0ee5fd5ce998a1b163ca257670d	62.0	112.0	Bacteria; Proteobacteria; Gammaproteobacteria; Ectothiorhodospirales; Ectothiorhodospiraceae; uncultured; uncultured marine bacterium
+705ba26aaee5871a308ded958a9f6461	14.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured bacterium HF0010_08B07; uncultured bacterium HF0010_08B07; uncultured bacterium HF0010_08B07
+9c9c51b8997dbe53f3d3f7d5414ead2c	0.0	2.0	Bacteria; Proteobacteria; Alphaproteobacteria; Kordiimonadales; uncultured; ; 
+616c3240719c4852dbc9697161fd0e06	3.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured delta proteobacterium
+ebf9354b851c070b55ab7ced4f39c0b8	0.0	35.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Amylibacter; 
+b474c8c5e4e3fdea032a7feb365e8e98	0.0	6.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; ; 
+479e899dc7bee35210fe3e610bf9634c	79.0	63.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+e4304c9496921fcf8a88c1ef30dfd0eb	26.0	9.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; ; 
+154216ffcdbd00e5dacbf88c3ff6ab8f	13.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Xanthobacteraceae; Ancylobacter; 
+ad5904f852ce73680c278e1d68e64a91	39.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Mucilaginibacter; metagenome
+0cde5d4570dde81863ec74db78536cf3	16.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Methylacidiphilales; Methylacidiphilaceae; uncultured; metagenome
+ba9225444a01fbc67f282a3ed0ca9a5b	512.0	1720.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured bacterium
+4d5ea57ba7338b0aca057fb93a24b82b	7.0	0.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; Blastopirellula; 
+b0a6f0c6c52d44f9850400ee9a5f5765	0.0	31.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured bacterium HF0010_08B07; uncultured bacterium HF0010_08B07; uncultured bacterium HF0010_08B07
+87ec982d0a3ccbf62b87c439bd4295e6	157.0	2229.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; 
+f6907f697361593491030f7dc8a198aa	0.0	18.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Saccharospirillaceae; Oleispira; 
+07c1379b824f23df9b591e393e430297	26.0	27.0	Bacteria; Proteobacteria; Alphaproteobacteria; uncultured; ; ; 
+4869379a1d315c0d2c7b37f461d8dd21	6.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Opitutaceae; uncultured; metagenome
+a50235afe252a863e383e4326d854107	0.0	16.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Rubritalea; 
+a5f208587e914e3c16310ef23c43bf87	85.0	161.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; NS11-12 marine group; unidentified marine bacterioplankton; unidentified marine bacterioplankton
+86d954d6ddff7385ec6136db4fad7f60	12.0	0.0	Bacteria; Epsilonbacteraeota; Campylobacteria; Campylobacterales; Arcobacteraceae; Arcobacter; 
+58386b5ec1d8e31a63cb7886889de452	0.0	12.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Wenyingzhuangia; 
+1294e6ff4a365536bdd7e002a488d46b	9.0	14.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured bacterium
+9b9813f1a766e72ab381bf56cd3c9c3c	31.0	9.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group III; metagenome; metagenome; metagenome
+ea212db66499986d12f92e12c0ac4c34	9.0	18.0	Archaea; Nanoarchaeaeota; Woesearchaeia; uncultured bacterium; uncultured bacterium; uncultured bacterium; uncultured bacterium
+cb83ed9c326c5f5d5ca0a8f2f63157e1	8.0	0.0	Bacteria; Planctomycetes; Planctomycetacia; Planctomycetales; Gimesiaceae; uncultured; uncultured planctomycete
+cbba35c0152682628245fca0d2efa51e	0.0	60.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Prevotellaceae; Prevotella; Prevotella amnii DSM 23384 = JCM 14753
+01784452cef9e81e1814fb6423bd2acb	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Microscillaceae; Ohtaekwangia; metagenome
+dfe11678315840aac7f0a68a774b9e79	2.0	0.0	Bacteria; ; ; ; ; ; 
+339a1f8d8b31a165072b62710e46cbc0	41.0	59.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+fd76516fb77cc77fc8dae8d0343da17d	120.0	66.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Colwellia; 
+8334f78e44ab9a8d7e69cc979716710f	68.0	130.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+c61d4c3ff7b9f30a82bf1de54b6dec70	128.0	419.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured bacterium
+555b33eb3c6ce5539cd445d2eb736bd1	328.0	1087.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+f2ca488621df81390c6a98237e87ac23	1134.0	5291.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Nitrincolaceae; uncultured; metagenome
+f4364d4bc6c59792c44e274c0d684f45	17.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+702af9e944edfd5a1a7f0dce0d566376	55.0	70.0	Bacteria; Actinobacteria; Actinobacteria; Micrococcales; Microbacteriaceae; ; 
+ea866ceb4985be8fb03c423aad607fc8	7.0	61.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Flavicella; uncultured bacterium
+ecd552b053fbadcdc5ab317954e20e3d	4.0	6.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; uncultured alpha proteobacterium
+045b612de2b6cbed79fc46dc8c01f8e4	0.0	10.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); bacterium associated with Parathyasira sp.; bacterium associated with Parathyasira sp.; bacterium associated with Parathyasira sp.
+c1f776917094339f26d7578d4646d538	0.0	5.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; 
+14b49bd6810f9f7c4dc71a217016e964	6.0	11.0	Bacteria; Proteobacteria; Gammaproteobacteria; Ga0077536; ; ; 
+1f60d1bdc49a59b16eb76eb94e6287d8	0.0	5.0	Bacteria; Dependentiae; Babeliae; Babeliales; UBA12409; candidate division TM6 bacterium RIFCSPHIGHO2_12_FULL_36_22; candidate division TM6 bacterium RIFCSPHIGHO2_12_FULL_36_22
+a1d3419e181cb7d4fa1e78e905b89ad5	25.0	31.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfobacterales; Desulfobulbaceae; Desulfotalea; uncultured bacterium
+fa7a2599a3f9c59c576a571a64c684ef	357.0	156.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Thalassotalea; Thalassotalea sp. HMF2303
+a65f0f9c189be1c06fc5044aadbc5b45	12.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; Legionellales; Legionellaceae; uncultured; uncultured bacterium
+4c5a9ecef196a1ae154d3b341d972d0d	0.0	10.0	Bacteria; Epsilonbacteraeota; Campylobacteria; Campylobacterales; Arcobacteraceae; Arcobacter; bioreactor metagenome
+322ae6fc577f74157d36c30d185ff1c1	79.0	118.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+16c7c8912f8488d9b89aacd9956621c2	3.0	5.0	Bacteria; Proteobacteria; Gammaproteobacteria; Diplorickettsiales; Diplorickettsiaceae; uncultured; uncultured gamma proteobacterium
+5807a294945dc9efeb280ae44727eaa1	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidetes VC2.1 Bac22; metagenome; metagenome; metagenome
+a22c8ef72659b99e76dd5d4ec6b37843	0.0	10.0	Bacteria; Actinobacteria; Coriobacteriia; Coriobacteriales; Atopobiaceae; Atopobium; Atopobium vaginae
+e9528150163296033ee663ab51145f74	15.0	18.0	Bacteria; Marinimicrobia (SAR406 clade); unidentified marine bacterioplankton; unidentified marine bacterioplankton; unidentified marine bacterioplankton; unidentified marine bacterioplankton; unidentified marine bacterioplankton
+a9dad510fef3208882c92e6558782f54	0.0	42.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; 
+7044201b9f266ac1168aaae5af250f57	48.0	46.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; uncultured; 
+09a0a71231fb491d26916eb43ded666e	4.0	29.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Schleiferiaceae; Schleiferia; 
+697dc02ae5aa9251dcb2b9b98027417f	0.0	17.0	Bacteria; Proteobacteria; Gammaproteobacteria; Legionellales; Legionellaceae; Legionella; 
+d0bd24da551a53d14c2d0c7ac2e00d04	0.0	11.0	Bacteria; Actinobacteria; Actinobacteria; Kineosporiales; Kineosporiaceae; Kineosporia; 
+d5d18352c689ab006bc657b78bfd11e8	697.0	1512.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; ; 
+203c2fc4840318e3a8180cebb58b26d4	21.0	18.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; marine metagenome
+453cf07d3e96e304f23fbde7b355fe70	25.0	44.0	Bacteria; Actinobacteria; Actinobacteria; Micrococcales; Microbacteriaceae; ; 
+ec337e105c03132e7fa6829c912e09b3	13.0	11.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Pedosphaerales; Pedosphaeraceae; uncultured Verrucomicrobia bacterium; uncultured Verrucomicrobia bacterium
+731a130efa176195313dcb4d62ce700e	39.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Flavobacterium; 
+26f925c845dfad50c18e4c9f1b04d4c7	35.0	11.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Spongiibacteraceae; Spongiibacter; 
+f30b546a68a43e74f0e8552558ac5288	0.0	10.0	Bacteria; Lentisphaerae; Lentisphaeria; Lentisphaerales; Lentisphaeraceae; Lentisphaera; 
+865f48070e7fe281ca9c16d8a1ad247d	27.0	29.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; 
+21d05aac8070d05f493325ca352fde48	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; 
+6bacde47c347cd5024961b82b5de47bb	5.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Shewanellaceae; Shewanella; 
+a2afcad6722a75f5b1ec79e56e6fdf02	115.0	107.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas; Pseudoalteromonas sp. '520P1 No. 423'
+2c0b1d66e29c6cfc0567a282ede8243b	41.0	42.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; 
+3cc9ba605aa1e36ba39abc39d2e58c17	21.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Pseudohongiellaceae; Pseudohongiella; 
+2c7c9872dd7201e085eb14e9d70d1d14	0.0	2.0	Bacteria; ; ; ; ; ; 
+e53981869dab674120a3a193e092bd71	6.0	9.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Chthoniobacterales; Xiphinematobacteraceae; Candidatus Xiphinematobacter; metagenome
+2b4d446cd6c3bea97852d320850b4993	16.0	0.0	Bacteria; Marinimicrobia (SAR406 clade); ; ; ; ; 
+e3b4d8da5a306826ba7886e25fba0287	0.0	15.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; ; ; 
+23c4f9b98e2765c4a24a68d86fd94c10	23.0	30.0	Bacteria; Proteobacteria; Alphaproteobacteria; Puniceispirillales; SAR116 clade; ; 
+e1f84b95f27e32f9a66f00f94ee6e371	0.0	6.0	Bacteria; Marinimicrobia (SAR406 clade); ; ; ; ; 
+38de15976347ad5c3f2cf12180860d8c	0.0	9.0	Bacteria; Kiritimatiellaeota; Kiritimatiellae; Kiritimatiellales; Kiritimatiellaceae; R76-B128; uncultured bacterium
+86b8ae6f51d8820b3c3449115b757e89	0.0	20.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+8f495d5a976eb356194dc28071b6f47b	8.0	0.0	Bacteria; PAUC34f; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+cbc5a8de2b20666c5c90f51868752bb5	79.0	327.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Gallionellaceae; Candidatus Nitrotoga; uncultured bacterium
+ffa4eea716328e237364b19955e1e7b7	0.0	20.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; uncultured marine bacterium
+c41a89dc1c7374fd7f57abc90cc6ab4f	0.0	12.0	Bacteria; Proteobacteria; Alphaproteobacteria; Micropepsales; Micropepsaceae; uncultured; 
+fc766700de4b256cb2fee73daeea4484	0.0	12.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+a1738eb82bd3292e0f8c363ab2261bf1	0.0	11.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured delta proteobacterium; uncultured delta proteobacterium; uncultured delta proteobacterium
+9380eac5ee2cf8d4a60f4b9f10bd5f16	53.0	200.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+f6bc87821a43b3c368203a0a063ddf56	198.0	300.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+e972a1d662c55ebf1b6d9afeb75b3875	6.0	8.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; Rhodopirellula; hydrothermal vent metagenome
+6fb5dc26c4cc567ca07dbb39a5c3bb26	27.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; Massilia; 
+584f1697100a921dd25018b7c8561546	0.0	10.0	Bacteria; Proteobacteria; Alphaproteobacteria; ; ; ; 
+81e9420331884bc011b1db392f1f0adc	9.0	0.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; uncultured; 
+5e9d27dfbb2c8da6c1a16afa4eac913a	78.0	95.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; 
+bea481436a51cdc489c0075761203efc	0.0	139.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; 
+78fe0895fdde812b43950244497417af	24.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Spongiibacteraceae; Spongiibacter; 
+f035398763008058685bee93719d9c54	0.0	16.0	Bacteria; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; uncultured; Clostridiales bacterium HAW-EB17
+398adf9c039fdf976d3da9dfef92ff2e	0.0	4.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; Parafilimonas; uncultured bacterium
+a5bb2450fde6242d0a18050e729f8c5c	92.0	32.0	Bacteria; Patescibacteria; Gracilibacteria; JGI 0000069-P22; ; ; 
+993bf414eec4f375fd62f0a337c57fbd	0.0	9.0	Bacteria; Planctomycetes; OM190; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+b2c7f912f0c9c47667ab4ecdc1bff415	6.0	17.0	Bacteria; Proteobacteria; Alphaproteobacteria; Kordiimonadales; uncultured; uncultured bacterium; uncultured bacterium
+709bd24cec0e41d061a84438bba54571	0.0	38.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; marine metagenome
+0e2e91fba1ca9ed7de2d11ea4786c914	8.0	7.0	Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Acinetobacter; 
+4ddfecf6ecb6b5d42e544e1b3f95fd75	15.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Devosiaceae; Devosia; Devosia glacialis
+891b232ced7872fbba8b0c951bc13ca7	2.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidetes VC2.1 Bac22; metagenome; metagenome; metagenome
+52060c1e53be0e3824bd0c3f968779d4	4.0	0.0	Bacteria; Lentisphaerae; Lentisphaeria; Victivallales; BD2-3; uncultured Verrucomicrobia bacterium; uncultured Verrucomicrobia bacterium
+5cb851b1260e97803d3cd89fdf773510	7.0	9.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Cyclobacteriaceae; uncultured; uncultured Bacteroidetes bacterium
+4b961b84716ac167392b11929d702643	25.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Novosphingobium; 
+f7d0fd8ac76fbabe92eb198ddc1419e6	5.0	4.0	Bacteria; Gemmatimonadetes; BD2-11 terrestrial group; uncultured marine bacterium Ant4D5; uncultured marine bacterium Ant4D5; uncultured marine bacterium Ant4D5; uncultured marine bacterium Ant4D5
+675b8ccf722dfa61a8cfa53c4bb84f8e	19.0	15.0	Bacteria; Marinimicrobia (SAR406 clade); metagenome; metagenome; metagenome; metagenome; metagenome
+dea4f677178ee3babbe543fe7e49d56c	9.0	5.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured bacterium; uncultured bacterium
+6ac5c96c76c2ab2a4f3486ed460b1750	2.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured delta proteobacterium
+dba0200281f711b6bebe83de2d6b8892	14.0	32.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS4 marine group; 
+8d8a0bfc3191d9d90bf1acad1d744ca8	11.0	20.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); uncultured delta proteobacterium Sva0853; uncultured delta proteobacterium Sva0853; uncultured delta proteobacterium Sva0853
+8c7bd7911f5b87a7a754690741d59e83	6.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Arctic97B-4 marine group; metagenome; metagenome; metagenome
+4711fddd65fe13062ff99d75db8aa5d4	15.0	7.0	Bacteria; Proteobacteria; Gammaproteobacteria; Steroidobacterales; Woeseiaceae; Woeseia; 
+53a28cd19f151d2387502afd777dfdc2	0.0	4.0	Bacteria; Proteobacteria; Gammaproteobacteria; Piscirickettsiales; Piscirickettsiaceae; Candidatus Endoecteinascidia; uncultured gamma proteobacterium
+63d867d2d963ea409d76761a3672ddf5	0.0	5.0	Bacteria; Planctomycetes; Pla3 lineage; ; ; ; 
+3391f21c128950d5850839a59eac3d4d	19.0	17.0	Bacteria; Proteobacteria; Gammaproteobacteria; OM182 clade; ; ; 
+6376ea6dab7d0fde3cd66f53b57e1484	27.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas; 
+24dcfb318c3ffa1ef67cd0de1b04405c	9.0	12.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); SAR324 cluster bacterium JCVI-SC AAA005; SAR324 cluster bacterium JCVI-SC AAA005; SAR324 cluster bacterium JCVI-SC AAA005
+e406ce5973610070401ae8320ddeae1f	9.0	39.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+53d9c860ca705176b1f2861dac2ddecc	0.0	13.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfobacterales; Desulfobulbaceae; Candidatus Electrothrix; uncultured bacterium
+f7602e7d65ce4587e704ab290edb0999	0.0	6.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfobacterales; Desulfobacteraceae; Desulfofrigus; uncultured bacterium
+14b2d26bb9ddf9abfd5744a502fcc6d7	479.0	2455.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+7c7de256777fbb215ff479f72b44f76c	7.0	0.0	Bacteria; Marinimicrobia (SAR406 clade); ; ; ; ; 
+b4391aca8a3ee6159dcf5c1908429ee6	4.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured bacterium; uncultured bacterium; uncultured bacterium
+968f578aa34bb7a72b9c9038826b00f2	14.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Salinirepens; 
+0297f9b0f5583d02665855b43c174acc	4.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfarculales; Desulfarculaceae; Desulfatiglans; marine metagenome
+9eab7a1249300ee6e9757c224201f94d	12.0	15.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Stenotrophomonas; 
+89e4b801c46c06154706c5bcbe846ce0	0.0	13.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+84b738cddad75358f87ba65365842a87	104.0	53.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; AEGEAN-169 marine group; uncultured alpha proteobacterium; uncultured alpha proteobacterium
+5e72e63af064c0b364c4053a77314fd4	50.0	43.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Saccharospirillaceae; uncultured deep-sea bacterium; uncultured deep-sea bacterium
+d24ba3e2bca71e0ab8255a046debb2a6	5.0	9.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured delta proteobacterium
+a900b6678ce86851fb16bfafb87f3326	9724.0	16355.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; 
+be55db2bc3b7820bcaaa14644d7c5ea6	3.0	0.0	Bacteria; Armatimonadetes; Armatimonadia; Armatimonadales; uncultured eubacterium WD294; uncultured eubacterium WD294; uncultured eubacterium WD294
+ff706b6120ad46a5c6d303d41d306c0c	9.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+fff755134860d0c5af35d9b2a90f0bb2	10.0	9.0	Bacteria; Dadabacteria; Dadabacteriia; Dadabacteriales; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+05b6fce12600899b6ecff0615d027c3d	5.0	6.0	Bacteria; Marinimicrobia (SAR406 clade); uncultured bacterium FGYC_13M19; uncultured bacterium FGYC_13M19; uncultured bacterium FGYC_13M19; uncultured bacterium FGYC_13M19; uncultured bacterium FGYC_13M19
+c946732474c4176549d204c9d9582e0f	7.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Idiomarinaceae; Aliidiomarina; uncultured bacterium
+9ac3bb1d7dedb08a012692a6f536b5af	37.0	30.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+4bab56dcb81e254394c6cea4483b60a4	10.0	0.0	Bacteria; Actinobacteria; Thermoleophilia; Solirubrobacterales; 67-14; metagenome; metagenome
+4ae83d74ad719968841b2be6d950de3f	64.0	60.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+4bca09b0e91f744c4183dd594d3790f4	44.0	20.0	Bacteria; Planctomycetes; OM190; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete
+aba1f4c3aac94b38f14cad917cbf0e93	3.0	0.0	Bacteria; Planctomycetes; OM190; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete
+6f4e8d53540daa897094612f2e212f68	78.0	86.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; uncultured; uncultured Sphingobacteriia bacterium
+ac937dd0986b50b6c0fc3d01f3fde005	48.0	88.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Pseudahrensia; 
+1f2430b704f251ebcc853ce2a1a2c85d	0.0	5.0	Bacteria; Gemmatimonadetes; BD2-11 terrestrial group; uncultured Gemmatimonadetes bacterium; uncultured Gemmatimonadetes bacterium; uncultured Gemmatimonadetes bacterium; uncultured Gemmatimonadetes bacterium
+e86aff9d83cae9a0a12ce9418a82f731	139.0	172.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; NS10 marine group; uncultured Flavobacteriia bacterium
+131345e7d6d8a62be6e8c4c8d93ca270	11.0	10.0	Bacteria; Planctomycetes; OM190; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+07918d29ad12e4dae721c7909129d266	63.0	133.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; Halioglobus; 
+1a04461b51bc23b48c24529fbdb95d2b	17.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Sulfitobacter; 
+0429a8a999c3238e12bbfaa1714d385e	21.0	18.0	Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio; 
+226ca6b52d7af139c06f232fd38e3569	54.0	77.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; uncultured Flavobacteriia bacterium
+cc6b261e10b7521da1762b64c7b66f20	366.0	162.0	Bacteria; Proteobacteria; Alphaproteobacteria; Caulobacterales; Hyphomonadaceae; Maricaulis; 
+879c0a1517bf8cc53b750eb6446e16ca	0.0	6.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); uncultured bacterium; uncultured bacterium; uncultured bacterium
+41e6c0b55654af1d5cd503359fb77d18	0.0	20.0	Bacteria; Proteobacteria; Alphaproteobacteria; Caulobacterales; Caulobacteraceae; Brevundimonas; 
+7c3473cf63302d75fc5e0aa7da467c30	1379.0	1779.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidetes VC2.1 Bac22; uncultured Bacteroidetes bacterium; uncultured Bacteroidetes bacterium; uncultured Bacteroidetes bacterium
+e30f2240792c6b70b56bf50df34be4b6	197.0	547.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Roseobacter clade NAC11-7 lineage; 
+f82d7fe88b1f41307ee2e87ed2001207	5.0	4.0	Bacteria; Proteobacteria; Deltaproteobacteria; ; ; ; 
+b617e893b719fd0039349edd2acb0c21	0.0	6.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Winogradskyella; 
+f44404ea806c18f6b05b7cbb4f3e5fd2	17.0	0.0	Bacteria; Firmicutes; Clostridia; Clostridiales; Peptostreptococcaceae; Romboutsia; uncultured bacterium
+32dede879657d29e489d7030361c9f82	13.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+a59f39b06bbadfca19daed13b73a81e7	0.0	3.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rickettsiales; AB1; uncultured bacterium; uncultured bacterium
+585acbab6a2210c0f4feb3a5180a89a3	0.0	10.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; ; 
+638a2f1ece653205f030964c19430961	9.0	4.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Arctic97B-4 marine group; uncultured organism; uncultured organism; uncultured organism
+151285d05d11dd3bad1b61fc0b635383	0.0	4.0	Bacteria; Tenericutes; Mollicutes; Mycoplasmatales; Mycoplasmataceae; Candidatus Bacilloplasma; uncultured bacterium
+68c20314edcbe69d8571c69b7ffe04e0	39.0	55.0	Bacteria; Proteobacteria; Gammaproteobacteria; SAR86 clade; uncultured Oceanospirillales bacterium; uncultured Oceanospirillales bacterium; uncultured Oceanospirillales bacterium
+5cd35aa0c27eed819e3f42741da1c890	0.0	5.0	Bacteria; Planctomycetes; vadinHA49; uncultured organism; uncultured organism; uncultured organism; uncultured organism
+55b1ecc4c221af21abc9bbf79d4f9d91	33.0	27.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+4241d58ba236d33dc2ed9a6d4721c217	0.0	6.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; uncultured marine bacterium
+dba53424e92d8150b0a59c02c1bd24ef	64.0	76.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; Rubripirellula; uncultured bacterium
+7192b22b9f0f0314060b9cf3e91e0c69	0.0	13.0	Bacteria; Marinimicrobia (SAR406 clade); uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+df2608d66de8d0db68da3cf20426ac03	0.0	4.0	Bacteria; Dependentiae; Babeliae; Babeliales; uncultured bacterium; uncultured bacterium; uncultured bacterium
+a7213a1a4e081f68269268e5fd71e12f	0.0	44.0	Bacteria; Epsilonbacteraeota; Campylobacteria; Campylobacterales; Arcobacteraceae; Arcobacter; Arcobacter sp. LA11
+e6fc2bad23ecb549e6f75daca4c40153	7.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+02301f7d1e08451a4244ccf9407ca8a8	24.0	53.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Lentibacter; 
+27b7cbfd478578ae99ace7d2c29b3684	922.0	1331.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; ; 
+1507698ef9efed12b6709f71fcd6d17c	0.0	9.0	Bacteria; Nitrospinae; Nitrospinia; Nitrospinales; Nitrospinaceae; LS-NOB; 
+0ad44af266958a36aeebcbfbbd048f8a	5.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured marine bacterium
+adeffbd39c3be96e40df94e400d48ae3	2.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; uncultured; uncultured bacterium; uncultured bacterium; uncultured bacterium
+534ae1292f8ab63bdd6f97344ef4656d	39.0	33.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Xanthobacteraceae; ; 
+817725950d1e7e63b3d8d62ea796d24e	0.0	23.0	Bacteria; Actinobacteria; Thermoleophilia; Solirubrobacterales; Solirubrobacteraceae; Conexibacter; 
+d43f711be318aff6b4d49c3804b3d0b2	42.0	42.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Oleiphilaceae; Oleiphilus; 
+81f209c013aee5bbd465a3daa7870d9d	25.0	14.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodovibrionales; Kiloniellaceae; ; 
+961fc728510e96be2b3de99a3bb7b398	96.0	14.0	Bacteria; Fibrobacteres; Fibrobacteria; Fibrobacterales; Fibrobacteraceae; uncultured; uncultured bacterium
+8a44a4e06b1a74f11ee8e2686464e0d5	159.0	344.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Planktomarina; 
+0583a6be54548df901f73bc2ec62dfae	16.0	4.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bradymonadales; uncultured delta proteobacterium; uncultured delta proteobacterium; uncultured delta proteobacterium
+b5581eb92ec1e93d2c774e604cc77a3d	8.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured bacterium
+ba4fb44a8b4f3c8839676b2c3966e206	6.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; uncultured gamma proteobacterium
+b816f84e82190f43697b94966a8de850	31.0	543.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; 
+deb7354342cfba5bd9a8f836f18a95fa	31.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+2c5148342fa2ddc031212de2bc880bef	15.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+cbef5a03b48197df4191b1afc57f3296	4.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Lysobacter; 
+9a8b133e77c109b6ca8bdf206af0dedc	4.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Piscirickettsiales; Piscirickettsiaceae; Candidatus Endoecteinascidia; uncultured bacterium
+20ebab43718fef4ad3337c293d96b66e	8.0	8.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; DEV007; ; 
+ed958e0a3e7f149c81e244174228a0fa	45.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Alcanivoracaceae; Alcanivorax; 
+73c8333f0b8f74934e099e7a3c739eea	0.0	4.0	Bacteria; Proteobacteria; Gammaproteobacteria; Arenicellales; Arenicellaceae; uncultured; uncultured marine bacterium
+365cf9e8424b84332cee898f37ee5885	32.0	21.0	Bacteria; Proteobacteria; Alphaproteobacteria; uncultured; ; ; 
+46b14e4969c754306af7095015e74163	0.0	10.0	Bacteria; Acidobacteria; Acidobacteriia; Acidobacteriales; Acidobacteriaceae (Subgroup 1); Edaphobacter; 
+3c25aefde2ab931cbf9149166d8644af	158.0	125.0	Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio; 
+a9164d01308501b576afa06256a15b0f	111.0	97.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium; 
+b6a152c1c1c3931033c229389a0f8d75	31.0	0.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; uncultured marine archaeon; uncultured marine archaeon
+750ba0e2bb9fe55d1cbb3b4eaadc1981	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; Terrimonas; 
+388a181d51e3618d47cdfe4fb918277d	0.0	7.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; uncultured; uncultured Saprospiraceae bacterium
+7a7272948670340ec2d4c0886c52cacc	6.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Acetobacterales; Acetobacteraceae; Roseococcus; metagenome
+d7970e5a09d15a8bc94a41c4ef774677	32.0	21.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured marine microorganism; uncultured marine microorganism; uncultured marine microorganism
+a464d4e4fc52e95ec48469613da0eb6e	37.0	49.0	Bacteria; Proteobacteria; Gammaproteobacteria; HgCo23; uncultured bacterium; uncultured bacterium; uncultured bacterium
+04db8fa0f286c42335556af597b5c346	83.0	65.0	Bacteria; Planctomycetes; Planctomycetacia; Planctomycetales; Gimesiaceae; uncultured; uncultured planctomycete
+d46e2205f0c6ecf67b51f83d111c509c	0.0	44.0	Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; Escherichia-Shigella; 
+d2b064e33428f099f318a587a61dac08	45.0	159.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+219bbddfdda2b23294c2c7522c18f704	10.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured delta proteobacterium; uncultured delta proteobacterium; uncultured delta proteobacterium
+a39300035694fec651fe6ede93a756be	9.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; 
+b47d2421437e0c941114025e7dc183b4	26.0	35.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured Owenweeksia sp.
+09f944acc15518b31e5803e1e4cb4e43	31.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; Duganella; 
+0922d35b7a59ea62158313c5a9a2a5a7	16.0	23.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Pedosphaerales; Pedosphaeraceae; ; 
+07da22cab5c55a4badb462bcbbded642	30.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Phyllobacterium; 
+aa2e422ad037b7735ef49526f99424be	1145.0	2192.0	Bacteria; Proteobacteria; Gammaproteobacteria; OM182 clade; ; ; 
+1c2b8892a0d7f828d72808cd01cfd199	0.0	19.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Devosiaceae; Devosia; 
+8fb4413ed236cf03df5e94100c843f31	37.0	52.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+8cb21fb64570dc74f19feb5ca4cbb8e0	25.0	72.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+5acdfbf5330bcf2d3a211056d3deecab	8.0	8.0	Bacteria; Proteobacteria; Gammaproteobacteria; UBA10353 marine group; uncultured bacterium; uncultured bacterium; uncultured bacterium
+1a2ced70f951a1d6678ac3faba1d5790	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; ; 
+b01cdc53ccf0147bfd6e571cbe2af6b6	0.0	28.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+12a678de1ab697ad0c99cd9cbf46fd90	10.0	0.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; ; 
+03df54c3cc42e19b77b270c8264c4d50	10.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; uncultured; uncultured bacterium; uncultured bacterium
+3f07c5798efd8deb6095045db89ee137	6.0	5.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfarculales; Desulfarculaceae; uncultured; uncultured delta proteobacterium
+fbdbaff990689e59c5d38e79775ac823	7.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bradymonadales; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+b8952a1be97fc489f86a95e261ee1913	22.0	35.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; uncultured marine bacterium
+75988afe3ca9126f78db546353425b4c	11.0	9.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS7 marine group; uncultured bacterium; uncultured bacterium
+39f702be83658ce20f3d9856618eb98c	4.0	11.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Cellvibrionaceae; uncultured; 
+fb92837fc6922d73ee7dd0b1feca3f34	21.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bacteriovoracaceae; Halobacteriovorax; uncultured bacterium
+12f83c66a8351950d2dd57715f1863fe	87.0	93.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; 
+e9a1698787ff19af6cf32617f77a7d47	0.0	5.0	Bacteria; Acidobacteria; Thermoanaerobaculia; Thermoanaerobaculales; Thermoanaerobaculaceae; Subgroup 10; 
+1ad081dbb956f3379220b5802dc30992	12.0	7.0	Bacteria; FBP; uncultured actinobacterium; uncultured actinobacterium; uncultured actinobacterium; uncultured actinobacterium; uncultured actinobacterium
+20f6b9bc7e52e18f6472c4a34e27aafa	206.0	161.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; 
+c6e9c9fe9159441c4ffe44947875236a	34.0	27.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; ; 
+4237c23d2b5e8dd8805b1c33e717b138	9.0	11.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured bacterium; uncultured bacterium; uncultured bacterium
+b632f1471fdbc48a83f80b09ee9ea027	149.0	1149.0	Bacteria; Proteobacteria; Gammaproteobacteria; Nitrosococcales; Methylophagaceae; uncultured; uncultured marine bacterium
+15c618b5045a3c1310364402887a59ea	47.0	160.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; BD2-7; ; 
+0e8d7f5ec91829192f3ace7dff1f62fc	0.0	5.0	Bacteria; Proteobacteria; Gammaproteobacteria; Gammaproteobacteria Incertae Sedis; Unknown Family; Candidatus Ovatusbacter; uncultured bacterium
+b81a059afb832b294cd85dfe74a459e6	4.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured delta proteobacterium
+1fb08b18138d8c6a97104ee81c5248d3	60.0	27.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Alteromonadaceae; ; 
+4f487bc7e9aaff20fafb073ca6924ace	196.0	204.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); ; ; 
+36e31371eb1ad17d4cdc37bd7cda2d41	0.0	20.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Mucilaginibacter; 
+15d56c1957f615a428b92ab2d5f3e1ee	0.0	16.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Mesorhizobium; 
+d6f30c2ceed71beac5839ed244b3e275	64.0	53.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; OM60(NOR5) clade; 
+dcd1521a3b33b6abb50cb12d0868dd05	64.0	32.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ib; 
+a8938cb2311a91ad93a2bb377ba1c74c	0.0	20.0	Bacteria; Nitrospinae; Nitrospinia; Nitrospinales; Nitrospinaceae; LS-NOB; 
+9601e84a92715b2819d6b129863d0385	0.0	11.0	Bacteria; Proteobacteria; Gammaproteobacteria; CH2b56; uncultured bacterium; uncultured bacterium; uncultured bacterium
+8884b52714b0982de06885fb47256a95	0.0	2.0	Bacteria; Proteobacteria; Deltaproteobacteria; Oligoflexales; Oligoflexaceae; uncultured; uncultured proteobacterium
+d16b55c828ed18211dfea1d66ee857b3	176.0	553.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Porticoccaceae; SAR92 clade; 
+1fae7588baccdfd0cc4d956aadd083f9	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured marine bacterium; uncultured marine bacterium
+c7212c3182271fc66b88ea4388339a8e	2.0	2.0	Bacteria; Planctomycetes; Phycisphaerae; Phycisphaerales; Phycisphaeraceae; uncultured; uncultured bacterium
+d4c845ae69d4db97ccb449c6201eb936	23.0	30.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; P3OB-42; uncultured marine bacterium; uncultured marine bacterium
+87d00390038199c00a6de39cf6f46b54	0.0	3.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured bacterium
+96a544503289da1ac973c80bc068b020	97.0	128.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS4 marine group; uncultured Bacteroidetes bacterium
+08d858113d61ab489ddc6e4a600f45c3	24.0	0.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured archaeon
+eeb07d56347f75ac21fafae6b282e632	31.0	12.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; 
+6868ba71639657fc57e30650bee93562	10.0	24.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Loktanella; 
+d821aeb7d148eb81375909bfdecd8ad9	234.0	512.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured marine bacterium; uncultured marine bacterium
+8c812c1dba3499ce71808af95264397f	25.0	19.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured delta proteobacterium
+3b9d08fd572f728beedfb711bb1b0bf0	8.0	29.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; uncultured marine archaeon; uncultured marine archaeon; uncultured marine archaeon
+727b93547c506f4e8d550c669d849a9f	41.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade II; ; 
+2d790e71dc56f074dcb97025523b7857	0.0	5.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Terasakiellaceae; uncultured; uncultured organism
+f1cacd9e70445f24c4619f0fca89b7f4	0.0	44.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Colwellia; 
+d9718c919cd07f8319be692e0913f198	83.0	22.0	Bacteria; Proteobacteria; Gammaproteobacteria; Nitrosococcales; Methylophagaceae; Methylophaga; 
+626df7db50e41ff90bc187e2964cdd88	883.0	1289.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; Halioglobus; 
+cfbc760bc9177688ef8445fd670910ac	0.0	44.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Nitrincolaceae; Amphritea; uncultured bacterium
+065731dc70ca2e0ae56177f7be27e398	67.0	105.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Oleiphilaceae; Oleiphilus; uncultured gamma proteobacterium
+3ffe42fb07d002c3a2bbd4e4876b78dd	5.0	3.0	Bacteria; Kiritimatiellaeota; Kiritimatiellae; Kiritimatiellales; Kiritimatiellaceae; MSBL3; uncultured bacterium
+4e569a411cfd20e27f89d231b691d3bc	31.0	25.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; ; ; 
+e053ffbf21bc73ea1948801c1acdd5df	0.0	47.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+799717f5ee22cca37027ef955146faa1	4.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); marine metagenome; marine metagenome; marine metagenome
+0e2a00623bdf3472b8f4f534976f37a6	0.0	6.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; KD3-93; ; 
+c53c7d16cc723c364f4e26481d469296	4.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Haliangiaceae; Haliangium; 
+75b4ffb58a99495f972fa08b6b78bfc5	0.0	14.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Salinirepens; uncultured bacterium
+4f5efd25dacb5d639316e7291ff6ff8b	8.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Neisseriaceae; Neisseria; uncultured bacterium
+4cbb095e89fab8c747d8f28f4e4a6ef6	14.0	25.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured Bacteroidetes bacterium
+c583320a0696f82fccf5d29e293c002c	22.0	63.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; NS11-12 marine group; uncultured marine bacterium; uncultured marine bacterium
+84487345e8aa83bce499d767a45e83b2	10.0	6.0	Bacteria; Cyanobacteria; Melainabacteria; Vampirovibrionales; metagenome; metagenome; metagenome
+dfe2b775ade3ed16a4e047322201ac8a	0.0	54.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Pedobacter; 
+85510cdc43af2e58f2253fce806a5a46	18.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ib; 
+1725a088fb71faf527c924311773113d	0.0	120.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Lutibacter; 
+675de378638ecb0f20b277733248342b	0.0	21.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Lutibacter; 
+291bc6c8ae3c52aa4aad93fc4b7a5d6c	0.0	12.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; uncultured; metagenome
+10b6939ebe40d98df58fc07f92bba289	1161.0	593.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Colwellia; 
+b252dc413f981b81b2a7c7d4183c3d2f	12.0	7.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; uncultured; uncultured bacterium
+f61e64488ea55ef4ec9008c239c8df98	4.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured Flavobacteriales bacterium
+ff6a6ec91876168c46cadd2a02cb6ad2	109.0	192.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Ascidiaceihabitans; 
+49af908bf7ecf1ed0e2f121823c6ad37	0.0	23.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Rhodanobacter; 
+2bddaf063a1a3ddccb511c5d431cb9fd	0.0	14.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingobium; 
+ee72435c54e9da1a45b04ab9074ce678	52.0	50.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Xanthobacteraceae; ; 
+99d43dd961a5502733b5eea8c5ebf00d	4.0	36.0	Bacteria; Proteobacteria; ; ; ; ; 
+224b1f1e7d9a6874775a6c4933450073	103.0	1251.0	Bacteria; Proteobacteria; ; ; ; ; 
+36602542caa215eaa04c5068fe515205	85.0	83.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; Lewinella; uncultured marine bacterium
+5befa169b5672330bd3965d4307f17af	4.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; env.OPS 17; metagenome; metagenome
+c3c2ce25cdd0424776e1791a8aa83c13	0.0	4.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Devosiaceae; Maritalea; uncultured alpha proteobacterium
+d92fd995c906b193643c289dece20f43	13.0	12.0	Bacteria; Marinimicrobia (SAR406 clade); uncultured bacterium 413004-H17; uncultured bacterium 413004-H17; uncultured bacterium 413004-H17; uncultured bacterium 413004-H17; uncultured bacterium 413004-H17
+af5a4159c426041e60cfc03ce87b36df	64.0	49.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; ; 
+acd971c3dbdc630fad7a3ed7f9d93e15	0.0	18.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; ; 
+1040e8aaec38d48d4a95fa1c3390a6c1	159.0	104.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ib; 
+0032f9498596693d022238b1a2c99704	21.0	26.0	Bacteria; Nitrospinae; Nitrospinia; Nitrospinales; Nitrospinaceae; Nitrospina; 
+54a7d2c9e0aa39ae9f734e40c7092fab	18.0	15.0	Bacteria; Proteobacteria; Gammaproteobacteria; HOC36; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+8df20522aa92813384adafdd96128fbc	7.0	7.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured bacterium; uncultured bacterium
+54ec6b2f290bb9ffd8f76b6bf7f32c20	30.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+b7b32d0e3941d3fd8a597b425b27a06a	0.0	11.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; uncultured bacterium ARCTIC37_F_06
+f19fda84a12829f2d6033c22da243230	302.0	2199.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Nitrincolaceae; uncultured; uncultured marine bacterium
+6e038528911e409d168b93df6e1073b7	196.0	512.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; NS11-12 marine group; uncultured marine bacterium; uncultured marine bacterium
+08c23f79246e1f94d8352af44be5bc0a	19.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+04a07c19c0e8b893189f815afd089bb0	4.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Cyclobacteriaceae; uncultured; uncultured marine bacterium
+63afe8e6aac58bf0d670a82ca5bc574c	7.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; ; 
+da6a7cba87e0895b9cbe6037b9bd8b3b	0.0	5.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Prevotellaceae; Prevotella 9; 
+63ffc596781727668a90d6da135a33b4	601.0	3645.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+7fd3fc3eb70370e3933c5b130196225b	62.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; Chitinophaga; 
+d42f71ee4f654658c98c1e7b7fdc1750	8.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Microscillaceae; Ohtaekwangia; metagenome
+d8653d1204a02243fb4500544f7101b6	6.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Azospirillales; Inquilinaceae; Inquilinus; 
+c6d53155dc70f1d525e55de6061d4cea	27.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Pedobacter; 
+79029fa983ec4eda60117a273a52cfc0	51.0	42.0	Bacteria; Proteobacteria; Alphaproteobacteria; Caulobacterales; Caulobacteraceae; Caulobacter; 
+60c3f919c670310e64fb79c6710bfd02	0.0	21.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Nitrincolaceae; uncultured; 
+b4b903f2d6db4796e4a0e0868168c219	5.0	0.0	Archaea; Nanoarchaeaeota; Woesearchaeia; uncultured euryarchaeote; uncultured euryarchaeote; uncultured euryarchaeote; uncultured euryarchaeote
+779b2421d89902a4dd81a8f83878c1b6	13.0	34.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+c9609a614a00671a6cb7331d180ba1a0	23.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Salinisphaerales; Solimonadaceae; Hydrocarboniphaga; uncultured bacterium
+fb1be430d2943ac61a9afc113282e5c5	47.0	33.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade IV; ; 
+32f047497ba33d5e3afddc7a6ef40105	6.0	7.0	Bacteria; PAUC34f; uncultured bacterium; uncultured bacterium; uncultured bacterium; uncultured bacterium; uncultured bacterium
+2b6dc9ebca1b08114b50b3cffad35478	8.0	0.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured archaeon
+1c0640727449285edabbda36ba0d8d8e	13.0	35.0	Bacteria; Cyanobacteria; Oxyphotobacteria; Synechococcales; Cyanobiaceae; Synechococcus CC9902; 
+d2c8b01a80e3ba42172f994289023881	17.0	9.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Nitrosomonadaceae; IS-44; uncultured marine bacterium
+a01583885429172b989fe4e58a330044	0.0	5.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; uncultured bacterium
+61e9a50f4346bb3a5b16179b8eca71fa	429.0	678.0	Bacteria; Proteobacteria; Gammaproteobacteria; SAR86 clade; ; ; 
+9c9b36f22d2b184eeecc4ee483b007d9	14.0	57.0	Bacteria; Epsilonbacteraeota; Campylobacteria; Campylobacterales; Arcobacteraceae; Arcobacter; 
+e768858f697d076facefe905bff3fcca	40.0	31.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Nitrosomonadaceae; Nitrosomonas; marine metagenome
+b95dd7293efa3e00ddaade8b04df91cd	94.0	290.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Rubritalea; 
+5f1163c312254df6de551d9b1a254da9	4.0	9.0	Bacteria; Lentisphaerae; Lentisphaeria; Lentisphaerales; Lentisphaeraceae; Lentisphaera; uncultured Lentisphaerae bacterium
+7de03a6b3ae110796b7145e01c01bed6	3.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfobacterales; Desulfobacteraceae; uncultured; uncultured delta proteobacterium
+9dd4cd1c642c44026eebb93ca23528c5	5.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; ; ; 
+39e1cd9f6eb95e185273e640e90838d4	0.0	8.0	Bacteria; Lentisphaerae; Lentisphaeria; Lentisphaerales; Lentisphaeraceae; Lentisphaera; uncultured bacterium
+aa49235f28ba29cb79bf7dcf96ffe2d1	4.0	8.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; uncultured bacterium
+fc6b2072c3637d733434917292c2a368	56.0	33.0	Bacteria; Marinimicrobia (SAR406 clade); uncultured eubacterium OCS307; uncultured eubacterium OCS307; uncultured eubacterium OCS307; uncultured eubacterium OCS307; uncultured eubacterium OCS307
+b6fb168021fe3281dccc38be07149991	23.0	27.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Rubritalea; uncultured bacterium
+10b754c618ecca32000959da2d5c9886	50.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ia; 
+398a2e93881ecaaec309309ade925817	0.0	6.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Hyphomicrobiaceae; Filomicrobium; 
+15e68564d419aeb967715703aeb33143	33.0	50.0	Bacteria; Proteobacteria; Deltaproteobacteria; NB1-j; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+6221c40ed6827853b7adcf4455ada9b0	10.0	14.0	Bacteria; Proteobacteria; Gammaproteobacteria; OM182 clade; uncultured gamma proteobacterium; uncultured gamma proteobacterium; uncultured gamma proteobacterium
+9ee8cfa3e2c4643f5de1f0f3151a9ed6	59.0	54.0	Bacteria; Marinimicrobia (SAR406 clade); ; ; ; ; 
+348bb73e43e5c23f7e171ffe032e6216	7.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; NB1-j; uncultured organism; uncultured organism; uncultured organism
+b9e59e89031b3b34283b583c1ffbfdd7	0.0	2.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; P3OB-42; uncultured delta proteobacterium; uncultured delta proteobacterium
+3d6687fcf4c467915480f15e7ead676e	0.0	10.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfuromonadales; Geobacteraceae; Geopsychrobacter; uncultured bacterium
+02ab883c30c1da01b499297013e01d48	0.0	2.0	Bacteria; Planctomycetes; OM190; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete
+81ba237350b51ef5741ed9266007d235	13.0	8.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Arctic97B-4 marine group; uncultured Verrucomicrobia bacterium; uncultured Verrucomicrobia bacterium; uncultured Verrucomicrobia bacterium
+c6c694db49029f9c74f00ef3fc23b4d1	3.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; uncultured alpha proteobacterium
+18d7f80dd2216322a2b8a7eed14b30f4	3.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; P3OB-42; uncultured bacterium; uncultured bacterium
+fc76636cb92c58c59e9f42799cd2ec4a	0.0	17.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured marine microorganism
+c430ea492a2f9b35fb79c084901fdcf6	150.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade II; ; 
+1f9d97b07aa566b3b35536b0e7302bb0	40.0	61.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+de735618dfe6fac7a2661b26df096b02	32.0	29.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured archaeon
+9051baf54c36a424c82de4f1f261b939	0.0	44.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; 
+b1049511f8b1d780b24222d89e86d4c2	14.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Gammaproteobacteria Incertae Sedis; Unknown Family; uncultured bacterium; uncultured bacterium
+3ec1bfa57d6677b243f903bbd3a9e13d	7.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Myxococcaceae; Myxococcus; 
+3766345c1716aec608d8b2307bc9d263	0.0	9.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured marine bacterium; uncultured marine bacterium
+6d31668512483c6640ec6e4c7030e129	0.0	5.0	Bacteria; Planctomycetes; Phycisphaerae; Phycisphaerales; Phycisphaeraceae; JL-ETNP-F27; uncultured bacterium
+9541c0e1adb8e9f3042b6ef0090c9551	4.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; uncultured; Chitinophagaceae bacterium BLB-2F4-1
+e750785f4ec0290b5b57ccbb9f86296c	0.0	7.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; uncultured; uncultured Bacteroidetes/Chlorobi group bacterium
+2501dae37a88430b9f43bd54b3f7e386	0.0	10.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Cellvibrionaceae; Cellvibrio; uncultured bacterium
+cc9c508989b2ef154139555faf273826	0.0	31.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); ; ; 
+e42e54374ced0e0901b3492bf7e26fd9	27.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Saccharospirillaceae; Oleispira; 
+dbbfb08d15f48f9778d531b1cc56b930	7.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bradymonadales; uncultured delta proteobacterium; uncultured delta proteobacterium; uncultured delta proteobacterium
+5b183a14ae2252da51a03097e28e284d	32.0	30.0	Bacteria; Proteobacteria; Gammaproteobacteria; HOC36; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+caefa59530fe3e2f4eff1d86552659c6	6.0	8.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bradymonadales; uncultured delta proteobacterium; uncultured delta proteobacterium; uncultured delta proteobacterium
+086db9a32dfeb701e45e20cc30a6492a	2176.0	5523.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+4a7917b3378629cb23794df893b350a2	0.0	33.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured Flavobacterium sp.; uncultured Flavobacterium sp.
+46edd9a681a1c394007859666f76d477	70.0	195.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Luteibacter; 
+01b90d81fd795d483309ec67acf917a5	4.0	17.0	Bacteria; ; ; ; ; ; 
+82470d9ab679d28b17deac8d09d74025	23.0	21.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured marine archaeon
+daf30703461441996a5931a4858fc53e	8.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Halomonadaceae; Salinicola; 
+245b3e700f62405c3ccb8ec617a2409a	7.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; 
+cb3c9bae5656749dca9068e16c962c66	12.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; SAR86 clade; ; ; 
+c5e09db0eecbf5db9483cf3278206a7e	73.0	116.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Ulvibacter; uncultured marine bacterium
+43207165d765bdd6edde112306fdca3a	1446.0	1984.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; uncultured; 
+7a8972b393ef87a29afeb221f90254d3	86.0	252.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+27987e4c312a835743bd892d0ee6cfd0	72.0	90.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; 
+236b2a6d36cfefc5ec60e078d6f2082f	0.0	8.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured marine archaeon
+70012c773d69336cf78d650e26c2236e	0.0	21.0	Bacteria; Marinimicrobia (SAR406 clade); Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06; Marinimicrobia bacterium SCGC AAA160-I06
+0b19e68de77f7e3e7818efede8850ce7	0.0	9.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; uncultured; uncultured Lutibacter sp.
+cf2752910266aa9986d441f815389f2c	21.0	69.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Psychromonadaceae; Psychromonas; 
+54fd06bbf572d2ede42a9f540a50bb64	0.0	10.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Moritellaceae; Moritella; 
+6141f9a86a1069aeb0d88459f438c089	0.0	6.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Bacteroidetes BD2-2; ; 
+f07742b99196a9dd9416e1deba413b7c	105.0	96.0	Bacteria; Proteobacteria; Alphaproteobacteria; Parvibaculales; OCS116 clade; ; 
+df2b103a67a63e63aa96c7878a7bf5b6	9.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Azospirillales; Azospirillaceae; Azospirillum; 
+39263d3ed0ca942b77e8482f9cee7fcd	35.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; Ectothiorhodospirales; Ectothiorhodospiraceae; uncultured; uncultured marine bacterium
+9485b25a0c921cb845dc9c4142ae4a0f	0.0	7.0	Bacteria; Firmicutes; Clostridia; Clostridiales; Family XI; Parvimonas; 
+4cc9cc33ceaf865205d249986638b014	6.0	19.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+ba3f7ff855a5a4761432db829b538697	19.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Alcanivoracaceae; Alcanivorax; uncultured Alcanivorax sp.
+6fb33b8e46d65bc512cc109ced8963c3	13.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; ; ; ; 
+6c02530662cdbde9dd670689ae32818d	0.0	8.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured bacterium
+c130baecd35f08a8f79bdfbdc0abb6c0	28.0	21.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium; 
+3179789dd5bc82ead4c4d25f9b405e08	120.0	197.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; uncultured; uncultured deep-sea bacterium
+43bf2e05902a9f38eb400647f5b1e0a0	0.0	58.0	Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio; 
+d232a23c0b971522d9095856d838dfb6	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Spirosomaceae; Spirosoma; 
+2545e6e92fe5e577798394b665fb9055	0.0	25.0	Bacteria; Actinobacteria; Thermoleophilia; Solirubrobacterales; 67-14; metagenome; metagenome
+ed612e1033e3f2631d8d1108ac4ef4e4	12.0	11.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS7 marine group; uncultured organism; uncultured organism
+915f7a29ec546d35160b170ee5e9c31c	83.0	550.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+f857c8729b7922d09eb2aa6a5202644f	3.0	7.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured Bacteroidetes bacterium; uncultured Bacteroidetes bacterium
+f4fe94e3ed0df87afaf1df42f0b48d54	15.0	7.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); uncultured bacterium HF0200_39L23; uncultured bacterium HF0200_39L23; uncultured bacterium HF0200_39L23
+d829bee4984f82ffc2453212157caf96	17.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Xanthobacteraceae; Bradyrhizobium; 
+b38ca1200c885ccbb28bbe12079c2dc2	0.0	22.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; 
+9115212cfd371d71d0b595531dcd78c3	16.0	116.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Psychromonadaceae; Psychromonas; 
+d6efd2da2728fd74ded268122ee05036	18.0	50.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+2a3464cbabfbd6d6c753a7fa1bf95202	10.0	40.0	Bacteria; Actinobacteria; Actinobacteria; Pseudonocardiales; Pseudonocardiaceae; Amycolatopsis; Amycolatopsis saalfeldensis
+775225d70b3ba7cd64d29ac389305846	15.0	22.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; AEGEAN-169 marine group; uncultured alpha proteobacterium; uncultured alpha proteobacterium
+283076d8fc0bc56af6b847bab7e6aa09	10.0	0.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; 
+22b545cd4650317c5335dc492e3bf8cf	36.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Caulobacterales; Caulobacteraceae; Brevundimonas; 
+8cebbeaa07c16425c0288860191ecccc	0.0	2.0	Bacteria; Proteobacteria; Gammaproteobacteria; ; ; ; 
+7ff01908e1d8d187672c7dbc4ecdd0ec	119.0	92.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+2145f217d0912812c475d6ffa64131d5	98.0	230.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Planktomarina; 
+c08fe22577d0025ef85c3783ef16228a	107.0	51.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; 
+fe2714c37b698c510451acfefe5b2d42	0.0	39.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; ; 
+cf3426a7a66bb5ddf18e0a44fbdb6a12	13.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Cytophagaceae; Cytophaga; metagenome
+c98f01664c8b5c71736c631c6fdb6c80	0.0	20.0	Bacteria; Proteobacteria; Gammaproteobacteria; Steroidobacterales; Woeseiaceae; Woeseia; uncultured marine microorganism
+a38be80fcf8fa00120091d5ee5b94183	33.0	23.0	Bacteria; Chloroflexi; Dehalococcoidia; SAR202 clade; ; ; 
+84cec816b1ff951af7b866347fc9ed47	173.0	204.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); ; ; 
+e3aca7c4636f2b48bd082b90f2b0de80	39.0	85.0	Bacteria; Proteobacteria; Deltaproteobacteria; Oligoflexales; 053A03-B-DI-P58; ; 
+ce3c6e0bc851f0bf9365e075107dcacb	22.0	49.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured marine bacterium
+78d4caa683937a0ef9ef35cac54f9a16	0.0	5.0	Bacteria; Proteobacteria; Gammaproteobacteria; Legionellales; Legionellaceae; uncultured; uncultured gamma proteobacterium
+f970cc9765c2f6ce2e1b0df9af2fbce7	0.0	3.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; ; ; 
+61130b509f470ad6647d89fecd001fa7	220.0	54.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bacteriovoracaceae; Peredibacter; uncultured Peredibacter sp.
+49cee6ad9495d3cbb1779d5c5904b0da	5.0	9.0	Bacteria; Proteobacteria; Gammaproteobacteria; Gammaproteobacteria Incertae Sedis; Unknown Family; uncultured marine bacterium; uncultured marine bacterium
+e4d02c8b70efe0ca922f8a1d36263a4a	0.0	23.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS4 marine group; uncultured Bacteroidetes bacterium
+7daf6be22e70630b4e68097f415857ca	14.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Polyangiaceae; Sorangium; uncultured bacterium
+a64af2021f9cd91e3b168e7ca3469ca7	5.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Verrucomicrobiaceae; uncultured; 
+c30cad9fcfd8f81ab1ad5e4fd7791450	2.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Cyclobacteriaceae; uncultured; uncultured Cytophaga sp.
+53ed53e9fc62bca9afadb051a825929b	353.0	522.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS4 marine group; 
+a30697dd9e9f5f6cc44fac2a2869b6e4	0.0	15.0	Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Vibrio; 
+63749f93fa752451b71632e68523bb95	0.0	96.0	Bacteria; Fusobacteria; Fusobacteriia; Fusobacteriales; Leptotrichiaceae; Sneathia; uncultured bacterium
+a48b62f6867cadba3832a7f285025180	7.0	8.0	Bacteria; AncK6; uncultured bacterium; uncultured bacterium; uncultured bacterium; uncultured bacterium; uncultured bacterium
+8ed6bda0d75e30bc17506e81e0300abf	0.0	5.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured bacterium
+4583fd18d2f1cd6a78f626db363e5d24	266.0	171.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; AEGEAN-169 marine group; uncultured alpha proteobacterium; uncultured alpha proteobacterium
+d6dac27cf052a463a630c43f8ffe5174	15.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Kaistiaceae; Kaistia; uncultured bacterium
+b7279007573da839dc7d022d326a795c	443.0	400.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Colwellia; 
+f7447c8e079023f4f2579d8580575dd3	52.0	0.0	Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus; Lactobacillus iners AB-1
+31354c3c6b98c62f6b7b4efa5bac6dc8	16.0	29.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; ; ; 
+63fad66953f8eb4deefe8b50f3a233e2	0.0	2.0	Bacteria; Planctomycetes; OM190; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete; uncultured planctomycete
+82f1c87171195a188ff40414b053e837	0.0	19.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; AEGEAN-169 marine group; uncultured alpha proteobacterium; uncultured alpha proteobacterium
+bddd9071ddb26eb16c0e4f9966614caf	16.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Kineosporiales; Kineosporiaceae; Kineosporia; 
+7a71b81ed0c9b6940572c0a64aba1b29	0.0	7.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidetes VC2.1 Bac22; uncultured bacterium; uncultured bacterium; uncultured bacterium
+f4eff3df0748df0bd9c641c08cb64adc	0.0	15.0	Bacteria; Actinobacteria; Thermoleophilia; Solirubrobacterales; Solirubrobacteraceae; JCM 18997; metagenome
+f7579eb4d7e31225af1f7d48a7d05599	3.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured delta proteobacterium; uncultured delta proteobacterium; uncultured delta proteobacterium
+039a4b4107746014499da0e40301e960	10.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Haliangiaceae; Haliangium; uncultured bacterium
+6ec4639c0972739ba0e02306d1eb9273	24.0	38.0	Bacteria; Proteobacteria; Gammaproteobacteria; Tenderiales; Tenderiaceae; Candidatus Tenderia; uncultured gamma proteobacterium
+afa2c317c14cb68c7fb89ab577140169	154.0	211.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; 
+c781a585778160c5707cf7529dc20e9b	50.0	56.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured marine bacterium; uncultured marine bacterium
+a4744f8a0c78f987f2e86299ed25ac87	103.0	1047.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; uncultured bacterium
+3a71b16155fdad56882f5e0c73b56ff9	9.0	16.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Marinifilaceae; uncultured; uncultured marine bacterium
+1a67cc29ddc60022d6a215e0f5066194	9.0	0.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured marine archaeon
+045c34af23838b3b427b54185d2dd18b	0.0	3.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; ; ; 
+23b654cbbea7606890cffdf88b65101f	89.0	75.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ia; 
+1ae61612934ca8385faf93a9775bfef0	15.0	36.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Prolixibacteraceae; Roseimarinus; 
+577ab2fd63927a467fc472aa93939c74	30.0	30.0	Bacteria; Proteobacteria; Alphaproteobacteria; Caulobacterales; Hyphomonadaceae; Hellea; uncultured marine bacterium
+95b466fa80e0bd503d20b61493d1ec48	4.0	14.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; marine metagenome; marine metagenome; marine metagenome
+437b23e68b8928651854a4174a223cd0	6.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured delta proteobacterium
+f05e692f64bb65d7a4b976dc01748d64	20.0	27.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; OM60(NOR5) clade; 
+17f04900bc23e4d8bc28bb77659cd448	2169.0	2233.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured marine archaeon
+eadcde9d203357f3d2c417e8a1276369	57.0	51.0	Bacteria; Proteobacteria; Gammaproteobacteria; SAR86 clade; uncultured Oceanospirillales bacterium; uncultured Oceanospirillales bacterium; uncultured Oceanospirillales bacterium
+892bada2dca1eb05af3497b221241174	0.0	47.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Crocinitomix; uncultured Crocinitomix sp.
+c831f791969b864cfb57308ae7357f3d	15.0	22.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; hydrothermal vent metagenome
+5c5e562a80a99f69066954262cb6ab12	0.0	5.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; A714019; uncultured Verrucomicrobia bacterium
+5e5e5dc5760b14168fbddc0113a314e4	0.0	3.0	Bacteria; ; ; ; ; ; 
+8e22ba1c20e8aef2d81a1d6b45e10de8	0.0	19.0	Bacteria; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Fastidiosipila; unidentified
+4acad82001e29100ff77bb6a31ad5d85	0.0	5.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; uncultured; Chitinophagaceae bacterium BLB-2F4-1
+23da176deb33932f43515cc238d926b5	74.0	237.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; NS11-12 marine group; ; 
+4a1e5e44473fcf41f308288148927289	0.0	2.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Neisseriaceae; uncultured; uncultured bacterium
+8188598a9b197d172cfc57da67efb2ab	107.0	199.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+e710ba8eeb660e6dff2f183bb30d5c0b	33.0	20.0	Bacteria; Planctomycetes; OM190; uncultured Planctomycetaceae bacterium; uncultured Planctomycetaceae bacterium; uncultured Planctomycetaceae bacterium; uncultured Planctomycetaceae bacterium
+78fd66d99d6b013e4426236a89124d6a	10.0	19.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Mucilaginibacter; 
+a0966d0fa3605aab65945dc7050531ad	9.0	21.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; 
+3faf267184168f31c8421ae67223a7fe	0.0	2.0	Archaea; Nanoarchaeaeota; Woesearchaeia; marine metagenome; marine metagenome; marine metagenome; marine metagenome
+892a0fc53b26d6a2c193d145b2464da7	48.0	57.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Weeksellaceae; Chryseobacterium; 
+7f5b76912af8cb3a82bc97a54a25313e	87.0	63.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; uncultured marine bacterium
+62eeaee79f9426612f447abb6473190b	19.0	4.0	Bacteria; Planctomycetes; Phycisphaerae; Phycisphaerales; Phycisphaeraceae; JL-ETNP-F27; uncultured planctomycete
+1b21d2b71f96b4a59b392aee9aa1d655	86.0	178.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; Pseudoalteromonas; 
+c59d58783e03253d86940ad37bf3d2aa	0.0	13.0	Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; Serratia; 
+6fbfd7a942ccf4066297155037dc0bf1	31.0	45.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Alteromonadaceae; Catenovulum; Catenovulum maritimum
+760791b9c80721e93c5b88925df8c1f4	20.0	12.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bacteriovoracaceae; ; 
+52fa0be0fa1e0a1c4a8497ecef766542	0.0	10.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Psychromonadaceae; Psychromonas; 
+8759500b7ef6449d34e8e39642e202fb	5.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Blfdi19; uncultured bacterium; uncultured bacterium
+65eebc0b6bf0d8e23852d1f4d2ed6e93	25.0	28.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured marine bacterium; uncultured marine bacterium
+bcd599d42ecce5fff9170bbdca8cc097	0.0	41.0	Bacteria; Actinobacteria; Actinobacteria; Propionibacteriales; Nocardioidaceae; Aeromicrobium; uncultured bacterium
+56109ff3cf47780b534b7251761dc46e	8.0	10.0	Bacteria; Actinobacteria; Acidimicrobiia; Actinomarinales; Actinomarinaceae; Candidatus Actinomarina; uncultured marine bacterium
+8bd43ab8fc17bc0f4ecc8d4ea412fa10	19.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Nitrosococcales; Methylophagaceae; Methylophaga; 
+fea5183f090a4a0fe3a5f0d2c9839653	78.0	91.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Methylophilaceae; OM43 clade; 
+594061ed4e2ea378773c474cd4803c29	16.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Micrococcales; Promicromonosporaceae; Promicromonospora; 
+1784af3ab9c4648a7072d6feeb47f6da	0.0	6.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Marinifilaceae; uncultured; uncultured bacterium
+acdc4f302ddfcdb282f60e732b1e2737	610.0	718.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Rubritalea; 
+ed2705c46014388e410c33059f14abbf	0.0	64.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Prevotellaceae; Prevotella; 
+b94cee67c25539a4525662c240ae093d	0.0	18.0	Bacteria; Proteobacteria; Gammaproteobacteria; Ectothiorhodospirales; Ectothiorhodospiraceae; uncultured; uncultured marine bacterium
+26f173c04574871aba8876838e2d9e61	0.0	17.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Novosphingobium; 
+01b921fe01acc5d005f66a1c9b3110df	990.0	1467.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; uncultured marine archaeon; uncultured marine archaeon; uncultured marine archaeon
+96df01b333627ad0818f8a5c39a9c536	23.0	0.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+452ffc04ae15275b0dc9d7f10cb9b41e	15.0	6.0	Bacteria; Proteobacteria; Alphaproteobacteria; uncultured; uncultured bacterium KM3-47-A6; uncultured bacterium KM3-47-A6; uncultured bacterium KM3-47-A6
+9fc59a188dd4b0b5e2ce1ecc541631bc	0.0	10.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; 
+3a258232ff0afe973a1687226860c4c9	0.0	18.0	Bacteria; Proteobacteria; Gammaproteobacteria; Beggiatoales; Beggiatoaceae; ; 
+b4b491e957ab54c16224f12115820d88	77.0	155.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; hydrothermal vent metagenome; hydrothermal vent metagenome
+183b1085ec7d9b20001265937f063710	0.0	13.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Pseudofulvibacter; uncultured Flavobacteriaceae bacterium
+6829e39b08add1564fc5f1e6ab05c8a9	15.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; Verticia; metagenome
+e3f55fdd0aaf3c8f5eead13b49547f66	10.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Halomonadaceae; Halomonas; Halomonas zincidurans B6
+2ab1db932f63447b1e5381a006e395fa	30.0	19.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; MB11C04 marine group; 
+495c1bd1608a1dad54d3e2824ce899ef	4266.0	5513.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+6ef30ad70950c7994898405da4aa1f2a	30.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Propionibacteriales; Nocardioidaceae; Aeromicrobium; 
+803e9dc8e8c4c4fd8c7e399c8eb89a5c	21.0	15.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS7 marine group; uncultured bacterium; uncultured bacterium
+e15e1ea2ea1f7a406d289b90304a21a0	7.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Micropepsales; Micropepsaceae; uncultured; metagenome
+ab1520df28207766f8f8bc10b2f35f74	56.0	52.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; uncultured; 
+77bab75a5c0e3c10fec1f8f52aceb37f	149.0	745.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Flavicella; uncultured bacterium
+45f68b5e02f96346dd3821c205e0ef56	15.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingobium; metagenome
+4bb684e7960675e87f5a42973202df18	0.0	12.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Weeksellaceae; Chryseobacterium; 
+c25f24a5f6ac483d61b43df601821893	7.0	85.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Lutimonas; 
+b331a0d2e4e550b00b640b85fe76bb23	20.0	13.0	Bacteria; Patescibacteria; Gracilibacteria; JGI 0000069-P22; uncultured bacterium; uncultured bacterium; uncultured bacterium
+d15bd1dcb9de71d7452648673a59f5b8	0.0	42.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Pedobacter; 
+4c9f2db04eb4d7fee5eea7c776b2f08d	13.0	7.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; Blastopirellula; uncultured bacterium
+fc8326366c7b103efc4a23d333d8c791	26.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Kangiellaceae; Kangiella; 
+2b33927d95f6dce198f1a05db2a78d44	16.0	0.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; uncultured bacterium
+458df83c627942cd319539483ee3742f	19.0	14.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); uncultured bacterium HF0500_03A04; uncultured bacterium HF0500_03A04; uncultured bacterium HF0500_03A04
+9ef18bf49692b8aa487c27990528fcf9	8.0	0.0	Bacteria; Marinimicrobia (SAR406 clade); ; ; ; ; 
+239d3af5e6b7b40e9ff229ba258348b3	49.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Pedobacter; 
+e0d8703b786bfe2788082bb0dcfd3976	0.0	3.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Opitutaceae; Diplosphaera; 
+36de22d2d3786d3173030c01891841d3	4.0	5.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Schleiferiaceae; Schleiferia; uncultured Bacteroidetes bacterium
+6850ce35d9f55693aa55d50a05d8d826	0.0	28.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Idiomarinaceae; Idiomarina; 
+b59663fd23553a90c237e6b94095cfc3	0.0	14.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Prevotellaceae; Prevotella 6; Prevotella sp. S7-1-8
+14b9416d06d7c1ba36305efaa7f4a883	0.0	2.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rickettsiales; AB1; ; 
+33e3d7409266a86935f571199ff9cc58	1290.0	1824.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+058aeb6b25d883ec4ce914ae6d601391	8.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Salinisphaerales; Algiphilaceae; Algiphilus; 
+0a32c84fa3ef1b0ebbc08d38cad57974	89.0	176.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured Bacteroidetes bacterium
+26a20a8ab2775fbd67191c36f1becfce	0.0	2.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rickettsiales; SM2D12; uncultured bacterium; uncultured bacterium
+3faeada37f4923c2b909d33003f9643b	7.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured marine bacterium
+0cfea841ea39af3349927240564285a1	44.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Idiomarinaceae; Idiomarina; 
+d663d088a943627b787c656e58c833e4	28.0	31.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; 
+8c5d35895476c47f7961bfe56e58a3fd	18.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; ; ; 
+fa90bb34c52171e2fc7a082d22652a4c	12.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Steroidobacterales; Steroidobacteraceae; Steroidobacter; metagenome
+0cc9c55d721f5f3d43ec8bc2fe132d0e	149.0	158.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; ; 
+1c6cedfbffe59672fbae39404ddb0147	0.0	9.0	Bacteria; PAUC34f; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+ca6c2b3b469c08212142e8821c65882a	61.0	149.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; Massilia; 
+a11f6576ed07dda68f4187d8839b584b	0.0	12.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Flavobacterium; 
+cf67533560255a808db11ae8ac74e3e4	180.0	172.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; ; 
+c2bb933d68536713181cd4fb3ec8c5d1	134.0	488.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+036fe49922fc3db139d76ca4c47d1c17	0.0	23.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Tenacibaculum; 
+8be9f5d14916bf8191e20717e92c2d8d	4.0	0.0	Bacteria; ; ; ; ; ; 
+986f728809055958ffec6ad72a0470ff	142.0	632.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Algibacter; uncultured bacterium
+030397a368ee38e3c7b8816fd177f6b4	17.0	36.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Polaribacter; uncultured bacterium
+167177802ba8c61c6caaaf29113a0ff0	0.0	30.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Rhodanobacteraceae; Dokdonella; uncultured Dokdonella sp.
+e1c7d97fe13e9127d225d76a1feb8c78	69.0	22.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium; 
+b3d73b5df65928a4f8c59f2eb7dcd58b	23.0	17.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Roseibacillus; uncultured marine bacterium
+150e4ab1c700bcf62ea89e118f5621a8	9.0	32.0	Bacteria; Proteobacteria; Gammaproteobacteria; KI89A clade; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+43a97500dc7c9cc86c9417b1ef9e817b	3.0	0.0	Bacteria; Marinimicrobia (SAR406 clade); ; ; ; ; 
+7a00a80a454e1e6b3c2ce199f8f2a8cd	16.0	7.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; Filimonas; 
+932c1eb16e4bd84bde323fc3d112f0b9	275.0	1925.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+65d86d68fdf396099b32ef6d949892b8	0.0	34.0	Bacteria; Acidobacteria; Acidobacteriia; Acidobacteriales; Acidobacteriaceae (Subgroup 1); Terriglobus; uncultured bacterium
+d6ac38b072bcfa653584192186d34a66	79.0	101.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+2c674dd5dcc493fc0bad82c12f46397e	777.0	603.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ia; 
+0d20658811c1d615ba21e9aa99bb818f	0.0	13.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; Sphingomonas glacialis
+deeb9df218ecfe1b1259dd65a2cf43bc	0.0	2.0	Bacteria; Proteobacteria; Deltaproteobacteria; Oligoflexales; 0319-6G20; ; 
+a6c9d9e2159c39bcae3c6fa95fca503f	35.0	97.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; Chitinophaga; metagenome
+bffd79a65e1cd0c98d984f7df8f1ed09	0.0	10.0	Bacteria; Firmicutes; Negativicutes; Selenomonadales; Veillonellaceae; Megasphaera; 
+f936cc0095df2ce79b485df5f7fe631a	2131.0	4644.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Tenacibaculum; 
+5dd9b4c4fb4de32a93a6e834dde0faa2	14.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; uncultured; metagenome
+c8649885cff53efe6f17fde5f897aae2	9.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured delta proteobacterium
+0fd35b5eb1fa4701fd522ccabe44cffc	3.0	2.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; Pelagicoccus; uncultured marine bacterium
+d9ac240c29be74f52a29fd9cb29d22bc	6.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured bacterium
+bf6852589d98ed161ee71db46d2fc434	35.0	88.0	Bacteria; Proteobacteria; Gammaproteobacteria; Francisellales; Francisellaceae; Francisella; uncultured bacterium
+2ea0ae7a46fdf3b091edc5449a40e332	116.0	237.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Methylophilaceae; OM43 clade; 
+31f24c0e3e16424592a91c6b4756c393	22.0	49.0	Bacteria; Proteobacteria; Gammaproteobacteria; OM182 clade; ; ; 
+4804669ff00c7ec682696fdd03d60923	0.0	9.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Arenimonas; 
+4bbec3bb723375416616a87d785ac74a	2452.0	5476.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Amylibacter; 
+598a4d7fc66f2fe2315a76eeb09f4ff6	0.0	5.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfovibrionales; Desulfovibrionaceae; Desulfovibrio; Desulfovibrio frigidus
+96e908c78d782f038fe5731fff139153	0.0	2.0	Bacteria; Chloroflexi; Dehalococcoidia; SAR202 clade; marine metagenome; marine metagenome; marine metagenome
+afab652223907a261807ec755bf2d0c5	29.0	12.0	Bacteria; Actinobacteria; Actinobacteria; Streptomycetales; Streptomycetaceae; Streptomyces; 
+1e3823aacc248e6ee16b4dd90973a7e2	23.0	14.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; uncultured; 
+5ac48f1cd4727a11d81457fc680d0aef	416.0	406.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+a4d7d5a16d13686c00c3e020c5c63ecb	166.0	117.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; 
+bf10e51940dbdbe72b5eec0d106e06c7	13.0	66.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Halomonadaceae; Cobetia; 
+41da1f67db882e54aa2020701805031e	23.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Xanthobacteraceae; Rhodopseudomonas; uncultured bacterium
+51d738cc489d1ae622336bc2d6415cf4	0.0	9.0	Bacteria; Armatimonadetes; Fimbriimonadia; Fimbriimonadales; Fimbriimonadaceae; Fimbriimonas; metagenome
+6cbe27b7fc5eed8d6daed17ae455f1d6	1775.0	2856.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Porticoccaceae; SAR92 clade; 
+7f34fe80594ff46667b6f3875fddb600	13.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Devosiaceae; Devosia; 
+2ed7d51e061664183c05fbbb56c0787e	13.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Pseudohongiellaceae; Pseudohongiella; 
+a6145a6964185a51baede5b3d825cb6c	0.0	2.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; uncultured marine bacterium
+e0daf7fb23a3e9053c033115b7fd9674	309.0	434.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; Luminiphilus; uncultured marine bacterium
+b5fb61584fb688918ec8c5431cdd4547	18.0	11.0	Bacteria; Planctomycetes; OM190; marine metagenome; marine metagenome; marine metagenome; marine metagenome
+f933ac5689ee56308dca08f62acae4ce	69.0	72.0	Bacteria; Proteobacteria; Gammaproteobacteria; OM182 clade; ; ; 
+62e99fadc610f0c5d2679bf9a83d2954	97.0	213.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+fec9300a69b67b0e8c5795489ed467e2	88.0	120.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+d2141ff5e908b180a353ec514aefef7b	14.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Saccharospirillaceae; Saccharospirillum; uncultured bacterium
+267b439d18a307df41812b0e32bbd7f4	6.0	8.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+79bcde8a60373340f3479e41ee5ec5f9	13.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rickettsiales; Rickettsiaceae; uncultured; uncultured bacterium
+e5bd399c0cee633e40579b334e34d345	3.0	6.0	Bacteria; Planctomycetes; OM190; uncultured Planctomyces sp.; uncultured Planctomyces sp.; uncultured Planctomyces sp.; uncultured Planctomyces sp.
+e5442e304b76fc5a09078d019536d903	0.0	6.0	Bacteria; Proteobacteria; Gammaproteobacteria; Diplorickettsiales; Diplorickettsiaceae; Aquicella; 
+d6b2915163c7dad22c41937bca70a3c8	167.0	193.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; 
+11cbeb9669528981aa310e1e95d628a5	5.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; uncultured; metagenome
+7cc51e58a341298a5439154ace967b6e	77.0	161.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+c4b8585c182c80585c1ef93a0163dfa4	13.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ib; 
+e147b59672d5b3fd45f1892b61ca78e3	5.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfobacterales; Desulfobacteraceae; Sva0081 sediment group; uncultured delta proteobacterium
+acd7f78505f2218fecdeddf042e7d6fa	0.0	3.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured bacterium
+3642f5233b63192e2c117624c71bcdde	0.0	2.0	Bacteria; Proteobacteria; Alphaproteobacteria; ; ; ; 
+700730a71ad6d00b5fc2b1dd38b6ef46	7.0	3.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; 
+3daf1be9fe5fe47c51b69a4af98e35c7	0.0	14.0	Bacteria; Proteobacteria; Gammaproteobacteria; Vibrionales; Vibrionaceae; Photobacterium; 
+5891c3b6eec84facda316068dcfb6943	4.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Magnetospiraceae; uncultured; uncultured bacterium
+4f1ddb6e7d5befadf0b9ab146d9d037b	0.0	10.0	Bacteria; Actinobacteria; Coriobacteriia; Coriobacteriales; Eggerthellaceae; DNF00809; Coriobacteriales bacterium DNF00809
+cc298b774b2f449d251ca2ce546612df	0.0	7.0	Bacteria; Marinimicrobia (SAR406 clade); ; ; ; ; 
+a099b394e1c5bf8da4ea283c5f27fd68	36.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; Sphingobacteriaceae; Pedobacter; 
+74511abd5b7ec52fa27eeced38626a34	3.0	6.0	Archaea; ; ; ; ; ; 
+43fddf1528d4a98928fd8c3a8ac23bfd	43.0	160.0	Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas; 
+bd7bb5b11e9ccba1afbf45d9e0d5808a	6.0	0.0	Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus; Lactobacillus reuteri
+8322fc388ba951415891ae08108f3b22	72.0	71.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ia; 
+51072144763d6f2480df1cad15babda4	0.0	6.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Octadecabacter; uncultured marine bacterium
+3b4649dc5ad5235e5b71f0fd67a527bd	8.0	5.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; P3OB-42; uncultured myxobacterium HF0130_06F04; uncultured myxobacterium HF0130_06F04
+7d90d5ed128c6d4519c33e4e5b4deda9	348.0	614.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; uncultured marine bacterium
+ceaafa0c87adb57b1d512e45c08e6115	99.0	190.0	Bacteria; Proteobacteria; Gammaproteobacteria; ; ; ; 
+e71c86754bc9e5d7e0aa0f297bd99dda	25.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; 
+dcbed9179bd68e5b7b223fa56b4bb429	0.0	9.0	Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Marinifilaceae; Marinifilum; uncultured marine bacterium
+3385a74dea527023428ed0d673791203	74.0	39.0	Bacteria; Planctomycetes; Phycisphaerae; Phycisphaerales; Phycisphaeraceae; CL500-3; uncultured marine bacterium
+a64076cabd8c26d71cda0647dbed9ca0	26.0	0.0	Bacteria; Armatimonadetes; Fimbriimonadia; Fimbriimonadales; Fimbriimonadaceae; ; 
+0925578cc92c0e22edc6d442fe420d58	6.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; uncultured marine bacterium
+6504902a1632c76ab0f7ee1b473fa491	10.0	8.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; 
+d67c365dce47104f34fc44ca059d411e	34.0	0.0	Bacteria; Acidobacteria; Acidobacteriia; Acidobacteriales; Acidobacteriaceae (Subgroup 1); Edaphobacter; 
+3fc1274ac08d7903e2005dad3f822ab8	8.0	9.0	Bacteria; Proteobacteria; Gammaproteobacteria; Salinisphaerales; Salinisphaeraceae; Salinisphaera; 
+b1937d4985b612a6e9c822da87bdf76e	23.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Micrococcales; Microbacteriaceae; Clavibacter; Clavibacter michiganensis subsp. michiganensis
+ba1f37dc6471273c1ab134a552737870	10.0	26.0	Bacteria; Bacteroidetes; Bacteroidia; Sphingobacteriales; NS11-12 marine group; uncultured bacterium; uncultured bacterium
+32137e685481a2029dad953ddc0431df	38.0	28.0	Bacteria; Proteobacteria; Gammaproteobacteria; Oceanospirillales; Pseudohongiellaceae; Pseudohongiella; 
+a619caa5848df9525980658feb62675b	24.0	16.0	Bacteria; Planctomycetes; Planctomycetacia; Planctomycetales; Rubinisphaeraceae; uncultured; uncultured organism
+39fa7989820ffdd38a71551d9949728c	0.0	4.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; Aureispira; 
+d590c23ecc6ae2ebb1cd5619aef7b97b	26.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; ; 
+b5feac7c147cad334ec0b6e2652ca38f	130.0	230.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Opitutales; Puniceicoccaceae; Lentimonas; uncultured marine bacterium
+528b28a0b0ed12e5b3455da14ec0823e	8.0	0.0	Bacteria; Chloroflexi; Chloroflexia; Thermomicrobiales; JG30-KF-CM45; uncultured Thermomicrobium sp.; uncultured Thermomicrobium sp.
+539f08db0d2d51fa6130c1d3805a011b	7.0	6.0	Bacteria; Proteobacteria; Deltaproteobacteria; PB19; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+b093534e7b9c5927e310a7d13a781bd9	8.0	4.0	Bacteria; Proteobacteria; Deltaproteobacteria; ; ; ; 
+28ed18165bb2d64e00a867d9aa5bea11	0.0	11.0	Bacteria; Marinimicrobia (SAR406 clade); Marinimicrobia bacterium SCGC AAA003-E22; Marinimicrobia bacterium SCGC AAA003-E22; Marinimicrobia bacterium SCGC AAA003-E22; Marinimicrobia bacterium SCGC AAA003-E22; Marinimicrobia bacterium SCGC AAA003-E22
+febb19ff2eb08a5e4ae9c6fa72eab8a0	0.0	44.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; Burkholderia-Caballeronia-Paraburkholderia; Paraburkholderia andropogonis
+d0f2bbb327524b213f7370d54e36411b	12.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Chthoniobacterales; Terrimicrobiaceae; Terrimicrobium; metagenome
+6848e5c18601f974f4bcf33034f91e6b	7.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; Sediminibacterium; 
+138c0d948474e8263de2f4323cff8493	261.0	207.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Pedosphaerales; Pedosphaeraceae; SCGC AAA164-E04; uncultured bacterium
+764f3d72f55334ef626ea58f6e0d5107	92.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Rhizobiaceae; Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium; 
+900afa963e27408f431a968c0a29c4ba	20.0	23.0	Bacteria; Proteobacteria; Gammaproteobacteria; AT-s2-59; uncultured sediment bacterium; uncultured sediment bacterium; uncultured sediment bacterium
+95f414cb96d6dc3591613ea6262e7a91	15.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiotrichales; Thiotrichaceae; uncultured; uncultured marine bacterium
+c07f9d559012cdc8472763a62dd5a1f6	0.0	7.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Methylacidiphilales; Methylacidiphilaceae; uncultured; metagenome
+744ba62faa39bd4245b2c59bd1f4893c	0.0	6.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; ; 
+9bd423ad39b47f28f685f50d28045f7e	19.0	19.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Spongiibacteraceae; BD1-7 clade; 
+14f741c375fc46279e042ff571f5165d	0.0	5.0	Bacteria; Planctomycetes; vadinHA49; uncultured bacterium; uncultured bacterium; uncultured bacterium; uncultured bacterium
+8dd07a6420c41eb1d7605f96143c79bf	13.0	42.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Flavicella; uncultured bacterium
+f38b1df5862b5f221e2a266c6dbb772d	103.0	59.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured Owenweeksia sp.
+36adc9f7bf5e86c8036b67868991b5c5	6480.0	593.0	Bacteria; Proteobacteria; Alphaproteobacteria; ; ; ; 
+de0e058c7df1bde8ac3735d1362af5f3	0.0	3.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; NS10 marine group; uncultured Bacteroidetes/Chlorobi group bacterium
+2fd5cca56d8fad002b35316c65e49070	3.0	8.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; uncultured; 
+958666b52c5d7c745674c64cccbf00ea	33.0	49.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+1f0450944dbee6482ce5e080016817e0	0.0	5.0	Archaea; Nanoarchaeaeota; Woesearchaeia; Candidatus Staskawiczbacteria bacterium RIFCSPHIGHO2_01_FULL_34_27; Candidatus Staskawiczbacteria bacterium RIFCSPHIGHO2_01_FULL_34_27; Candidatus Staskawiczbacteria bacterium RIFCSPHIGHO2_01_FULL_34_27; Candidatus Staskawiczbacteria bacterium RIFCSPHIGHO2_01_FULL_34_27
+e9fc682cbf7c52a672b5aceb1e8587fd	27.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; ; 
+ef6ef7d2c6304fcecd57b77c5296c6d2	70.0	289.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; Tateyamaria; uncultured marine bacterium
+311d3d484bede4575e8e4882c9cd9de8	8.0	49.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Pseudoalteromonadaceae; uncultured; uncultured bacterium
+e93ecb09fa8a36e95c47be4d8ff628e1	213.0	288.0	Bacteria; Proteobacteria; Gammaproteobacteria; UBA10353 marine group; marine metagenome; marine metagenome; marine metagenome
+ef550fcfea5a4980e665ee6303024440	0.0	5.0	Archaea; Euryarchaeota; Thermoplasmata; Marine Group II; ; ; 
+969ad2f012457cca28e055bf8774f6f4	29.0	14.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; 
+9e1443d204c8febad33372ad6ae2015d	166.0	270.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; uncultured; uncultured planctomycete
+defcb02ec20f29352cb1b1b267f162a4	6.0	3.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; AEGEAN-169 marine group; uncultured marine bacterium; uncultured marine bacterium
+b271790ca541791921516cfeacfff436	24.0	35.0	Bacteria; Proteobacteria; Alphaproteobacteria; Puniceispirillales; EF100-94H03; uncultured alpha proteobacterium; uncultured alpha proteobacterium
+5b7a3abc99be4b8ba2c7cec449a0db65	5.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bdellovibrionaceae; OM27 clade; unidentified marine bacterioplankton
+09de3dde6c465b74bcb8e6f8a478e4e0	29.0	28.0	Bacteria; Actinobacteria; Actinobacteria; Corynebacteriales; Nocardiaceae; Rhodococcus; 
+0c38f198b962cf6c7f42c68eec9c7848	8.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Roseibacillus; Verrucomicrobia bacterium SCGC AAA164-L15
+f80e2cf29bd206a20b45bd780749c4dd	11.0	0.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bdellovibrionales; Bacteriovoracaceae; Peredibacter; 
+cbe4c7ea5c4540bad2b1e63772770ca4	0.0	47.0	Bacteria; Proteobacteria; Gammaproteobacteria; Salinisphaerales; Solimonadaceae; Hydrocarboniphaga; uncultured bacterium
+8063cb3629f6ccc2751b658b311c2fb9	268.0	655.0	Bacteria; Actinobacteria; Acidimicrobiia; Actinomarinales; Actinomarinaceae; Candidatus Actinomarina; uncultured marine bacterium
+60f080392f75d470b8049e89acb58746	76.0	58.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); ; ; 
+df71de0e92459aa808364311135bb8fc	53.0	46.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; Variovorax; 
+28f9b5f1a2d6d2a444484f891ad1e944	49.0	63.0	Bacteria; Proteobacteria; Alphaproteobacteria; uncultured; uncultured marine bacterium; uncultured marine bacterium; uncultured marine bacterium
+0cd519632b2b79b0ff874f2dd08b0a14	89.0	81.0	Bacteria; Proteobacteria; Gammaproteobacteria; Arenicellales; Arenicellaceae; ; 
+fcdd9dd0e808513b19e6482210648061	42.0	46.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; uncultured; uncultured Bacteroidetes/Chlorobi group bacterium; uncultured Bacteroidetes/Chlorobi group bacterium
+1b78d0e4ed4baf512e0b07d438f6254e	7.0	15.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Rhodospirillaceae; uncultured; uncultured alpha proteobacterium
+4b4de2ebd32432aa36f762bd700a1a80	189.0	197.0	Bacteria; Proteobacteria; Gammaproteobacteria; Steroidobacterales; Woeseiaceae; Woeseia; uncultured gamma proteobacterium EB080_L93H08
+74d341bed5c4f4d1400bd4c7ff0556b8	0.0	4.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; uncultured marine bacterium
+c6833ec304789e6ab915766d8a61142f	10.0	19.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Spongiibacteraceae; Dasania; 
+a1ae9616b621213b6f5255a65e4a7888	31.0	28.0	Bacteria; Proteobacteria; Alphaproteobacteria; Thalassobaculales; Nisaeaceae; OM75 clade; 
+945184b6386c192c0066e0a98a154780	0.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales; Enterobacteriaceae; ; 
+b14306bf04462de74590bd1ba810147e	0.0	6.0	Bacteria; ; ; ; ; ; 
+0be02a6f2328abb2ac3d9e65b8162e37	4.0	10.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; Terasakiellaceae; uncultured; uncultured organism
+2925bbfdbe78e7e3e0b69a94761d5e91	2.0	0.0	Bacteria; Omnitrophicaeota; Omnitrophia; Omnitrophales; Omnitrophaceae; Candidatus Omnitrophus; uncultured bacterium
+7b2a33f10384e88178731e09b0bf4f83	0.0	4.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales; uncultured; metagenome; metagenome
+012404fdadfbaf107b90c21b6011a121	54.0	135.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Formosa; 
+83ad52090168e2a1de7f281350a17ac2	7.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Diplorickettsiales; Diplorickettsiaceae; uncultured; 
+503e245ef7610e07931e8ffe369f7e01	56.0	42.0	Bacteria; Proteobacteria; Gammaproteobacteria; UBA10353 marine group; ; ; 
+2b6e42bf9200244b950fdda2491dd4ca	19.0	20.0	Bacteria; Proteobacteria; Gammaproteobacteria; Alteromonadales; Colwelliaceae; Colwellia; 
+8b2279d344a707a0286f4355f6db92ff	24.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Microscillaceae; uncultured; 
+2bbe9ffa11b7f8f8f39949efd572622e	140.0	166.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Ilumatobacteraceae; Ilumatobacter; 
+4ec37aa30ab2bf855e1b18f114113868	32.0	16.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); ; ; 
+49683dd62b698ff09899ccd820083ebb	21.0	13.0	Bacteria; Epsilonbacteraeota; Campylobacteria; Campylobacterales; Arcobacteraceae; Arcobacter; 
+fd187133c3cb6a8878443e7f6ae0c77e	20.0	34.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhodobacterales; Rhodobacteraceae; ; 
+6fe4c1b66305430b8681deb53d5b2668	10.0	5.0	Bacteria; Proteobacteria; Deltaproteobacteria; Desulfarculales; Desulfarculaceae; uncultured; uncultured delta proteobacterium
+c8e360969108fa2125a3d56eb4dad24f	441.0	811.0	Bacteria; Actinobacteria; Acidimicrobiia; Actinomarinales; Actinomarinaceae; Candidatus Actinomarina; uncultured marine bacterium
+45aae5b06129baf3325f68a675e9c8e2	406.0	420.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; OM60(NOR5) clade; uncultured marine bacterium
+8e03a5546765d4f3e949a77f5f700f7e	0.0	28.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopelagicus; uncultured archaeon
+35b4930c8ef9b7fa7c378c7f69d1fa09	12.0	0.0	Bacteria; Planctomycetes; OM190; ; ; ; 
+2a29f80ddb77d9a091452ac11d2065a0	0.0	20.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Formosa; uncultured marine bacterium
+929cbf36f791dd363157d90871061cee	128.0	132.0	Bacteria; Proteobacteria; Gammaproteobacteria; UBA10353 marine group; uncultured organism; uncultured organism; uncultured organism
+41508066e895c1a53b03b464db2e3c50	0.0	8.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; 
+a6b9bfa854e77e8f54161f3b485a6714	17.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Corynebacteriales; Mycobacteriaceae; Mycobacterium; 
+e2901c4b03e674c7e67f89478f81e128	25.0	95.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Spongiibacteraceae; BD1-7 clade; uncultured bacterium
+1d0d5ffd613d79c83dc39cdeb7e297c5	0.0	20.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; uncultured marine bacterium; uncultured marine bacterium
+3f8370d5341692ef7e6f31eae982ed21	0.0	9.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; ; 
+8c866d6fd971f26428fadc39d12e6224	5.0	4.0	Bacteria; Nitrospinae; Nitrospinia; Nitrospinales; Nitrospinaceae; Nitrospina; 
+b5c40e084e48850dbd6ee192dd8bcb14	0.0	5.0	Bacteria; Proteobacteria; ; ; ; ; 
+0ab2c16c7082d494ba4d3ad819ec4f7a	89.0	117.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Saprospiraceae; uncultured; unidentified marine eubacterium
+76ff56adf5a8f60da6894bf988d75c28	8.0	5.0	Bacteria; Fibrobacteres; Fibrobacteria; Fibrobacterales; Fibrobacteraceae; uncultured; uncultured Fibrobacteres bacterium
+a916b13589ae791d4efd1e727fa89b46	2.0	0.0	Bacteria; Dependentiae; Babeliae; Babeliales; UBA12409; metagenome; metagenome
+825cfba5237338118f5512de2223cabc	24.0	15.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Blfdi19; uncultured bacterium; uncultured bacterium
+1f25302398a08fa973d6ebae46465f9e	107.0	90.0	Bacteria; Actinobacteria; Acidimicrobiia; Microtrichales; Microtrichaceae; Sva0996 marine group; uncultured bacterium
+2c769b0e96ba35ca60a6aa3a15f527d8	83.0	64.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ia; 
+72143fd9e63fe40c1258948d2f0d79c3	917.0	780.0	Bacteria; Proteobacteria; Alphaproteobacteria; SAR11 clade; Clade I; Clade Ia; 
+c3747f18b2483e043c8b3c7c53b1416c	6.0	0.0	Bacteria; ; ; ; ; ; 
+c6cd3b9fd6ae77dc88ddac6386d4e741	6.0	0.0	Bacteria; Cyanobacteria; Melainabacteria; Obscuribacterales; ; ; 
+576b43eee9797f7036a8901584989470	16.0	54.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Porticoccaceae; SAR92 clade; 
+bea27daf6523539c06827f4806443412	12.0	9.0	Bacteria; Proteobacteria; Gammaproteobacteria; Coxiellales; Coxiellaceae; Coxiella; uncultured bacterium
+c7c02c07fb28c8730768bb76cafad3fe	50.0	138.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Burkholderiaceae; Burkholderia-Caballeronia-Paraburkholderia; 
+19c8b33153ecbc5ab139b86ed996a90e	20.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Xanthomonadales; Xanthomonadaceae; Pseudoxanthomonas; 
+636526723b6edd9bc9a4e2a10feeee2a	0.0	12.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; uncultured Bacteroidetes bacterium
+0c35cfa523aa27921ef8544a16d1cd36	2934.0	3229.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+3bac14d2805bf995afe9d316a5777b1e	197.0	0.0	Bacteria; Firmicutes; Bacilli; Lactobacillales; Lactobacillaceae; Lactobacillus; 
+7ec69f2c62aad60e060e588ef687bdd0	238.0	317.0	Bacteria; Proteobacteria; Gammaproteobacteria; SAR86 clade; ; ; 
+62ecc763393ec2da50034523c30663e3	35.0	30.0	Bacteria; Proteobacteria; Gammaproteobacteria; Steroidobacterales; Woeseiaceae; Woeseia; uncultured marine bacterium
+059f987baf951c4e8d2ca6e46d60b148	10.0	13.0	Bacteria; Proteobacteria; Deltaproteobacteria; Myxococcales; Sandaracinaceae; uncultured; uncultured delta proteobacterium
+6f7fdad1419595b3bb1e5ceda289402b	11.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sphingomonadales; Sphingomonadaceae; Sphingomonas; Sphingomonas sp. S-2
+a140195871278e8fcf9447e42bad8786	134.0	240.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; 
+b0dbb8722e6bae57ffc2b42325d33a40	0.0	5.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Crocinitomicaceae; Fluviicola; 
+778f0eb2a8cfc6df11f04536adafa0aa	21.0	18.0	Bacteria; Nitrospinae; Nitrospinia; Nitrospinales; Nitrospinaceae; LS-NOB; 
+f184a7549905b726947d65f2d8cafa4a	174.0	181.0	Bacteria; Proteobacteria; Deltaproteobacteria; SAR324 clade(Marine group B); uncultured SAR324 cluster bacterium; uncultured SAR324 cluster bacterium; uncultured SAR324 cluster bacterium
+e5bcc1b07eae68abda8f7934a2a2648b	0.0	8.0	Bacteria; Bacteroidetes; Bacteroidia; Cytophagales; Microscillaceae; uncultured; metagenome
+dfee0dfd8c86415a8c8e28784f482990	63.0	196.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; 
+72f9c992a3dc068f869b1feef54e7733	0.0	4.0	Bacteria; Proteobacteria; Gammaproteobacteria; Cellvibrionales; Halieaceae; ; 
+4f5fc09b11a0c49cc7911a4580cf2654	7.0	4.0	Bacteria; Fibrobacteres; Fibrobacteria; Fibrobacterales; Fibrobacteraceae; uncultured; uncultured Fibrobacteres bacterium
+0d957ff7a95ed06d5550618efeeb1e35	0.0	12.0	Bacteria; Proteobacteria; Gammaproteobacteria; Thiomicrospirales; Thioglobaceae; SUP05 cluster; endosymbiont of Ridgeia piscesae
+2c2ea9e7a20a6fb7ca0419b8b457f1ee	32.0	0.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Persicirhabdus; uncultured bacterium
+38305865891ec39e4ca7ece6bdbc98c9	0.0	22.0	Bacteria; Proteobacteria; Gammaproteobacteria; SAR86 clade; ; ; 
+ae1c8acafd0f5311b02ff603be1d9aa0	777.0	483.0	Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales; Rubritaleaceae; Roseibacillus; uncultured marine bacterium
+ae3d16e8d08f070f3f34e3a161a573e9	20.0	0.0	Bacteria; Proteobacteria; Alphaproteobacteria; Rhizobiales; Devosiaceae; Devosia; 
+e5c19d7800b18015f3a917fc015fc42f	0.0	7.0	Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Moraxellaceae; Enhydrobacter; 
+e0b375bae1b37c73a8b03caf0a47226d	0.0	18.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS7 marine group; ; 
+7e220081fd7e474730f82e3a854a1427	0.0	9.0	Bacteria; Proteobacteria; Alphaproteobacteria; Sneathiellales; Sneathiellaceae; AT-s3-44; 
+d80580014fbd650c390fb8e5cccb4317	31.0	47.0	Archaea; Thaumarchaeota; Nitrososphaeria; Nitrosopumilales; Nitrosopumilaceae; Candidatus Nitrosopumilus; 
+9b9aba8aa4621f4d1014a8292a87bedb	163.0	354.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Cryomorphaceae; uncultured; 
+64b7f64aac846cb86f1eaa8fac017de6	14.0	29.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; NS9 marine group; ; 
+a812d532c93b1871f5bf0fb5b2aa168e	3.0	0.0	Bacteria; Actinobacteria; Actinobacteria; Micrococcales; Promicromonosporaceae; ; 
+4c77902f6f95e62df654e23ae6a96abe	5.0	5.0	Bacteria; Proteobacteria; Deltaproteobacteria; Bradymonadales; uncultured bacterium; uncultured bacterium; uncultured bacterium
+3122d62cf49f436c6292447d8394c625	0.0	5.0	Bacteria; Proteobacteria; Gammaproteobacteria; ; ; ; 
+89f5e841fc125e244c88d9685c8da045	177.0	260.0	Bacteria; Bacteroidetes; Rhodothermia; Rhodothermales; Rhodothermaceae; uncultured; 
+0ca3c23a3be78908599216bf9b2e35fb	6.0	0.0	Bacteria; Bacteroidetes; Bacteroidia; Chitinophagales; Chitinophagaceae; Filimonas; Filimonas sp. R5-375
+7174b1950c11ec56289a8d328e1204a2	0.0	11.0	Bacteria; Actinobacteria; Actinobacteria; Pseudonocardiales; Pseudonocardiaceae; Pseudonocardia; 
+c9c356ac79f06c50de2461c85c91d9df	17.0	0.0	Bacteria; Proteobacteria; Gammaproteobacteria; Betaproteobacteriales; Methylophilaceae; ; 
+7a26b18ecf36e25e17aebec4dec9295d	23.0	18.0	Bacteria; Planctomycetes; Planctomycetacia; Pirellulales; Pirellulaceae; Blastopirellula; uncultured planctomycete
+e85c6db967d39bf200e9953a7abdfa92	0.0	17.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; NS5 marine group; 
+ea212cc14044b8a8fae5e39bd7e507fd	0.0	27.0	Bacteria; Bacteroidetes; Bacteroidia; Flavobacteriales; Flavobacteriaceae; Formosa; uncultured marine bacterium
+a4270e0b738ab902fefda2901602934b	0.0	3.0	Bacteria; Bacteroidetes; Bacteroidia; ; ; ; 
